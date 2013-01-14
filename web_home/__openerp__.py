@@ -14,7 +14,7 @@
         "security/ir.model.access.csv",
     ],
     "depends": ["base",],
-    #"js": ["static/js/*.js",],
+    "js": ["static/js/*.js",],
     #"css": ["static/css/*.css",],
     'auto_install': False,
     #'web_preload': False,

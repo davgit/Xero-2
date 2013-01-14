@@ -57,7 +57,7 @@ class users(osv.osv):
 
 class web_home(osv.osv):
     
-    _name = "web_home"
+    _inherit = 'board.board'
     _description = "Web Home"
     
     _columns = {

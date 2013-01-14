@@ -2,32 +2,59 @@
 <openerp>
     <data>
         
-        <record model="ir.ui.view" id="view_form_web_home">
-            <field name="name">Web Home Page</field>
-            <field name="model">web_home</field>
+        <record model="ir.ui.view" id="view_user_connection_tree_inherit">
+            <field name="name">user.connection.tree</field>
+            <field name="model">res.users</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Latest Connections">
+                    <field name="name"/>
+                    <field name="date"/>
+                    <field name="end_date"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.actions.act_window" id="action_user_connection_tree_inherit">
+            <field name="name">User Connections</field>
+            <field name="res_model">res.users</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_user_connection_tree_inherit"></field>
+        </record>
+        
+        <record id="board_config_overview_inherit" model="ir.actions.client">
+            <field name="name">Configuration Overview</field>
+            <field name="tag">board.config.overview</field>
+        </record>
+        
+        <record id="board_administration_form_inherit" model="ir.ui.view">
+            <field name="name">board.administration.form.inherit</field>
+            <field name="model">board.board</field>
             <field name="type">form</field>
             <field name="arch" type="xml">
-                <form string="">
-                    <button name="" string="Test" type="object" icon="gtk-go-forward" />
+                <form string="Administration Dashboard">
+                    <board style="1-1">
+                        <column>
+                            <action name="%(board_config_overview_inherit)d" string="Configuration Overview"/>
+                        </column>
+                        <column>
+                            <action name="%(action_user_connection_tree_inherit)d" string="Users" />
+                        </column>
+                    </board>
                 </form>
             </field>
         </record>
         
-        
-
-        
-        <record model="ir.actions.act_window" id="action_web_home_view">
-            <field name="type">ir.actions.act_window</field>
-            <field name="res_model">web_home</field>
+        <record id="open_board_administration_form_inherit" model="ir.actions.act_window">
+             <field name="name">Administration Dashboard</field>
+            <field name="res_model">board.board</field>
             <field name="view_type">form</field>
             <field name="view_mode">form</field>
-            <field name="view_id" ref="view_form_web_home"></field>
+            <field name="view_id" ref="board_administration_form_inherit"/>
         </record>
         
-        
-        
-        
-        <menuitem id='id_web_home' name='Web Home' sequence= '2' web_icon_hover="images/alert2.png" web_icon="images/alert.png" action="action_web_home_view"/>
+        <menuitem id='id_web_home' name='Web Home' sequence= '2' web_icon_hover="images/alert2.png" web_icon="images/alert.png" action="open_board_administration_form_inherit"/>
     
     </data>
 </openerp>
