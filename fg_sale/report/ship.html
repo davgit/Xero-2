@@ -1,0 +1,105 @@
+# -*- coding: utf-8 -*-
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>产品清单(配载)</title>
+		<style type="text/css">
+			table
+			{
+			    border-collapse:collapse;
+			}
+			table, td, th
+			{
+			    border:1px solid #ccc;
+			}
+			
+		</style>
+		<script language="javascript" src="/web_lodop/static/src/js/LodopFuncs.js"></script>
+		<object id="LODOP_OB" classid="clsid:2105C259-1E0C-4534-8141-A753534CB4CA" width=0 height=0>
+			<embed id="LODOP_EM" type="application/x-print-lodop" width=0 height=0 pluginspage="/web_lodop/static/src/js/install_lodop.exe"></embed>
+		</object>
+	</head>
+	<body>
+        % if len(objects) > 1:
+			目前不支持多单据打印.
+		% else:
+    		% for o in objects:
+    		    
+                    <div id="div2">
+                    <table border="0" cellspacing="2" cellpadding="2" bordercolor="#000000" style="font-size:14px;">
+                      <thead>
+                          <tr>
+                            <td width="100%" colspan="8">
+                              <p align="center" style="font-size:16px;"><b>产品清单(配载)</b></p></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td colspan="1"  height="18">单位名称: ${ o.partner_id.name }</td>
+                            <td colspan="1"  height="18">备注: ${ o.note or '' }</td>
+                            <td colspan="1" height="18">时间: ${ o.date_order }</td>
+                            <td colspan="1" height="18" style="font-size:12px;">
+                                单号: ${ o['name'] }
+    						</td>
+                          </tr>
+                          <tr height="18">
+                            <td style="BORDER-COLLAPSE: collapse; BORDER:groove 1px;" align="center">No.</td>
+            				<td style="BORDER-COLLAPSE: collapse; BORDER:groove 1px;" align="center">品名</td>
+            				<td style="BORDER-COLLAPSE: collapse; BORDER:groove 1px;" align="center">型号</td>
+            				<td style="BORDER-COLLAPSE: collapse; BORDER:groove 1px;" align="center">单位</td>
+            				<td style="BORDER-COLLAPSE: collapse; BORDER:groove 1px;" align="center">数量</td>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <%
+              				i = 0
+              			    %>
+                  			% for line in o.order_line:
+                                <% i = i + 1 %>
+                                <tr>
+                                    <td width="2%" height="18" style="BORDER-COLLAPSE: collapse; BORDER:groove 1px;text-align:center;" >${ i }</td>
+                                    <td height="18" style="BORDER-COLLAPSE: collapse; BORDER:groove 1px;" >${ line.product_id.name }</td>
+                                    <td width="15%" height="18" style="BORDER-COLLAPSE: collapse; BORDER:groove 1px;" >${ line.product_id.default_code or '' }</td>
+                                    <td width="20%" height="18" style="BORDER-COLLAPSE: collapse; BORDER:groove 1px;" >${ line.product_uom.name }</td>
+                                    <td width="20%" height="18" style="BORDER-COLLAPSE: collapse; BORDER:groove 1px;" >${ line.product_uom_qty }</td>
+                                  </tr>
+                                % endfor
+                      </tbody>
+                      <tfoot>
+                          <tr>
+                            <td colspan="2" style="BORDER-COLLAPSE: collapse; BORDER:groove 1px;text-align:right;" tdata="allSum" format="#,##0.00" tindex="5">
+                                汇总数量: #
+                            </td>
+                            <td colspan="3" style="BORDER-COLLAPSE: collapse; BORDER:groove 1px;text-align:right;" tdata="subSum" format="#,##0.00" tindex="5">
+                                本页小计: #
+                            </td>
+                          </tr>
+                          <tr>
+                              <td colspan="2" style="font-size:13px;">开票人: ${ o['user_id']['name'] }</td>
+                              <td colspan="1" style="font-size:13px;">审核人: ${ o['confirmer_id']['name'] }</td>
+                              <td colspan="1" style="font-size:13px;">客户签收: </td>
+                              <td colspan="1" style="font-size:13px;text-align:right;">第<span tdata="pageNO" format="#">#</span>页 - 共<span tdata="pageCount" format="#">#</span>页</td>
+                          </tr>
+                      </tfoot>
+                    </table>
+                    </div>
+                    <script language="javascript" type="text/javascript">
+            		    var LODOP; //声明为全局变量
+            		    function print_all(){
+                        		LODOP=getLodop(document.getElementById('LODOP'),document.getElementById('LODOP_EM'));  
+                        		LODOP.SET_LICENSES("","292881049110510152101109126561","","");
+                        		LODOP.PRINT_INIT("FG ERP Order");
+                        		LODOP.SET_PRINT_PAGESIZE(1, 2300, 1390, 'fg_sale_order_order');
+                        		LODOP.ADD_PRINT_TABLE("0mm","0mm","220mm", "90mm", document.getElementById("div2").innerHTML);
+                                
+                        		LODOP.PREVIEW();
+                        		
+                        		//LODOP.PRINT_DESIGN();
+                        		window.close();
+                        }
+                        print_all();
+        		    </script>
+        	% endfor
+		% endif 
+        </body>
+</html>

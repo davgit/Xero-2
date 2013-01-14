@@ -1,0 +1,2230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+                
+<record id="product_ul_box_556" model="product.ul">
+    <field name="name">445×410×185</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_555" model="product.ul">
+    <field name="name">445×410×185</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_554" model="product.ul">
+    <field name="name">445×410×185</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_553" model="product.ul">
+    <field name="name">460×385×220</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_552" model="product.ul">
+    <field name="name">425×355×210</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_551" model="product.ul">
+    <field name="name">415×375×175</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_550" model="product.ul">
+    <field name="name">375×315×205</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_549" model="product.ul">
+    <field name="name">420×350×205</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_548" model="product.ul">
+    <field name="name">625×450×255</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_547" model="product.ul">
+    <field name="name">625×450×255</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_546" model="product.ul">
+    <field name="name">625×450×255</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_545" model="product.ul">
+    <field name="name">635×430×265</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_544" model="product.ul">
+    <field name="name">635×430×265</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_543" model="product.ul">
+    <field name="name">675×435×245</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_542" model="product.ul">
+    <field name="name">675×435×245</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_541" model="product.ul">
+    <field name="name">605×430×270</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_540" model="product.ul">
+    <field name="name">605×450×270</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_539" model="product.ul">
+    <field name="name">625×450×255</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_538" model="product.ul">
+    <field name="name">625×450×255</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_537" model="product.ul">
+    <field name="name">625×465×260</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_536" model="product.ul">
+    <field name="name">625×465×260</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_535" model="product.ul">
+    <field name="name">625×465×260</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_534" model="product.ul">
+    <field name="name">455×380×168</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_533" model="product.ul">
+    <field name="name">510×345×175</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_532" model="product.ul">
+    <field name="name">495×495×175</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_531" model="product.ul">
+    <field name="name">430×360×200</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_530" model="product.ul">
+    <field name="name">390×325×190</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_529" model="product.ul">
+    <field name="name">390×325×190</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_528" model="product.ul">
+    <field name="name">390×325×190</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_527" model="product.ul">
+    <field name="name">430×360×200</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_526" model="product.ul">
+    <field name="name">515×295×170</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_525" model="product.ul">
+    <field name="name">450×420×170</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_524" model="product.ul">
+    <field name="name">371×310×180</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_523" model="product.ul">
+    <field name="name">440×370×205</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_522" model="product.ul">
+    <field name="name">440×370×215</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_521" model="product.ul">
+    <field name="name">375×315×185</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_520" model="product.ul">
+    <field name="name">440×370×210</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_519" model="product.ul">
+    <field name="name">533×357×500</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_518" model="product.ul">
+    <field name="name">533×357×500</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_517" model="product.ul">
+    <field name="name">450×310×435</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_516" model="product.ul">
+    <field name="name">430×365×215</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_515" model="product.ul">
+    <field name="name">520×420×255</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_514" model="product.ul">
+    <field name="name">615×495×220</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_513" model="product.ul">
+    <field name="name">620×499×216</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_512" model="product.ul">
+    <field name="name">530×451×245</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_511" model="product.ul">
+    <field name="name">530×451×245</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_510" model="product.ul">
+    <field name="name">530×451×245</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_509" model="product.ul">
+    <field name="name">520×430×280</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_508" model="product.ul">
+    <field name="name">520×430×280</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_507" model="product.ul">
+    <field name="name">575×380×225</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_506" model="product.ul">
+    <field name="name">520×420×255</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_505" model="product.ul">
+    <field name="name">520×420×255</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_504" model="product.ul">
+    <field name="name">520×430×255</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_503" model="product.ul">
+    <field name="name">615×495×220</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_502" model="product.ul">
+    <field name="name">505×490×245</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_501" model="product.ul">
+    <field name="name">520×430×280</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_500" model="product.ul">
+    <field name="name">520×430×280</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_499" model="product.ul">
+    <field name="name">520×430×280</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_498" model="product.ul">
+    <field name="name">520×430×280</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_497" model="product.ul">
+    <field name="name">505×490×245</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_496" model="product.ul">
+    <field name="name">535×430×175</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_495" model="product.ul">
+    <field name="name">535×430×175</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_494" model="product.ul">
+    <field name="name">535×430×175</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_493" model="product.ul">
+    <field name="name">535×430×175</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_492" model="product.ul">
+    <field name="name">535×430×175</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_491" model="product.ul">
+    <field name="name">535×430×175</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_490" model="product.ul">
+    <field name="name">535×430×175</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_489" model="product.ul">
+    <field name="name">535×430×175</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_488" model="product.ul">
+    <field name="name">535×430×175</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_487" model="product.ul">
+    <field name="name">535×430×175</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_486" model="product.ul">
+    <field name="name">535×430×175</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_485" model="product.ul">
+    <field name="name">535×430×175</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_484" model="product.ul">
+    <field name="name">535×430×175</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_483" model="product.ul">
+    <field name="name">535×430×175</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_482" model="product.ul">
+    <field name="name">535×430×175</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_481" model="product.ul">
+    <field name="name">535×430×175</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_480" model="product.ul">
+    <field name="name">535×430×175</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_479" model="product.ul">
+    <field name="name">535×430×175</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_478" model="product.ul">
+    <field name="name">535×430×175</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_477" model="product.ul">
+    <field name="name">535×430×175</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_476" model="product.ul">
+    <field name="name">535×430×175</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_475" model="product.ul">
+    <field name="name">535×430×175</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_474" model="product.ul">
+    <field name="name">535×430×175</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_473" model="product.ul">
+    <field name="name">535×430×175</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_472" model="product.ul">
+    <field name="name">535×430×175</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_471" model="product.ul">
+    <field name="name">520×430×280</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_470" model="product.ul">
+    <field name="name">520×430×280</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_469" model="product.ul">
+    <field name="name">415×385×160</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_468" model="product.ul">
+    <field name="name">445×420×170</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_467" model="product.ul">
+    <field name="name">470×295×148</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_466" model="product.ul">
+    <field name="name">470×295×180</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_465" model="product.ul">
+    <field name="name">535×335×147</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_464" model="product.ul">
+    <field name="name">545×340×190</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_463" model="product.ul">
+    <field name="name">625×360×240</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_462" model="product.ul">
+    <field name="name">505×405×270</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_461" model="product.ul">
+    <field name="name">430×365×215</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_460" model="product.ul">
+    <field name="name">680×425×255</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_459" model="product.ul">
+    <field name="name">490×310×175</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_458" model="product.ul">
+    <field name="name">545×345×205</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_457" model="product.ul">
+    <field name="name">460×310×345</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_456" model="product.ul">
+    <field name="name">471×320×410</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_455" model="product.ul">
+    <field name="name">460×310×345</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_454" model="product.ul">
+    <field name="name">420×385×172</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_453" model="product.ul">
+    <field name="name">460×420×170</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_452" model="product.ul">
+    <field name="name">355×295×180</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_451" model="product.ul">
+    <field name="name">435×365×200</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_450" model="product.ul">
+    <field name="name">440×370×210</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_449" model="product.ul">
+    <field name="name">510×425×205</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_448" model="product.ul">
+    <field name="name">655×455×245</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_447" model="product.ul">
+    <field name="name">690×500×270</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_446" model="product.ul">
+    <field name="name">635×435×245</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_445" model="product.ul">
+    <field name="name">635×435×245</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_444" model="product.ul">
+    <field name="name">635×435×245</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_443" model="product.ul">
+    <field name="name">635×435×245</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_442" model="product.ul">
+    <field name="name">635×435×245</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_441" model="product.ul">
+    <field name="name">635×345×245</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_440" model="product.ul">
+    <field name="name">540×340×195</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_439" model="product.ul">
+    <field name="name">535×315×195</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_438" model="product.ul">
+    <field name="name">615×365×235</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_437" model="product.ul">
+    <field name="name">615×365×235</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_436" model="product.ul">
+    <field name="name">440×380×210</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_435" model="product.ul">
+    <field name="name">620×499×216</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_434" model="product.ul">
+    <field name="name">620×499×216</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_433" model="product.ul">
+    <field name="name">620×499×216</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_432" model="product.ul">
+    <field name="name">513×492×240</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_431" model="product.ul">
+    <field name="name">513×492×240</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_430" model="product.ul">
+    <field name="name">513×492×240</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_429" model="product.ul">
+    <field name="name">640×445×280</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_428" model="product.ul">
+    <field name="name">640×445×280</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_427" model="product.ul">
+    <field name="name">635×405×270</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_426" model="product.ul">
+    <field name="name">635×405×270</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_425" model="product.ul">
+    <field name="name">635×405×270</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_424" model="product.ul">
+    <field name="name">640×480×250</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_423" model="product.ul">
+    <field name="name">490×440×232</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_422" model="product.ul">
+    <field name="name">590×380×200</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_421" model="product.ul">
+    <field name="name">590×380×200</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_420" model="product.ul">
+    <field name="name">655×435×220</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_419" model="product.ul">
+    <field name="name">490×440×232</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_418" model="product.ul">
+    <field name="name">500×440×236</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_417" model="product.ul">
+    <field name="name">490×440×232</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_416" model="product.ul">
+    <field name="name">630×450×260</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_415" model="product.ul">
+    <field name="name">565×340×235</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_414" model="product.ul">
+    <field name="name">565×340×235</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_413" model="product.ul">
+    <field name="name">565×340×245</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_412" model="product.ul">
+    <field name="name">565×340×235</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_411" model="product.ul">
+    <field name="name">636×400×260</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_410" model="product.ul">
+    <field name="name">636×400×260</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_409" model="product.ul">
+    <field name="name">636×400×260</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_408" model="product.ul">
+    <field name="name">635×450×255</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_407" model="product.ul">
+    <field name="name">635×450×255</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_406" model="product.ul">
+    <field name="name">665×425×240</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_405" model="product.ul">
+    <field name="name">520×340×275</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_404" model="product.ul">
+    <field name="name">520×340×275</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_403" model="product.ul">
+    <field name="name">636×400×260</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_402" model="product.ul">
+    <field name="name">636×400×260</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_401" model="product.ul">
+    <field name="name">510×365×270</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_400" model="product.ul">
+    <field name="name">666×426×240</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_399" model="product.ul">
+    <field name="name">615×440×265</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_398" model="product.ul">
+    <field name="name">520×340×275</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_397" model="product.ul">
+    <field name="name">520×340×275</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_396" model="product.ul">
+    <field name="name">615×440×265</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_395" model="product.ul">
+    <field name="name">615×440×265</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_394" model="product.ul">
+    <field name="name">636×400×260</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_393" model="product.ul">
+    <field name="name">625×450×285</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_392" model="product.ul">
+    <field name="name">666×426×240</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_391" model="product.ul">
+    <field name="name">635×395×265</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_390" model="product.ul">
+    <field name="name">625×450×285</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_389" model="product.ul">
+    <field name="name">500×340×550</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_388" model="product.ul">
+    <field name="name">480×330×490</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_387" model="product.ul">
+    <field name="name">480×380×425</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_386" model="product.ul">
+    <field name="name">570×395×615</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_385" model="product.ul">
+    <field name="name">470×320×490</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_384" model="product.ul">
+    <field name="name">480×320×435</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_383" model="product.ul">
+    <field name="name">440×310×410</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_382" model="product.ul">
+    <field name="name">570×395×615</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_381" model="product.ul">
+    <field name="name">570×395×615</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_380" model="product.ul">
+    <field name="name">500×340×550</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_379" model="product.ul">
+    <field name="name">635×450×255</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_378" model="product.ul">
+    <field name="name">635×450×255</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_377" model="product.ul">
+    <field name="name">390×325×200</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_376" model="product.ul">
+    <field name="name">635×395×265</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_375" model="product.ul">
+    <field name="name">615×440×265</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_374" model="product.ul">
+    <field name="name">615×440×265</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_373" model="product.ul">
+    <field name="name">615×440×265</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_372" model="product.ul">
+    <field name="name">520×430×280</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_371" model="product.ul">
+    <field name="name">520×430×280</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_370" model="product.ul">
+    <field name="name">520×430×280</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_369" model="product.ul">
+    <field name="name">520×430×280</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_368" model="product.ul">
+    <field name="name">520×430×280</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_367" model="product.ul">
+    <field name="name">520×430×280</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_366" model="product.ul">
+    <field name="name">520×430×280</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_365" model="product.ul">
+    <field name="name">530×325×255</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_364" model="product.ul">
+    <field name="name">665×425×240</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_363" model="product.ul">
+    <field name="name">665×425×240</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_362" model="product.ul">
+    <field name="name">665×425×240</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_361" model="product.ul">
+    <field name="name">530×325×255</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_360" model="product.ul">
+    <field name="name">665×425×240</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_359" model="product.ul">
+    <field name="name">665×425×240</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_358" model="product.ul">
+    <field name="name">665×425×240</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_357" model="product.ul">
+    <field name="name">665×425×240</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_356" model="product.ul">
+    <field name="name">665×425×240</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_355" model="product.ul">
+    <field name="name">565×340×235</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_354" model="product.ul">
+    <field name="name">665×425×240</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_353" model="product.ul">
+    <field name="name">665×425×240</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_352" model="product.ul">
+    <field name="name">665×425×240</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_351" model="product.ul">
+    <field name="name">665×425×240</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_350" model="product.ul">
+    <field name="name">565×340×235</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_349" model="product.ul">
+    <field name="name">635×395×260</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_348" model="product.ul">
+    <field name="name">615×440×260</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_347" model="product.ul">
+    <field name="name">615×440×260</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_346" model="product.ul">
+    <field name="name">545×330×290</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_345" model="product.ul">
+    <field name="name">545×330×290</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_344" model="product.ul">
+    <field name="name">545×330×270</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_343" model="product.ul">
+    <field name="name">475×400×275</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_342" model="product.ul">
+    <field name="name">665×425×240</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_341" model="product.ul">
+    <field name="name">636×440×260</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_340" model="product.ul">
+    <field name="name">415×315×325</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_339" model="product.ul">
+    <field name="name">415×315×325</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_338" model="product.ul">
+    <field name="name">415×315×325</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_337" model="product.ul">
+    <field name="name">415×315×325</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_336" model="product.ul">
+    <field name="name">415×315×275</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_335" model="product.ul">
+    <field name="name">500×420×355</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_334" model="product.ul">
+    <field name="name">485×410×325</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_333" model="product.ul">
+    <field name="name">405×365×325</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_332" model="product.ul">
+    <field name="name">415×375×275</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_331" model="product.ul">
+    <field name="name">575×385×635</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_330" model="product.ul">
+    <field name="name">575×385×635</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_329" model="product.ul">
+    <field name="name">575×385×635</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_328" model="product.ul">
+    <field name="name">435×295×395</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_327" model="product.ul">
+    <field name="name">396×265×370</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_326" model="product.ul">
+    <field name="name">360×245×325</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_325" model="product.ul">
+    <field name="name">625×450×260</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_324" model="product.ul">
+    <field name="name">625×450×260</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_323" model="product.ul">
+    <field name="name">625×450×260</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_322" model="product.ul">
+    <field name="name">625×450×260</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_321" model="product.ul">
+    <field name="name">625×450×260</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_320" model="product.ul">
+    <field name="name">625×450×260</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_319" model="product.ul">
+    <field name="name">625×450×260</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_318" model="product.ul">
+    <field name="name">615×440×215</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_317" model="product.ul">
+    <field name="name">523×440×255</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_316" model="product.ul">
+    <field name="name">515×415×270</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_315" model="product.ul">
+    <field name="name">695×435×240</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_314" model="product.ul">
+    <field name="name">640×445×260</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_313" model="product.ul">
+    <field name="name">630×435×245</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_312" model="product.ul">
+    <field name="name">630×435×245</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_311" model="product.ul">
+    <field name="name">655×440×255</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_310" model="product.ul">
+    <field name="name">523×440×255</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_309" model="product.ul">
+    <field name="name">630×435×245</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_308" model="product.ul">
+    <field name="name">630×435×245</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_307" model="product.ul">
+    <field name="name">695×435×235</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_306" model="product.ul">
+    <field name="name">630×435×245</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_305" model="product.ul">
+    <field name="name">635×450×255</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_304" model="product.ul">
+    <field name="name">635×450×255</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_303" model="product.ul">
+    <field name="name">635×450×255</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_302" model="product.ul">
+    <field name="name">635×450×255</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_301" model="product.ul">
+    <field name="name">635×450×255</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_300" model="product.ul">
+    <field name="name">635×450×255</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_299" model="product.ul">
+    <field name="name">635×450×255</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_298" model="product.ul">
+    <field name="name">430×365×220</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_297" model="product.ul">
+    <field name="name">430×365×252</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_296" model="product.ul">
+    <field name="name">430×360×260</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_295" model="product.ul">
+    <field name="name">430×360×215</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_294" model="product.ul">
+    <field name="name">480×405×270</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_293" model="product.ul">
+    <field name="name">480×405×230</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_292" model="product.ul">
+    <field name="name">360×300×200</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_291" model="product.ul">
+    <field name="name">440×365×210</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_290" model="product.ul">
+    <field name="name">440×365×255</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_289" model="product.ul">
+    <field name="name">465×375×270</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_288" model="product.ul">
+    <field name="name">465×375×240</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_287" model="product.ul">
+    <field name="name">470×330×230</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_286" model="product.ul">
+    <field name="name">470×330×230</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_285" model="product.ul">
+    <field name="name">470×330×230</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_284" model="product.ul">
+    <field name="name">575×385×635</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_283" model="product.ul">
+    <field name="name">575×385×635</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_282" model="product.ul">
+    <field name="name">500×340×545</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_281" model="product.ul">
+    <field name="name">480×315×500</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_280" model="product.ul">
+    <field name="name">435×295×450</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_279" model="product.ul">
+    <field name="name">435×295×395</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_278" model="product.ul">
+    <field name="name">425×285×375</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_277" model="product.ul">
+    <field name="name">396×265×370</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_276" model="product.ul">
+    <field name="name">575×385×635</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_275" model="product.ul">
+    <field name="name">360×245×325</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_274" model="product.ul">
+    <field name="name">540×335×208</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_273" model="product.ul">
+    <field name="name">515×315×195</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_272" model="product.ul">
+    <field name="name">465×290×180</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_271" model="product.ul">
+    <field name="name">560×350×195</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_270" model="product.ul">
+    <field name="name">525×330×175</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_269" model="product.ul">
+    <field name="name">465×295×155</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_268" model="product.ul">
+    <field name="name">575×360×190</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_267" model="product.ul">
+    <field name="name">575×360×190</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_266" model="product.ul">
+    <field name="name">575×360×190</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_265" model="product.ul">
+    <field name="name">575×360×190</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_264" model="product.ul">
+    <field name="name">575×360×190</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_263" model="product.ul">
+    <field name="name">520×325×178</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_262" model="product.ul">
+    <field name="name">455×285×160</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_261" model="product.ul">
+    <field name="name">580×350×195</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_260" model="product.ul">
+    <field name="name">560×350×195</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_259" model="product.ul">
+    <field name="name">510×310×170</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_258" model="product.ul">
+    <field name="name">595×373×203</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_257" model="product.ul">
+    <field name="name">595×373×203</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_256" model="product.ul">
+    <field name="name">550×350×180</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_255" model="product.ul">
+    <field name="name">500×318×167</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_254" model="product.ul">
+    <field name="name">590×490×260</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_253" model="product.ul">
+    <field name="name">600×375×210</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_252" model="product.ul">
+    <field name="name">527×330×185</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_251" model="product.ul">
+    <field name="name">507×318×175</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_250" model="product.ul">
+    <field name="name">468×295×140</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_249" model="product.ul">
+    <field name="name">468×295×140</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_248" model="product.ul">
+    <field name="name">468×295×140</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_247" model="product.ul">
+    <field name="name">468×295×140</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_246" model="product.ul">
+    <field name="name">468×295×140</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_245" model="product.ul">
+    <field name="name">468×295×140</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_244" model="product.ul">
+    <field name="name">468×295×140</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_243" model="product.ul">
+    <field name="name">580×360×605</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_242" model="product.ul">
+    <field name="name">580×360×605</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_241" model="product.ul">
+    <field name="name">595×510×525</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_240" model="product.ul">
+    <field name="name">510×445×475</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_239" model="product.ul">
+    <field name="name">490×436×460</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_238" model="product.ul">
+    <field name="name">455×370×425</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_237" model="product.ul">
+    <field name="name">410×340×437</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_236" model="product.ul">
+    <field name="name">370×310×210</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_235" model="product.ul">
+    <field name="name">616×420×225</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_234" model="product.ul">
+    <field name="name">445×420×170</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_233" model="product.ul">
+    <field name="name">552×372×206</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_232" model="product.ul">
+    <field name="name">494×412×205</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_231" model="product.ul">
+    <field name="name">552×372×206</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_230" model="product.ul">
+    <field name="name">552×372×206</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_229" model="product.ul">
+    <field name="name">552×372×206</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_228" model="product.ul">
+    <field name="name">552×372×206</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_227" model="product.ul">
+    <field name="name">417×350×210</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_226" model="product.ul">
+    <field name="name">552×372×206</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_225" model="product.ul">
+    <field name="name">552×372×206</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_224" model="product.ul">
+    <field name="name">552×372×206</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_223" model="product.ul">
+    <field name="name">552×372×206</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_222" model="product.ul">
+    <field name="name">552×372×206</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_221" model="product.ul">
+    <field name="name">552×372×206</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_220" model="product.ul">
+    <field name="name">552×372×206</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_219" model="product.ul">
+    <field name="name">552×372×206</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_218" model="product.ul">
+    <field name="name">552×372×206</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_217" model="product.ul">
+    <field name="name">552×372×206</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_216" model="product.ul">
+    <field name="name">423×355×192</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_215" model="product.ul">
+    <field name="name">552×372×206</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_214" model="product.ul">
+    <field name="name">552×372×206</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_213" model="product.ul">
+    <field name="name">552×372×206</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_212" model="product.ul">
+    <field name="name">552×372×206</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_211" model="product.ul">
+    <field name="name">552×372×206</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_210" model="product.ul">
+    <field name="name">552×372×206</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_209" model="product.ul">
+    <field name="name">552×372×206</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_208" model="product.ul">
+    <field name="name">552×372×206</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_207" model="product.ul">
+    <field name="name">552×372×206</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_206" model="product.ul">
+    <field name="name">552×372×206</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_205" model="product.ul">
+    <field name="name">380×320×180</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_204" model="product.ul">
+    <field name="name">552×372×206</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_203" model="product.ul">
+    <field name="name">552×372×206</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_202" model="product.ul">
+    <field name="name">625×460×260</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_201" model="product.ul">
+    <field name="name">625×460×260</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_200" model="product.ul">
+    <field name="name">625×460×260</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_199" model="product.ul">
+    <field name="name">560×445×280</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_198" model="product.ul">
+    <field name="name">520×430×280</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_197" model="product.ul">
+    <field name="name">392×330×170</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_196" model="product.ul">
+    <field name="name">615×390×220</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_195" model="product.ul">
+    <field name="name">615×390×195</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_194" model="product.ul">
+    <field name="name">570×360×202</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_193" model="product.ul">
+    <field name="name">490×310×180</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_192" model="product.ul">
+    <field name="name">688×450×425</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_191" model="product.ul">
+    <field name="name">688×450×425</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_190" model="product.ul">
+    <field name="name">688×450×425</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_189" model="product.ul">
+    <field name="name">688×450×425</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_188" model="product.ul">
+    <field name="name">688×450×425</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_187" model="product.ul">
+    <field name="name">688×450×425</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_186" model="product.ul">
+    <field name="name">610×465×295</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_185" model="product.ul">
+    <field name="name">615×460×325</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_184" model="product.ul">
+    <field name="name">615×460×325</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_183" model="product.ul">
+    <field name="name">615×460×325</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_182" model="product.ul">
+    <field name="name">615×460×325</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_181" model="product.ul">
+    <field name="name">688×450×425</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_180" model="product.ul">
+    <field name="name">615×460×295</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_179" model="product.ul">
+    <field name="name">610×380×215</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_178" model="product.ul">
+    <field name="name">568×360×195</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_177" model="product.ul">
+    <field name="name">510×320×180</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_176" model="product.ul">
+    <field name="name">460×290×170</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_175" model="product.ul">
+    <field name="name">540×340×212</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_174" model="product.ul">
+    <field name="name">540×340×212</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_173" model="product.ul">
+    <field name="name">540×340×212</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_172" model="product.ul">
+    <field name="name">540×340×212</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_171" model="product.ul">
+    <field name="name">540×340×212</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_170" model="product.ul">
+    <field name="name">540×340×212</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_169" model="product.ul">
+    <field name="name">540×340×212</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_168" model="product.ul">
+    <field name="name">465×295×185</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_167" model="product.ul">
+    <field name="name">590×375×200</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_166" model="product.ul">
+    <field name="name">530×335×195</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_165" model="product.ul">
+    <field name="name">468×300×175</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_164" model="product.ul">
+    <field name="name">590×375×200</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_163" model="product.ul">
+    <field name="name">530×335×195</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_162" model="product.ul">
+    <field name="name">468×300×175</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_161" model="product.ul">
+    <field name="name">540×340×205</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_160" model="product.ul">
+    <field name="name">510×318×195</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_159" model="product.ul">
+    <field name="name">475×295×180</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_158" model="product.ul">
+    <field name="name">533×335×167</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_157" model="product.ul">
+    <field name="name">533×335×197</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_156" model="product.ul">
+    <field name="name">500×315×170</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_155" model="product.ul">
+    <field name="name">500×315×170</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_154" model="product.ul">
+    <field name="name">500×315×170</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_153" model="product.ul">
+    <field name="name">500×315×170</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_152" model="product.ul">
+    <field name="name">550×350×183</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_151" model="product.ul">
+    <field name="name">595×373×205</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_150" model="product.ul">
+    <field name="name">535×340×215</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_149" model="product.ul">
+    <field name="name">535×340×200</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_148" model="product.ul">
+    <field name="name">500×305×185</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_147" model="product.ul">
+    <field name="name">670×445×490</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_146" model="product.ul">
+    <field name="name">670×445×490</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_145" model="product.ul">
+    <field name="name">670×445×490</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_144" model="product.ul">
+    <field name="name">670×445×490</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_143" model="product.ul">
+    <field name="name">575×387×450</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_142" model="product.ul">
+    <field name="name">515×354×428</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_141" model="product.ul">
+    <field name="name">515×345×378</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_140" model="product.ul">
+    <field name="name">460×310×358</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_139" model="product.ul">
+    <field name="name">610×385×215</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_138" model="product.ul">
+    <field name="name">570×360×195</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_137" model="product.ul">
+    <field name="name">510×320×180</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_136" model="product.ul">
+    <field name="name">460×290×170</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_135" model="product.ul">
+    <field name="name">585×485×260</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_134" model="product.ul">
+    <field name="name">405×370×240</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_133" model="product.ul">
+    <field name="name">400×335×222</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_132" model="product.ul">
+    <field name="name">335×305×200</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_131" model="product.ul">
+    <field name="name">579×363×205</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_130" model="product.ul">
+    <field name="name">535×335×180</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_129" model="product.ul">
+    <field name="name">470×295×165</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_128" model="product.ul">
+    <field name="name">632×363×240</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_127" model="product.ul">
+    <field name="name">460×400×246</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_126" model="product.ul">
+    <field name="name">435×315×240</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_125" model="product.ul">
+    <field name="name">420×260×240</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_124" model="product.ul">
+    <field name="name">420×260×240</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_123" model="product.ul">
+    <field name="name">470×305×255</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_122" model="product.ul">
+    <field name="name">470×305×255</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_121" model="product.ul">
+    <field name="name">525×360×220</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_120" model="product.ul">
+    <field name="name">470×305×245</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_119" model="product.ul">
+    <field name="name">505×305×245</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_118" model="product.ul">
+    <field name="name">525×360×215</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_117" model="product.ul">
+    <field name="name">470×305×255</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_116" model="product.ul">
+    <field name="name">470×305×245</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_115" model="product.ul">
+    <field name="name">470×305×255</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_114" model="product.ul">
+    <field name="name">470×305×255</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_113" model="product.ul">
+    <field name="name">575×380×225</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_112" model="product.ul">
+    <field name="name">536×376×251</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_111" model="product.ul">
+    <field name="name">520×430×250</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_110" model="product.ul">
+    <field name="name">625×395×190</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_109" model="product.ul">
+    <field name="name">610×385×160</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_108" model="product.ul">
+    <field name="name">560×370×220</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_107" model="product.ul">
+    <field name="name">560×370×220</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_106" model="product.ul">
+    <field name="name">533×335×197</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_105" model="product.ul">
+    <field name="name">533×335×191</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_104" model="product.ul">
+    <field name="name">575×365×185</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_103" model="product.ul">
+    <field name="name">490×310×185</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_102" model="product.ul">
+    <field name="name">625×395×190</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_101" model="product.ul">
+    <field name="name">625×395×190</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_100" model="product.ul">
+    <field name="name">625×395×190</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_99" model="product.ul">
+    <field name="name">600×495×185</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_98" model="product.ul">
+    <field name="name">575×365×210</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_97" model="product.ul">
+    <field name="name">490×310×185</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_96" model="product.ul">
+    <field name="name">604×385×206</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_95" model="product.ul">
+    <field name="name">608×388×186</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_94" model="product.ul">
+    <field name="name">550×345×240</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_93" model="product.ul">
+    <field name="name">550×345×240</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_92" model="product.ul">
+    <field name="name">550×345×205</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_91" model="product.ul">
+    <field name="name">550×345×205</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_90" model="product.ul">
+    <field name="name">530×330×205</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_89" model="product.ul">
+    <field name="name">530×330×205</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_88" model="product.ul">
+    <field name="name">530×330×205</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_87" model="product.ul">
+    <field name="name">630×420×510</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_86" model="product.ul">
+    <field name="name">560×370×420</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_85" model="product.ul">
+    <field name="name">525×350×395</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_84" model="product.ul">
+    <field name="name">490×325×365</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_83" model="product.ul">
+    <field name="name">440×290×360</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_82" model="product.ul">
+    <field name="name">490×330×520</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_81" model="product.ul">
+    <field name="name">490×330×520</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_80" model="product.ul">
+    <field name="name">490×330×520</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_79" model="product.ul">
+    <field name="name">490×330×460</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_78" model="product.ul">
+    <field name="name">490×330×420</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_77" model="product.ul">
+    <field name="name">490×330×520</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_76" model="product.ul">
+    <field name="name">490×330×520</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_75" model="product.ul">
+    <field name="name">490×330×520</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_74" model="product.ul">
+    <field name="name">490×330×520</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_73" model="product.ul">
+    <field name="name">420×280×430</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_72" model="product.ul">
+    <field name="name">520×350×535</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_71" model="product.ul">
+    <field name="name">465×315×525</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_70" model="product.ul">
+    <field name="name">440×300×495</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_69" model="product.ul">
+    <field name="name">425×285×455</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_68" model="product.ul">
+    <field name="name">455×305×485</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_67" model="product.ul">
+    <field name="name">455×305×485</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_66" model="product.ul">
+    <field name="name">455×305×485</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_65" model="product.ul">
+    <field name="name">445×300×425</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_64" model="product.ul">
+    <field name="name">445×300×425</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_63" model="product.ul">
+    <field name="name">435×295×365</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_62" model="product.ul">
+    <field name="name">435×295×365</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_61" model="product.ul">
+    <field name="name">430×290×305</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_60" model="product.ul">
+    <field name="name">455×305×485</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_59" model="product.ul">
+    <field name="name">430×290×305</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_58" model="product.ul">
+    <field name="name">460×310×475</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_57" model="product.ul">
+    <field name="name">458×307×435</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_56" model="product.ul">
+    <field name="name">390×260×420</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_55" model="product.ul">
+    <field name="name">390×260×485</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_54" model="product.ul">
+    <field name="name">636×400×260</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_53" model="product.ul">
+    <field name="name">636×400×260</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_52" model="product.ul">
+    <field name="name">636×400×260</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_51" model="product.ul">
+    <field name="name">425×355×255</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_50" model="product.ul">
+    <field name="name">495×415×300</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_49" model="product.ul">
+    <field name="name">495×415×300</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_48" model="product.ul">
+    <field name="name">495×415×300</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_47" model="product.ul">
+    <field name="name">495×415×300</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_46" model="product.ul">
+    <field name="name">465×385×275</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_45" model="product.ul">
+    <field name="name">465×385×235</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_44" model="product.ul">
+    <field name="name">465×385×185</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_43" model="product.ul">
+    <field name="name">480×360×345</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_42" model="product.ul">
+    <field name="name">480×360×345</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_41" model="product.ul">
+    <field name="name">480×360×315</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_40" model="product.ul">
+    <field name="name">480×360×290</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_39" model="product.ul">
+    <field name="name">640×480×250</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_38" model="product.ul">
+    <field name="name">650×430×215</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_37" model="product.ul">
+    <field name="name">590×380×200</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_36" model="product.ul">
+    <field name="name">415×345×190</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_35" model="product.ul">
+    <field name="name">368×305×174</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_34" model="product.ul">
+    <field name="name">570×335×270</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_33" model="product.ul">
+    <field name="name">466×451×226</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_32" model="product.ul">
+    <field name="name">466×451×226</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_31" model="product.ul">
+    <field name="name">475×440×245</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_30" model="product.ul">
+    <field name="name">475×440×245</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_29" model="product.ul">
+    <field name="name">475×440×245</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_28" model="product.ul">
+    <field name="name">475×440×245</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_27" model="product.ul">
+    <field name="name">475×440×245</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_26" model="product.ul">
+    <field name="name">475×440×245</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_25" model="product.ul">
+    <field name="name">528×335×205</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_24" model="product.ul">
+    <field name="name">550×345×180</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_23" model="product.ul">
+    <field name="name">615×385×220</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_22" model="product.ul">
+    <field name="name">590×375×215</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_21" model="product.ul">
+    <field name="name">515×365×215</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_20" model="product.ul">
+    <field name="name">510×325×195</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_19" model="product.ul">
+    <field name="name">610×390×195</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_18" model="product.ul">
+    <field name="name">610×390×195</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_17" model="product.ul">
+    <field name="name">435×415×180</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_16" model="product.ul">
+    <field name="name">485×310×190</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_15" model="product.ul">
+    <field name="name">560×350×220</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_14" model="product.ul">
+    <field name="name">580×375×215</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_13" model="product.ul">
+    <field name="name">505×420×235</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_12" model="product.ul">
+    <field name="name">440×365×175</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_11" model="product.ul">
+    <field name="name">495×435×180</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_10" model="product.ul">
+    <field name="name">520×435×180</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_9" model="product.ul">
+    <field name="name">625×450×260</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_8" model="product.ul">
+    <field name="name">625×450×260</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_7" model="product.ul">
+    <field name="name">625×450×260</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_6" model="product.ul">
+    <field name="name">575×345×565</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_5" model="product.ul">
+    <field name="name">620×410×530</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_4" model="product.ul">
+    <field name="name">550×370×435</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_3" model="product.ul">
+    <field name="name">490×330×405</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_2" model="product.ul">
+    <field name="name">490×330×370</field>
+    <field name="type">box</field>
+</record>
+<record id="product_ul_box_1" model="product.ul">
+    <field name="name">430×290×365</field>
+    <field name="type">box</field>
+</record>
+                </data>
+        </openerp>

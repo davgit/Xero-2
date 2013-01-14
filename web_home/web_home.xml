@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        
+        <record model="ir.ui.view" id="view_form_web_home">
+            <field name="name">Web Home Page</field>
+            <field name="model">web_home</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="">
+                    <button name="" string="Test" type="object" icon="gtk-go-forward" />
+                </form>
+            </field>
+        </record>
+        
+        
+
+        
+        <record model="ir.actions.act_window" id="action_web_home_view">
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">web_home</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_form_web_home"></field>
+        </record>
+        
+        
+        
+        
+        <menuitem id='id_web_home' name='Web Home' sequence= '2' web_icon_hover="images/alert2.png" web_icon="images/alert.png" action="action_web_home_view"/>
+    
+    </data>
+</openerp>

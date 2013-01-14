@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <!-- Sequences for clivia_analysis.daily_report -->
+        <record id="seq_type_fuguang_report" model="ir.sequence.type">
+            <field name="name">FG Report</field>
+            <field name="code">clivia_analysis.daily_report</field>
+        </record>
+        <record id="seq_fg_report" model="ir.sequence">
+            <field name="name">FG Report</field>
+            <field name="code">clivia_analysis.daily_report</field>
+            <field name="prefix">FGR%(year)s%(month)s</field>
+            <field name="padding">2</field>
+        </record>
+        
+        <!-- Sequences for clivia_analysis.monthly_plan -->
+        <record id="seq_type_fuguang_monthly_plan" model="ir.sequence.type">
+            <field name="name">FG Monthly Plan</field>
+            <field name="code">clivia_analysis.monthly_plan</field>
+        </record>
+        <record id="seq_fg_monthly_plan" model="ir.sequence">
+            <field name="name">FG Monthly Plan</field>
+            <field name="code">clivia_analysis.monthly_plan</field>
+            <field name="prefix">FGMP%(year)s</field>
+            <field name="padding">2</field>
+        </record>
+        
+        <record model="ir.ui.view" id="clivia_analysis_stocked_product_form_view">
+            <field name="name">clivia_analysis.stocked_product.form</field>
+            <field name="model">clivia_analysis.stocked_product</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="产品">
+                    <field name="name" select="1"/>
+                    <field name="code" select="1"/>
+                    <field name="barcode"/>
+                </form>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="clivia_analysis_stocked_product_tree_view">
+            <field name="name">clivia_analysis.stocked_product.tree</field>
+            <field name="model">clivia_analysis.stocked_product</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="产品" editable="top">
+                    <field name="name" select="1"/>
+                    <field name="code" select="1"/>
+                    <field name="barcode"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.actions.act_window" id="action_clivia_analysis_stocked_product">
+            <field name="name">君子兰产品</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">clivia_analysis.stocked_product</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        
+        <record model="ir.ui.view" id="clivia_analysis_monthly_plan_form_view">
+            <field name="name">clivia_analysis_monthly_plan.form</field>
+            <field name="model">clivia_analysis.monthly_plan</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="月度计划">
+                    <field name="name" select="1"/>
+                    <field name="date_created"/>
+                    <field name="date_month"/>
+                    <field name="reporter_id"/>
+                    <field colspan="4" mode="tree,form" name="plan_line" nolabel="1" widget="one2many_list">
+                        <tree string="计划明细" editable="top">
+                            <field name="product_id"/>
+                            <field name="hefei_warning_level"/>
+                            <field name="sanhe_warning_level"/>
+                            <field name="production"/>
+                            <field name="note"/>
+                        </tree>
+                        <form string="计划明细">
+                            <field name="product_id"/>
+                            <field name="hefei_warning_level"/>
+                            <field name="sanhe_warning_level"/>
+                            <field name="production"/>
+                            <field name="note"/>
+                        </form>
+                    </field>
+                </form>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="clivia_analysis_monthly_plan_tree_view">
+            <field name="name">clivia_analysis.monthly_plan.tree</field>
+            <field name="model">clivia_analysis.monthly_plan</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="月度计划">
+                    <field name="name" select="1"/>
+                    <field name="date_created" select="1"/>
+                    <field name="date_month" select="1"/>
+                    <field name="reporter_id" select="1"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.actions.act_window" id="action_clivia_analysis_monthly_plan_tree_view">
+            <field name="name">月度计划</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">clivia_analysis.monthly_plan</field>
+        <!--<field name="domain">[('field_name','condition',criteria)]</field>-->
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        
+        
+        <!--每日报表-->
+        <record model="ir.ui.view" id="clivia_analysis_daily_report_tree_view">
+            <field name="name">clivia_analysis.daily_report.tree</field>
+            <field name="model">clivia_analysis.daily_report</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="每日报表">
+                    <field name="name" select="1"/>
+                    <field name="date_created" select="1"/>
+                    <field name="date_confirmed" select="1"/>
+                    <field name="reporter_id" select="1"/>
+                    <field name="confirmer_id" select="1"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="clivia_analysis_daily_report_form_view">
+            <field name="name">clivia_analysis.daily_report.form</field>
+            <field name="model">clivia_analysis.daily_report</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="每日报表">
+                    <field name="name"/>
+                    <field name="date_created"/>
+                    <field name="date_confirmed"/>
+                    <field name="reporter_id"/>
+                    <field name="confirmer_id"/>
+                    <field name="state"/>
+                    <newline/>
+					<notebook colspan="5">
+						<page string="每日报表明细">
+							<field colspan="4" mode="tree" name="report_line" nolabel="1" widget="one2many_list"
+							    attrs="{'readonly' : [('state', '==', 'review')] }" />
+						</page>
+						<page string="附注">
+							<field name="note"/>
+						</page>
+					</notebook>
+				    <button name="dr_review" confirm="一旦审核以后,将不能被修改, 确认审核?" 
+					    groups="clivia_analysis.group_analysis_manager,clivia_analysis.group_analysis_admin"  
+    					    string="审核" type="object" icon="gtk-go-forward" attrs="{'invisible' : [('state', '==', 'review')] }"/>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_clivia_analysis_daily_report_tree_view">
+            <field name="name">每日报表</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">clivia_analysis.daily_report</field>
+            <field name="domain">[('state','=','draft')]</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="clivia_analysis_daily_report_tree_view"/>
+        </record>
+        
+        <record model="ir.actions.act_window" id="action_clivia_analysis_daily_report_tree_view_review">
+            <field name="name">每日报表</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">clivia_analysis.daily_report</field>
+            <field name="domain">[('state','=','review')]</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="clivia_analysis_daily_report_tree_view"/>
+        </record>
+        
+        
+        <record model="ir.ui.view" id="clivia_analysis.daily_report_line_tree_view">
+            <field name="name">clivia_analysis.daily_report_line.tree</field>
+            <field name="model">clivia_analysis.daily_report_line</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="每日报表">
+                    <field name="product_id"/>
+    				<field name="hefei_last_inventory"/>
+    				<field name="produced"/>
+    				<field name="sent"/>
+    				<field name="hefei_today_inventory" sum="君子兰总结存"/>
+    				<field name="sanhe_last_inventory"/>
+    				<field name="sold"/>
+    				<field name="sanhe_today_inventory" sum="三河总结存"/>
+    				<field name="sanhe_real_inventory"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="clivia_analysis.daily_report_line_form_view">
+            <field name="name">clivia_analysis.daily_report_line.form</field>
+            <field name="model">clivia_analysis.daily_report_line</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="每日报表">
+					<group colspan="4" col="4">
+						<separator string="产品" colspan="4"/>
+						<field name="product_id"/>
+					</group>
+					<group colspan="4" col="4">
+						<separator string="合肥" colspan="4"/>
+						<field name="hefei_last_inventory" on_change="hefei_changed(hefei_last_inventory, produced, sent)" sum="原库存"/>
+						<field name="produced" on_change="hefei_changed(hefei_last_inventory, produced, sent)" sum="日产量"/>
+						<field name="sent" on_change="hefei_changed(hefei_last_inventory, produced, sent)" sum="发送"/>
+						<field name="hefei_today_inventory" sum="君子兰总结存"/>
+					</group>
+					<group colspan="4" col="4">
+						<separator string="三河" colspan="4"/>
+						<field name="sanhe_last_inventory" on_change="sanhe_changed(sanhe_last_inventory, sold, sent)" sum="原库存"/>
+						<field name="sold" on_change="sanhe_changed(sanhe_last_inventory, sold, sent)" sum="发送"/>
+						<field name="sanhe_today_inventory" sum="三河总结存"/>
+						<field name="sanhe_real_inventory" sum="实际库存" />
+					</group>
+					<group colspan="4" col="4">
+						<separator string="附注" colspan="4"/>
+						<field name="notes"/>
+					</group>
+				</form>
+            </field>
+        </record>
+        
+        <menuitem id="menu_clivia_report" name="每日报表" web_icon="icon/bar_chart.png" web_icon_hover="icon/bar_chart_hover.png"/>
+        <menuitem name="月计划" id="menu_clivia_report_plan" parent="menu_clivia_report" sequence="0"/>
+        <menuitem name="每日报表" id="menu_clivia_report_report" parent="menu_clivia_report" sequence="1"/>
+        <menuitem id="menu_clivia_report_analysis" name="报表分析" parent="menu_clivia_report" sequence="2"/>
+        <menuitem name="管理" id="menu_clivia_report_admin" parent="menu_clivia_report" sequence="3"/>
+        
+	    <menuitem name="产品管理" id="menu_clivia_report_product"
+             parent="menu_clivia_report_admin" sequence="2" action="action_clivia_analysis_stocked_product"/>
+		<menuitem id="menu_clivia_report_monthly_plan" name="月度计划" parent="menu_clivia_report_plan" action="action_clivia_analysis_monthly_plan_tree_view"/>
+		<menuitem id="clivia_analysis_daily_report_menu" name="未审核报表" parent="menu_clivia_report_report" action="action_clivia_analysis_daily_report_tree_view"/>
+		<menuitem id="clivia_analysis_daily_report_review_menu" name="已审核报表" parent="menu_clivia_report_report" action="action_clivia_analysis_daily_report_tree_view_review"/>
+        
+    </data>
+</openerp>

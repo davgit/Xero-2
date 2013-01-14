@@ -1,0 +1,4 @@
+<template>
+    <div t-name="GraphView" t-att-id="element_id+'-chart-'+chart_id"
+         style="height:1500px;position:relative;"/>
+</template>

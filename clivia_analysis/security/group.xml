@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="0">
+		<record id="group_analysis_manager" model="res.groups">
+	        <field name="name">君子兰 / 主管</field>
+	    </record>
+		<record id="group_analysis_admin" model="res.groups">
+	        <field name="name">君子兰 / 管理员</field>
+	    </record>
+		<record id="group_analysis_user" model="res.groups">
+	        <field name="name">君子兰 / 用户</field>
+	    </record>
+	</data>
+</openerp>

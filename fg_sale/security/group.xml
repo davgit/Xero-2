@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+	    <record id="group_fg_sale_user" model="res.groups">
+	        <field name="name">业务开单系统 / 业务部业务员</field>
+	    </record>
+	    <record id="group_fg_sale_manager" model="res.groups">
+	        <field name="name">业务开单系统 / 业务部经理</field>
+	    </record>
+	    <record id="group_fg_sale_chart" model="res.groups">
+	        <field name="name">业务开单系统 / 报表组</field>
+	    </record>
+	    <record id="group_fg_sale_fga" model="res.groups">
+	        <field name="name">业务开单系统 / FGA组</field>
+	    </record>
+	    <record id="group_fg_sale_sale_user" model="res.groups">
+	        <field name="name">业务开单系统 / 销售部业务员组</field>
+	    </record>
+	     <record id="group_fg_sale_sale_manager" model="res.groups">
+    	        <field name="name">业务开单系统 / 销售部经理组</field>
+    	    </record>
+	    <record id="fg_sale_fga_strict" model="ir.rule">
+	         <field name="name">fga fg_order</field>
+             <field name="model_id" ref="model_fg_sale_order"/>
+             <field name="prem_read" eval="True"/>
+             <field name="perm_write" eval="False"/>
+             <field name="perm_create" eval="False"/>
+             <field name="perm_unlink" eval="False"/>
+             <field eval="0" name="global"/>
+             <field eval="[(6,0,[ref('fg_sale.group_fg_sale_fga')])]" name="groups"/>
+             <field name="domain_force">[('partner_cate_ids','in',[4])]</field>
+         </record>
+	</data>
+</openerp>

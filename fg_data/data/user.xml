@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="user_1" model="res.users">
+            <field name="login">张静</field>
+            <field name="password">8751888</field>
+            <field name="name">张静</field>
+            <field name="signature">业务部 张静</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user')])]"/>
+        </record>
+        <record id="user_2" model="res.users">
+            <field name="login">沈声</field>
+            <field name="password">8751888</field>
+            <field name="name">沈声</field>
+            <field name="signature">业务部 沈声</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user')])]"/>
+        </record>
+        <record id="user_3" model="res.users">
+            <field name="login">汪治中</field>
+            <field name="password">8751888</field>
+            <field name="name">汪治中</field>
+            <field name="signature">业务部 汪治中</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user')])]"/>
+        </record>
+        <record id="user_4" model="res.users">
+            <field name="login">金维祥</field>
+            <field name="password">8751888</field>
+            <field name="name">金维祥</field>
+            <field name="signature">业务部 金维祥</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user')])]"/>
+        </record>
+        <record id="user_5" model="res.users">
+            <field name="login">杨兵</field>
+            <field name="password">8751888</field>
+            <field name="name">杨兵</field>
+            <field name="signature">业务部 杨兵</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user')])]"/>
+        </record>
+        <record id="user_6" model="res.users">
+            <field name="login">韩君</field>
+            <field name="password">8751888</field>
+            <field name="name">韩君</field>
+            <field name="signature">业务部 韩君</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user')])]"/>
+        </record>
+        <record id="user_7" model="res.users">
+            <field name="login">董玥</field>
+            <field name="password">8751888</field>
+            <field name="name">董玥</field>
+            <field name="signature">业务部 董玥</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user')])]"/>
+        </record>
+        <record id="user_8" model="res.users">
+            <field name="login">候勤婷</field>
+            <field name="password">8751888</field>
+            <field name="name">候勤婷</field>
+            <field name="signature">业务部 候勤婷</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user')])]"/>
+        </record>
+        <record id="user_9" model="res.users">
+            <field name="login">方华</field>
+            <field name="password">8751888</field>
+            <field name="name">方华</field>
+            <field name="signature">财务部 方华</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user')])]"/>
+        </record>
+        <record id="user_10" model="res.users">
+            <field name="login">王慧</field>
+            <field name="password">8751888</field>
+            <field name="name">王慧</field>
+            <field name="signature">财务部 王慧</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user')])]"/>
+        </record>
+        <record id="user_11" model="res.users">
+            <field name="login">汪青春</field>
+            <field name="password">8751888</field>
+            <field name="name">汪青春</field>
+            <field name="signature">财务部 汪青春</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user')])]"/>
+        </record>
+        <record id="user_12" model="res.users">
+            <field name="login">看海</field>
+            <field name="password">8751888</field>
+            <field name="name">看海</field>
+            <field name="signature">财务部 看海</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user')])]"/>
+        </record>
+        <record id="user_13" model="res.users">
+            <field name="login">吴大存</field>
+            <field name="password">8751888</field>
+            <field name="name">吴大存</field>
+            <field name="signature">财务部 吴大存</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user')])]"/>
+        </record>
+        <record id="user_14" model="res.users">
+            <field name="login">徐丽</field>
+            <field name="password">8751888</field>
+            <field name="name">徐丽</field>
+            <field name="signature">财务部 徐丽</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user')])]"/>
+        </record>
+        <record id="user_15" model="res.users">
+            <field name="login">王书婷</field>
+            <field name="password">8751888</field>
+            <field name="name">王书婷</field>
+            <field name="signature">财务部 王书婷</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user')])]"/>
+        </record>
+        <record id="user_16" model="res.users">
+            <field name="login">孙文雅</field>
+            <field name="password">8751888</field>
+            <field name="name">孙文雅</field>
+            <field name="signature">财务部 孙文雅</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user')])]"/>
+        </record>
+        <record id="user_17" model="res.users">
+            <field name="login">万晓雨</field>
+            <field name="password">8751888</field>
+            <field name="name">万晓雨</field>
+            <field name="signature">业务部 万晓雨</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user')])]"/>
+        </record>
+        <record id="user_18" model="res.users">
+            <field name="login">王平静</field>
+            <field name="password">8751888</field>
+            <field name="name">王平静</field>
+            <field name="signature">业务部 王平静</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user')])]"/>
+        </record>
+        <record id="user_19" model="res.users">
+            <field name="login">郑明亮</field>
+            <field name="password">8751888</field>
+            <field name="name">郑明亮</field>
+            <field name="signature">业务部 郑明亮</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user')])]"/>
+        </record>
+        
+    </data>
+</openerp>

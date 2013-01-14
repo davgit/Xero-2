@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+    <!-- Search view for Order 
+    <record model="ir.ui.view" id="view_order_creat_search">
+        <field name="name">order.creat.search</field>
+        <field name="model">cust_order</field>
+        <field name="type">search</field>
+        <field name="arch" type="xml">
+            <search string="CustOrder"> 
+                <group>
+                    <field name="state"/>
+                    <field name="name"/>
+                </group>              
+                <newline/>
+                <group expand="1" string="统计">
+                    <filter icon="terp-personal" string="未审核的" help='未审核的订单' domain="[('state','=','draft')]"/>
+                    <separator orientation="vertical"/>
+                    <filter icon="terp-stock_symbol-selection" string="已审核的" help="已审核的订单" domain="[('state','=','approve')]"/>
+                    <filter icon="terp-stock_effects-object-colorize" string="已完成的" help="已完成的订单" domain="[('state','=','done')]"/>
+                </group>
+            </search>
+        </field>
+    </record>-->
+    
+    <!--定义列表视图-->
+    <record model="ir.ui.view" id="order_creat_tree_view">
+            <field name="name"></field>
+            <field name="model">cust_order</field>
+            <field name="type">ht</field>
+            <field name="arch" type="xml">
+                <ht>
+                <button name="updateModule" string="Update" type="object" icon="gtk-go-forward"/>
+                <newline/>
+                <html>
+                     <div class="forkit-curtain">
+			<div class="close-button"></div>
+			<h2>OMGOSH KITTENZ!!!1!</h2>
+			<small>thx <a href="http://placekitten.com/">placekittens.com</a></small>
+			<img src="http://placekitten.com/g/200/200"></img>
+			<img src="http://placekitten.com/g/201/200"></img>
+			<img src="http://placekitten.com/g/202/200"></img>
+			<img src="http://placekitten.com/g/204/200"></img>
+                        <img src="http://placekitten.com/200/300"></img>
+                    </div>
+                     <a class="forkit" data-text="Top Secret" data-text-detached="Drag down >"
+                       href="https://github.com/hakimel/forkit.js">
+                        <img style="position: absolute; top: 0; right: 0; border: 0;"
+                            src='' alt="Fork me on GitHub"></img>
+                    </a>
+                    <h1 class='h11' style="background-color:green">This is Test Html Page </h1>
+                    <div cssclass="test">asdfasd</div>
+                    <select name="fruit" >
+                        <option value="apple">苹果</option>
+                        <option value="orange">桔子</option>
+                        <option value="mango">芒果</option>
+                    </select>
+                    <textarea name="yoursuggest" cols ="50" rows = "3"></textarea>
+                    <input type="password" name="yourpw"/>
+                    <input type='button' onclick="window.open('http://www.baidu.com')"/>
+                    <a href="http://www.w3school.com.cn">W3School</a>
+                    <button onclick="on_move();">Copy Text</button>
+                    <img id='t' style="float:right" class='imgstyle' src="/web/static/src/img/throbber2.gif">OMG</img>
+                    <div id="test">
+                        <article>
+				<h2>Tilt</h2>
+				<ul class="tilt ull"><li>One</li><li>Two</li><li>Three</li><li>Four</li><li>Five</li><li>Six</li><li>Seven</li><li>Eight</li><li>Nine</li><li>Ten</li><li>Eleven</li><li>Twelve</li><li>Thirteen</li><li>Fourteen</li><li>Fifteen</li><li>Sixteen</li><li>Seventeen</li><li>Eighteen</li><li>Nineteen</li><li>Twenty</li><li>Twentyone</li><li>Twentytwo</li><li>Twentythree</li><li>Twentyfour</li><li>Twentyfive</li><li>Twentysix</li><li>Twentyseven</li><li>Twentyeight</li><li>Twentynine</li><li>Thirty</li><li>Thirtyone</li><li>Thirtytwo</li><li>Thirtythree</li><li>Thirtyfour</li><li>Thirtyfive</li><li>Thirtysix</li><li>Thirtyseven</li><li>Thirtyeight</li><li>Thirtynine</li><li>Forty</li><li>Fortyone</li><li>Fortytwo</li><li>Fortythree</li><li>Fortyfour</li><li>Fortyfive</li><li>Fortysix</li><li>Fortyseven</li><li>Fortyeight</li><li>Fortynine</li><li>Fifty</li><li>Fiftyone</li><li>Fiftytwo</li><li>Fiftythree</li><li>Fiftyfour</li><li>Fiftyfive</li><li>Fiftysix</li><li>Fiftyseven</li><li>Fiftyeight</li><li>Fiftynine</li><li>Sixty</li><li>Sixtyone</li><li>Sixtytwo</li><li>Sixtythree</li><li>Sixtyfour</li><li>Sixtyfive</li><li>Sixtysix</li><li>Sixtyseven</li><li>Sixtyeight</li><li>Sixtynine</li><li>Seventy</li><li>Seventyone</li><li>Seventytwo</li><li>Seventythree</li><li>Seventyfour</li><li>Seventyfive</li><li>Seventysix</li><li>Seventyseven</li><li>Seventyeight</li><li>Seventynine</li><li>Eighty</li><li>Eightyone</li><li>Eightytwo</li><li>Eightythree</li><li>Eightyfour</li><li>Eightyfive</li><li>Eightysix</li><li>Eightyseven</li><li>Eightyeight</li><li>Eightynine</li><li>Ninety</li><li>Ninetyone</li><li>Ninetytwo</li><li>Ninetythree</li><li>Ninetyfour</li><li>Ninetyfive</li><li>Ninetysix</li><li>Ninetyseven</li><li>Ninetyeight</li><li>Ninetynine</li></ul>
+                        </article>
+                    </div>
+                    
+                    <h1 style="background-color:green;margin-top:100px">Html Page End</h1>
+                    <img style="width:1200px;margin-top:500px;display:none" src="/web/static/src/img/CatsB2_Soba.jpg">Mg</img>
+                </html>
+                <newline/>
+                <label string="sfdasdfasdfa" cssclass="test"/>
+                <newline/>
+                <group>
+                    <label string="Test" fgcolor='red' cssclass='test2' nolabel='1'/>
+                </group>
+                <newline/>
+                <newline/>
+                <group colspan="4">
+                    <field name="name" bgcolor='black' fgcolor='white'/>
+                    <newline/>
+                    <newline/>
+                </group>
+                </ht>
+            </field>
+    </record>     
+
+    <!--定义表单视图-->
+   
+    <!--定义视图动作-->            
+    <record model="ir.actions.act_window" id="action_order_create">
+        <field name="name">order.creat.actions</field>
+        <field name="res_model">cust_order</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">ht</field>
+    </record>
+    <!--定义菜单-->
+    <menuitem id="order_menu" name="Web Test" action="action_order_create"/>
+    </data>
+</openerp>

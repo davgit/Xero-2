@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+                <record id="product_color_673" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">灰白</field>
+</record>
+<record id="product_color_390" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">咖啡色</field>
+</record>
+<record id="product_color_463" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">草绿色</field>
+</record>
+<record id="product_color_684" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">葡萄紫</field>
+</record>
+<record id="product_color_542" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">红</field>
+</record>
+<record id="product_color_476" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">银</field>
+</record>
+<record id="product_color_512" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">16型</field>
+</record>
+<record id="product_color_489" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">圈</field>
+</record>
+<record id="product_color_1108" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">深海兰</field>
+</record>
+<record id="product_color_611" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">闪深绿</field>
+</record>
+<record id="product_color_852" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">浅亮兰</field>
+</record>
+<record id="product_color_613" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">8048未分色</field>
+</record>
+<record id="product_color_807" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">闪银</field>
+</record>
+<record id="product_color_326" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">粉</field>
+</record>
+<record id="product_color_391" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">深蓝色</field>
+</record>
+<record id="product_color_643" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">闪蓝色</field>
+</record>
+<record id="product_color_640" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">本</field>
+</record>
+<record id="product_color_708" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">米金</field>
+</record>
+<record id="product_color_720" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">透明蓝</field>
+</record>
+<record id="product_color_1098" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">灰迷彩</field>
+</record>
+<record id="product_color_776" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">果蔬绿</field>
+</record>
+<record id="product_color_467" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">淡蓝色</field>
+</record>
+<record id="product_color_854" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">迷彩</field>
+</record>
+<record id="product_color_761" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">橘黄</field>
+</record>
+<record id="product_color_932" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">宝石纹</field>
+</record>
+<record id="product_color_356" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">混 </field>
+</record>
+<record id="product_color_25" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">粉红</field>
+</record>
+<record id="product_color_248" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">绿色</field>
+</record>
+<record id="product_color_578" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">黄绿</field>
+</record>
+<record id="product_color_1251" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">蓝绿色</field>
+</record>
+<record id="product_color_630" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">亮银咖啡</field>
+</record>
+<record id="product_color_1183" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">宝兰</field>
+</record>
+<record id="product_color_811" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">亮银兰</field>
+</record>
+<record id="product_color_389" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">棕色</field>
+</record>
+<record id="product_color_295" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">红色</field>
+</record>
+<record id="product_color_894" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">玫红</field>
+</record>
+<record id="product_color_520" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">灰兰色</field>
+</record>
+<record id="product_color_737" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">米黄色</field>
+</record>
+<record id="product_color_1042" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">闪蓝</field>
+</record>
+<record id="product_color_629" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">亮银黑</field>
+</record>
+<record id="product_color_247" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">蓝色</field>
+</record>
+<record id="product_color_781" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">蓝灰</field>
+</record>
+<record id="product_color_1029" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">大红</field>
+</record>
+<record id="product_color_226" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">粉红色</field>
+</record>
+<record id="product_color_757" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">紫红色</field>
+</record>
+<record id="product_color_589" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">电脑灰</field>
+</record>
+<record id="product_color_758" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">海蓝色</field>
+</record>
+<record id="product_color_981" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">闪兰</field>
+</record>
+<record id="product_color_892" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">绿迷彩</field>
+</record>
+<record id="product_color_808" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">闪黑</field>
+</record>
+<record id="product_color_224" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">淡黄色</field>
+</record>
+<record id="product_color_544" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">淡草绿</field>
+</record>
+<record id="product_color_217" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">混装</field>
+</record>
+<record id="product_color_628" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">亮银蓝</field>
+</record>
+<record id="product_color_933" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">虎纹</field>
+</record>
+<record id="product_color_738" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">珠光蓝</field>
+</record>
+<record id="product_color_896" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">淡黄</field>
+</record>
+<record id="product_color_262" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">桔色</field>
+</record>
+<record id="product_color_644" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">浅红色</field>
+</record>
+<record id="product_color_600" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">浅灰</field>
+</record>
+<record id="product_color_497" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">黑色</field>
+</record>
+<record id="product_color_1078" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">闪银色</field>
+</record>
+<record id="product_color_670" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">钛金</field>
+</record>
+<record id="product_color_576" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">草绿</field>
+</record>
+<record id="product_color_3" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">黄</field>
+</record>
+<record id="product_color_556" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">灰绿色</field>
+</record>
+<record id="product_color_365" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">淡绿</field>
+</record>
+<record id="product_color_1043" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">闪绿</field>
+</record>
+<record id="product_color_449" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">黑</field>
+</record>
+<record id="product_color_29" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">绿</field>
+</record>
+<record id="product_color_701" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">香槟色</field>
+</record>
+<record id="product_color_382" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">紫色</field>
+</record>
+<record id="product_color_820" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">灰黑</field>
+</record>
+<record id="product_color_609" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">闪灰</field>
+</record>
+<record id="product_color_1154" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">纳米</field>
+</record>
+<record id="product_color_532" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">灰</field>
+</record>
+<record id="product_color_375" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">灰色</field>
+</record>
+<record id="product_color_835" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">大红色</field>
+</record>
+<record id="product_color_335" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">黑紫色</field>
+</record>
+<record id="product_color_918" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">灰黄</field>
+</record>
+<record id="product_color_27" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">白</field>
+</record>
+<record id="product_color_834" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">珠光白</field>
+</record>
+<record id="product_color_1137" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">紫兰</field>
+</record>
+<record id="product_color_364" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">淡蓝</field>
+</record>
+<record id="product_color_1211" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">橙</field>
+</record>
+<record id="product_color_897" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">墨蓝</field>
+</record>
+<record id="product_color_809" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">闪紫红</field>
+</record>
+<record id="product_color_913" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">紫红</field>
+</record>
+<record id="product_color_261" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">茶色</field>
+</record>
+<record id="product_color_195" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">兰色</field>
+</record>
+<record id="product_color_784" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">闪金</field>
+</record>
+<record id="product_color_510" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">10型</field>
+</record>
+<record id="product_color_762" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">本色</field>
+</record>
+<record id="product_color_1127" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">果绿</field>
+</record>
+<record id="product_color_2" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">茶</field>
+</record>
+<record id="product_color_500" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">12型</field>
+</record>
+<record id="product_color_444" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">咖啡</field>
+</record>
+<record id="product_color_530" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">海蓝</field>
+</record>
+<record id="product_color_32" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">军绿</field>
+</record>
+<record id="product_color_197" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">白色</field>
+</record>
+<record id="product_color_31" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">蓝绿</field>
+</record>
+<record id="product_color_780" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">深绿</field>
+</record>
+<record id="product_color_1051" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">墨蓝色</field>
+</record>
+<record id="product_color_1" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">兰</field>
+</record>
+<record id="product_color_499" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">4型</field>
+</record>
+<record id="product_color_488" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">字</field>
+</record>
+<record id="product_color_163" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">浅兰</field>
+</record>
+<record id="product_color_502" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">8型</field>
+</record>
+<record id="product_color_619" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">淡咖啡</field>
+</record>
+<record id="product_color_475" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">金</field>
+</record>
+<record id="product_color_767" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">桔黄</field>
+</record>
+<record id="product_color_1100" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">迷彩混装</field>
+</record>
+<record id="product_color_1180" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">桔红</field>
+</record>
+<record id="product_color_1099" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">土迷彩</field>
+</record>
+<record id="product_color_558" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">深灰</field>
+</record>
+<record id="product_color_165" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">黑紫</field>
+</record>
+<record id="product_color_201" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">混</field>
+</record>
+<record id="product_color_560" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">米</field>
+</record>
+<record id="product_color_164" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">浅紫</field>
+</record>
+<record id="product_color_471" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">军绿色</field>
+</record>
+<record id="product_color_300" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">卡通</field>
+</record>
+<record id="product_color_302" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">女生</field>
+</record>
+<record id="product_color_514" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">11型</field>
+</record>
+<record id="product_color_837" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">闪银蓝</field>
+</record>
+<record id="product_color_503" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">9型</field>
+</record>
+<record id="product_color_880" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">海  蓝</field>
+</record>
+<record id="product_color_557" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">米黄</field>
+</record>
+<record id="product_color_299" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">红卡通</field>
+</record>
+<record id="product_color_1155" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">滤叶</field>
+</record>
+<record id="product_color_531" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">咖</field>
+</record>
+<record id="product_color_173" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">紫</field>
+</record>
+<record id="product_color_406" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">透明</field>
+</record>
+<record id="product_color_704" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">闪深灰</field>
+</record>
+<record id="product_color_18" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">透明花瓶</field>
+</record>
+<record id="product_color_1096" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">蓝迷彩</field>
+</record>
+<record id="product_color_672" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">中灰</field>
+</record>
+<record id="product_color_263" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">粉色</field>
+</record>
+<record id="product_color_805" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">亮兰</field>
+</record>
+<record id="product_color_902" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">墨兰</field>
+</record>
+<record id="product_color_655" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">米金色</field>
+</record>
+<record id="product_color_645" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">闪黄色</field>
+</record>
+<record id="product_color_615" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">深咖啡</field>
+</record>
+<record id="product_color_386" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">未分色</field>
+</record>
+<record id="product_color_301" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">男生</field>
+</record>
+<record id="product_color_763" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">瓷白</field>
+</record>
+<record id="product_color_739" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">珠光紫</field>
+</record>
+<record id="product_color_225" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">黄色</field>
+</record>
+<record id="product_color_319" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">蓝</field>
+</record>
+<record id="product_color_392" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">浅紫色</field>
+</record>
+<record id="product_color_646" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">闪灰色</field>
+</record>
+<record id="product_color_231" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">桔</field>
+</record>
+<record id="product_color_271" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">混色</field>
+</record>
+<record id="product_color_709" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">紫砂</field>
+</record>
+<record id="product_color_719" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">透明红</field>
+</record>
+<record id="product_color_610" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">青蓝</field>
+</record>
+<record id="product_color_547" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">浅蓝色</field>
+</record>
+<record id="product_color_501" model="product.attribute">
+        <field name="name">颜色</field>
+                <field name="value">13型</field>
+</record>
+
+                </data>
+        </openerp>

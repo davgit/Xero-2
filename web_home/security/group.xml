@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+	    <record id="group_web_home" model="res.groups">
+	        <field name="name">Web Home / 用户</field>
+	    </record>
+	</data>
+</openerp>

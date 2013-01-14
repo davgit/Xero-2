@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <menuitem id="menu_fg_sale" name="业务开单" sequence="2" web_icon="icon/fg_sale.png" web_icon_hover="icon/fg_sale_hover.png"
+            groups="fg_sale.group_fg_sale_user,fg_sale.group_fg_sale_fga,fg_sale.group_fg_sale_chart,fg_sale.group_fg_sale_manager"/>
+        
+        
+        <record model="ir.ui.view" id="fg_sale_cust_order_form_view">
+            <field name="name">fg_sale.cust.order.form</field>
+            <field name="model">fg_sale.cust.order</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="定制杯清单">
+                    <group col="6" colspan="4">
+                        <field name="name" select="1"/>
+                        <field name="date_order"/>
+                        <field name="user_id"/>
+                        <field name="date_confirm"/>
+                        <field name="type"/>
+                        <field name="confirmer_id"/>
+                        <field name="amount_paid"/>
+                        <field name="amount_left_info"/>
+                        <field name="amount_total"/>
+                        <field name="reset" invisible="True"/>
+                    </group>
+                    <notebook colspan="5">
+                        <page string="定制杯清单">
+                            <field name="partner_id" attrs="{'invisible' : [('type', '=','common')] }"/>
+                            <field name="client" attrs="{'invisible' : [('type', '=','partner')] }"/>
+                            <field name="contact"/>
+                            <field name="phone"/>
+                            <field name="date_delivery"/>
+                            <field name="date_arrival_req"/>
+                            <field name="delivery_addr"/>
+                            <field name="delivery_method"/>
+                            <field name="delivery_fee"/>
+                            
+                            <field colspan="4" name="order_line" nolabel="1" widget="one2many_list">
+                                <form string="销售明细">
+                                    <field name="product_id"/>
+                                    <field name="product_uom_qty"/>
+                                    <field name="unit_price"/>
+                                    <field name="cust_price"/>
+                                    <field name="extra_amount"/>
+                                    <field name="subtotal_amount"/>
+                                    <field name="note"/>
+                                </form>
+                                <tree string="定制杯清单" editable="bottom">
+                                    <field name="product_id"/>
+                                    <field name="product_uom_qty"/>
+                                    <field name="unit_price" on_change="amount_change(product_id, product_uom_qty, unit_price, cust_price, extra_amount)"/>
+                                    <field name="cust_price" on_change="amount_change(product_id, product_uom_qty, unit_price, cust_price, extra_amount)"/>
+                                    <field name="extra_amount" on_change="amount_change(product_id, product_uom_qty, unit_price, cust_price, extra_amount)"/>
+                                    <field name="subtotal_amount"/>
+                                    <field name="note"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="发票信息">
+                            <field name="invoice_type"/>
+                            <field name="invoice_title"/>
+                        </page>
+                        <page string="流程跟踪">
+                            <field name="logs" nolabel="1" widget="one2many_list"/>
+                        </page>
+                        <page string="备注">
+                            <field name="note" nolabel="1"/>
+                        </page>
+                    </notebook>
+                    <group col="6" colspan="4">
+                        <field name="state" widget="statusbar" statusbar_visible="draft,done" statusbar_colors='{"draft":"red","done":"blue"}'/>
+                        <button name="button_dummy" states="draft" string="计算价格" type="object" icon="gtk-execute"/>
+                        <button name="button_submit" confirm="一旦提交以后,将不能再修改, 确认提交?" string="提交" type="object" icon="gtk-go-forward" states="draft" groups="fg_sale.group_fg_sale_sale_user,fg_sale.group_fg_sale_sale_manager"/>
+                        <button name="button_reset" confirm="确认打回?" string="打回" type="object" icon="gtk-go-back" states="submit" groups="fg_sale.group_fg_sale_manager,fg_sale.group_fg_sale_user"/>
+                        <button name="button_review" confirm="将根据定制单自动生成业务单, 确认生成?" string="确认" type="object" icon="gtk-go-forward" states="submit" groups="fg_sale.group_fg_sale_manager,fg_sale.group_fg_sale_user"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="fg_sale_cust_order_tree_view">
+            <field name="name">fg_sale.cust.order.tree</field>
+            <field name="model">fg_sale.cust.order</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="定制杯清单" colors="red:reset == True">
+                    <field name="name"/>
+                    <field name="partner_id"/>
+                    <field name="date_order"/>
+                    <field name="user_id"/>
+                    <field name="amount_total"/>
+                    <field name="state"/>
+                    <field name="reset" invisible="True"/>
+                </tree>
+            </field>
+        </record>
+
+    
+        <record model="ir.actions.act_window" id="action_fg_sale_cust_order_tree_view_draft">
+            <field name="name">未提交定制杯清单</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">fg_sale.cust.order</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('state','=','draft')]</field>
+            <field name="view_id" ref="fg_sale_cust_order_tree_view"/>
+        </record>
+        
+        <record model="ir.actions.act_window" id="action_fg_sale_cust_order_tree_view_submit">
+            <field name="name">已提交定制杯清单</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">fg_sale.cust.order</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('state','=','submit')]</field>
+            <field name="view_id" ref="fg_sale_cust_order_tree_view"/>
+        </record>
+        
+        <record model="ir.actions.act_window" id="action_fg_sale_cust_order_tree_view_review">
+            <field name="name">已确认定制杯清单</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">fg_sale.cust.order</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('state','=','review')]</field>
+            <field name="view_id" ref="fg_sale_cust_order_tree_view"/>
+        </record>
+        
+        <record model="ir.actions.act_window" id="action_fg_sale_cust_order_tree_view_reset">
+            <field name="name">已打回定制杯清单</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">fg_sale.cust.order</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('reset','=',True)]</field>
+            <field name="view_id" ref="fg_sale_cust_order_tree_view"/>
+        </record>
+        
+        <record id="action_fg_sale_cust_order_new" model="ir.actions.act_window">
+            <field name="name">新建定制杯清单</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">fg_sale.cust.order</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form,tree</field>
+        </record>
+        
+    </data>
+    
+</openerp>

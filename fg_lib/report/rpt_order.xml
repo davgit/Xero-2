@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+    <report id="report.order_rpt_order" header="False"
+      auto="False" model="cust_order" name="order.rpt_order" 
+      rml="FG_SALE_/report/rpt_order.rml" string="打印请假单"/>
+  </data>
+</openerp>

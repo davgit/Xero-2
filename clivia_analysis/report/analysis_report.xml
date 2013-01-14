@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="clivia_analysis_production_report_tree_view">
+            <field name="name">clivia_analysis.production_report.tree</field>
+            <field name="model">clivia_analysis.production_report</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="报表分析分解">
+                    <field name="date"/>
+                    <field name="month" select="1"/>
+                    <field name="product_id" select="1"/>
+					<field name="produced" />
+					<field name="sent"/>
+					<field name="sold"/>
+                </tree>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="clivia_analysis_production_report_form_view">
+            <field name="name">clivia_analysis.production_report.form</field>
+            <field name="model">clivia_analysis.production_report</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="报表分析分解">
+                    <field name="date"/>
+                    <field name="month" select="1"/>
+                    <field name="product_id" select="1"/>
+					<field name="produced" />
+					<field name="sent"/>
+					<field name="sold"/>
+                </form>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="clivia_analysis_production_report_graph">
+            <field name="name">clivia_analysis.production_report.graph</field>
+            <field name="model">clivia_analysis.production_report</field>
+            <field name="type">graph</field>
+            <field name="arch" type="xml">
+                <graph string="生产形势" type="bar">
+                    <field name="date"/>
+                    <field name="produced" operator="+"/>
+					<field name="product_id" group="True" select="1"/>
+                </graph>
+            </field>
+        </record>
+        
+        <record id="action_analysis_produced_report_graph"  model="ir.actions.act_window">
+			<field name="name">生产形势</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">graph</field>
+			<field name="res_model">clivia_analysis.production_report</field>
+			<field name="view_id" ref="clivia_analysis_production_report_graph"/>
+		</record>
+        
+        
+		<menuitem id="menu_fuguang_report_produced" action="action_analysis_produced_report_graph" parent="menu_clivia_report_analysis" sequence="0" />
+		
+    </data>
+    
+</openerp>
