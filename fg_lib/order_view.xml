@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+    <!-- Search view for Order -->
+    <record model="ir.ui.view" id="view_order_creat_search">
+        <field name="name">order.creat.search</field>
+        <field name="model">cust_order</field>
+        <field name="type">search</field>
+        <field name="arch" type="xml">
+            <search string="CustOrder"> 
+                <group>
+                    <field name="state"/>
+                    <field name="confirmer_id"/>
+                    <field name="name"/>
+                    <field name="user_id"/>
+                </group>              
+                <newline/>
+                <group expand="1" string="统计">
+                    <filter icon="terp-personal" string="未审核的" help='未审核的订单' domain="[('state','=','draft')]"/>
+                    <separator orientation="vertical"/>
+                    <filter icon="terp-stock_symbol-selection" string="已审核的" help="已审核的订单" domain="[('state','=','approve')]"/>
+                    <filter icon="terp-stock_effects-object-colorize" string="已完成的" help="已完成的订单" domain="[('state','=','done')]"/>
+                </group>
+            </search>
+        </field>
+    </record>
+    
+    <!--定义列表视图-->
+    <record model="ir.ui.view" id="order_creat_tree_view">
+            <field name="name">order.creat.tree.view</field>
+            <field name="model">cust_order</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="order">
+                    <field name="name"/>
+                    <field name="confirmer_id"/>
+                    <field name="contact"/>
+                    <field name="partner_id"/>
+                    <field name='date_delivery'/>
+                    <field name="amount_paid"/>
+                    <field name="delivery_method"/>
+                    <field name="delivery_fee"/>
+                    <field name="state"/>
+                </tree>                    
+            </field>
+    </record>     
+
+
+    <!--定义表单视图-->
+    <record model="ir.ui.view" id="order_creat_form_view">
+            <field name="name">order.creat.form.view</field>
+            <field name="type">form</field>
+            <field name="model">cust_order</field>
+            <field name="arch" type="xml">
+                <group string='新的订制杯清单' col="6" colspan="4">    
+                    <field name="user_id" />
+                    <field name="date_order"/>
+                    <newline/>
+                    <field name="partner_id" colspan='4'/>
+                    <newline/>                    
+                    <field name="contact" />
+                    <field name="phone" />                    
+                </group>
+                <notebook colspan="4">
+                    <page string="产品明细">
+                        <group col="4">
+                            <field name="name"/>
+                            <field name='product_id'/>
+                            <newline/>
+                            <field name="product_uom_qty"/>
+                            <field name="unit_price"/>
+                            <field name='cust_price'/>
+                            <field name="subtotal_amount"/>                            
+                        </group>                       
+                    </page>
+                    <page string="交货明细">
+                        <group>
+                            <field name="date_delivery"/>
+                            <field name='delivery_delivery'/>
+                            <field name="amount_paid"/>                            
+                            <field name="invoice_type"/>
+                            <field name="delivery_method"/>
+                            <field name="delivery_fee"/>
+                            <field name="amount_left"/>
+                            <newline/>
+                            <field name="note"/>
+                            <field name="date2"/>
+                            <field name="date3"/>
+                        </group>
+                    </page>
+                </notebook>
+                <newline/>
+                <group colspan="4" col="6">
+                            <field name="state" widget="statusbar" statusbar_visible="draft,approve,done" statusbar_colors='{"draft":"blue","approve":"blue","done":"blue"}'/>
+                            <button name="order_done" string="已完成" states="approve" icon="gtk-yes"/>
+                            <button name="order_approve" string="确认审批" states='draft' icon="gtk-apply"/>
+                            <button name="order_cancel" string="取消" states='approve'  icon="gtk-cancel"/>
+                            <button name="button_dummy"  string="配置" type="object" icon="gtk-execute"/>
+                </group>
+            </field>             
+    </record>    
+    
+    <!--定义视图动作-->            
+    <record model="ir.actions.act_window" id="action_order_creat">
+        <field name="name">order.creat.action</field>
+        <field name="res_model">cust_order</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name='search_view_id' ref="view_order_creat_search"/>
+    </record>
+    <!--定义菜单-->
+    <menuitem id="order_menu" name="订单" web_icon="icon/icon.png" web_icon_hover="icon/icon.png"/>
+    <menuitem id='order_menu2' name='订单' parent='order_menu'/>
+    <menuitem name="订单" id="order_creat_menu" parent='order_menu2' action="action_order_creat"/>
+    </data>
+</openerp>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+                <record id="product_uom_categ_fg" model="product.uom.categ">
+            <field name="name">富光计量单位</field>
+        </record>
+                <record id="product_uom_categ_fg_item" model="product.uom.categ">
+            <field name="name">口杯(只装)</field>
+        </record>
+                <record id="product_uom_categ_fg_set" model="product.uom.categ">
+            <field name="name">口杯(套装)</field>
+        </record>
+                
+                <record id="product_uom_cup_item" model="product.uom">
+                    <field name="category_id" ref="product_uom_categ_fg_item"/>
+                    <field name="name">只</field>
+                                <field name="rounding" eval="1"/>
+                    <field name="factor" eval="1"/>
+                                <field name="uom_type">smaller</field>
+                </record>
+                <record id="product_uom_cup_item_48" model="product.uom">
+                    <field name="category_id" ref="product_uom_categ_fg_item"/>
+                    <field name="name">件(48只)</field>
+                                <field name="rounding" eval="1"/>
+                    <field name="factor" eval="48"/>
+                                <field name="uom_type">bigger</field>
+                </record>
+                <record id="product_uom_cup_item_30" model="product.uom">
+                    <field name="category_id" ref="product_uom_categ_fg_item"/>
+                    <field name="name">件(30只)</field>
+                                <field name="rounding" eval="1"/>
+                    <field name="factor" eval="30"/>
+                                <field name="uom_type">bigger</field>
+                </record>
+                <record id="product_uom_cup_item_36" model="product.uom">
+                    <field name="category_id" ref="product_uom_categ_fg_item"/>
+                    <field name="name">件(36只)</field>
+                                <field name="rounding" eval="1"/>
+                    <field name="factor" eval="36"/>
+                                <field name="uom_type">bigger</field>
+                </record>
+                
+                <record id="product_uom_cup_item_20" model="product.uom">
+                    <field name="category_id" ref="product_uom_categ_fg_item"/>
+                    <field name="name">件(20只)</field>
+                                <field name="rounding" eval="1"/>
+                    <field name="factor" eval="20"/>
+                                <field name="uom_type">bigger</field>
+                </record>
+                <record id="product_uom_cup_item_16" model="product.uom">
+                    <field name="category_id" ref="product_uom_categ_fg_item"/>
+                    <field name="name">件(16只)</field>
+                                <field name="rounding" eval="1"/>
+                    <field name="factor" eval="16"/>
+                                <field name="uom_type">bigger</field>
+                </record>
+                <record id="product_uom_cup_item_40" model="product.uom">
+                    <field name="category_id" ref="product_uom_categ_fg_item"/>
+                    <field name="name">件(40只)</field>
+                                <field name="rounding" eval="1"/>
+                    <field name="factor" eval="40"/>
+                                <field name="uom_type">bigger</field>
+                </record>
+                <record id="product_uom_cup_item_18" model="product.uom">
+                    <field name="category_id" ref="product_uom_categ_fg_item"/>
+                    <field name="name">件(18只)</field>
+                                <field name="rounding" eval="1"/>
+                    <field name="factor" eval="18"/>
+                                <field name="uom_type">bigger</field>
+                </record>
+                <record id="product_uom_cup_item_12" model="product.uom">
+                    <field name="category_id" ref="product_uom_categ_fg_item"/>
+                    <field name="name">件(12只)</field>
+                                <field name="rounding" eval="1"/>
+                    <field name="factor" eval="12"/>
+                                <field name="uom_type">bigger</field>
+                </record>
+                <record id="product_uom_cup_item_8" model="product.uom">
+                    <field name="category_id" ref="product_uom_categ_fg_item"/>
+                    <field name="name">件(8只)</field>
+                                <field name="rounding" eval="1"/>
+                    <field name="factor" eval="8"/>
+                                <field name="uom_type">bigger</field>
+                </record>
+                <record id="product_uom_cup_item_24" model="product.uom">
+                    <field name="category_id" ref="product_uom_categ_fg_item"/>
+                    <field name="name">件(24只)</field>
+                                <field name="rounding" eval="1"/>
+                    <field name="factor" eval="24"/>
+                                <field name="uom_type">bigger</field>
+                </record>
+                <record id="product_uom_cup_item_10" model="product.uom">
+                    <field name="category_id" ref="product_uom_categ_fg_item"/>
+                    <field name="name">件(10只)</field>
+                                <field name="rounding" eval="1"/>
+                    <field name="factor" eval="10"/>
+                                <field name="uom_type">bigger</field>
+                </record>
+                <record id="product_uom_cup_item_50" model="product.uom">
+                    <field name="category_id" ref="product_uom_categ_fg_item"/>
+                    <field name="name">件(50只)</field>
+                                <field name="rounding" eval="1"/>
+                    <field name="factor" eval="50"/>
+                                <field name="uom_type">bigger</field>
+                </record>
+                <record id="product_uom_cup_item_6" model="product.uom">
+                    <field name="category_id" ref="product_uom_categ_fg_item"/>
+                    <field name="name">件(6只)</field>
+                                <field name="rounding" eval="1"/>
+                    <field name="factor" eval="6"/>
+                                <field name="uom_type">bigger</field>
+                </record>
+                <record id="product_uom_cup_item_15" model="product.uom">
+                    <field name="category_id" ref="product_uom_categ_fg_item"/>
+                    <field name="name">件(15只)</field>
+                                <field name="rounding" eval="1"/>
+                    <field name="factor" eval="15"/>
+                                <field name="uom_type">bigger</field>
+                </record>
+                <record id="product_uom_cup_item_100" model="product.uom">
+                    <field name="category_id" ref="product_uom_categ_fg_item"/>
+                    <field name="name">件(100只)</field>
+                                <field name="rounding" eval="1"/>
+                    <field name="factor" eval="100"/>
+                                <field name="uom_type">bigger</field>
+                </record>
+                <record id="product_uom_cup_item_3" model="product.uom">
+                    <field name="category_id" ref="product_uom_categ_fg_item"/>
+                    <field name="name">件(3只)</field>
+                                <field name="rounding" eval="1"/>
+                    <field name="factor" eval="3"/>
+                                <field name="uom_type">bigger</field>
+                </record>
+                <record id="product_uom_cup_item_72" model="product.uom">
+                    <field name="category_id" ref="product_uom_categ_fg_item"/>
+                    <field name="name">件(72只)</field>
+                                <field name="rounding" eval="1"/>
+                    <field name="factor" eval="72"/>
+                                <field name="uom_type">bigger</field>
+                </record>
+                <record id="product_uom_cup_set" model="product.uom">
+                    <field name="category_id" ref="product_uom_categ_fg_set"/>
+                    <field name="name">套</field>
+                                <field name="rounding" eval="1"/>
+                    <field name="factor" eval="1"/>
+                                <field name="uom_type">smaller</field>
+                </record>
+                <record id="product_uom_cup_set_4" model="product.uom">
+                    <field name="category_id" ref="product_uom_categ_fg_set"/>
+                    <field name="name">件(4套)</field>
+                                <field name="rounding" eval="1"/>
+                    <field name="factor" eval="4"/>
+                </record>
+                <record id="product_uom_cup_set_6" model="product.uom">
+                    <field name="category_id" ref="product_uom_categ_fg_set"/>
+                    <field name="name">件(6套)</field>
+                                <field name="rounding" eval="1"/>
+                    <field name="factor" eval="6"/>
+                </record>
+                <record id="product_uom_cup_set_8" model="product.uom">
+                    <field name="category_id" ref="product_uom_categ_fg_set"/>
+                    <field name="name">件(8套)</field>
+                                <field name="rounding" eval="1"/>
+                    <field name="factor" eval="8"/>
+                </record>
+                <record id="product_uom_cup_set_10" model="product.uom">
+                    <field name="category_id" ref="product_uom_categ_fg_set"/>
+                    <field name="name">件(10套)</field>
+                                <field name="rounding" eval="1"/>
+                    <field name="factor" eval="10"/>
+                </record>
+                
+                <record id="product_uom_cup_article" model="product.uom">
+                    <field name="category_id" ref="product_uom_categ_fg"/>
+                    <field name="name">件</field>
+                                <field name="rounding" eval="1"/>
+                    <field name="factor" eval="1"/>
+                </record>
+                <record id="product_uom_cup_ba" model="product.uom">
+                    <field name="category_id" ref="product_uom_categ_fg"/>
+                    <field name="name">把</field>
+                                <field name="rounding" eval="1"/>
+                    <field name="factor" eval="1"/>
+                </record>
+                <record id="product_uom_jin" model="product.uom">
+            <field name="category_id" ref="product.product_uom_categ_kgm"/>
+            <field name="name">斤</field>
+            <field name="factor" eval="2"/>
+            <field name="uom_type">smaller</field>
+        </record>
+	<record id="product_uom_ding" model="product.uom">
+            <field name="category_id" ref="product_uom_categ_fg"/>
+            <field name="name">顶</field>
+            <field name="rounding" eval="1"/>
+                    <field name="factor" eval="1"/>
+        </record>
+	<record id="product_uom_tong" model="product.uom">
+                    <field name="category_id" ref="product_uom_categ_fg"/>
+                    <field name="name">筒</field>
+                                <field name="rounding" eval="1"/>
+                    <field name="factor" eval="1"/>
+                </record>
+                <record id="cat_pc" model="product.category">
+            <field name="parent_id" ref="product.cat0"/>
+            <field name="name">塑胶事业部</field>
+        </record>
+                <record id="cat_glass" model="product.category">
+            <field name="parent_id" ref="product.cat0"/>
+            <field name="name">玻璃事业部</field>
+        </record>
+                <record id="cat_vacuum" model="product.category">
+            <field name="parent_id" ref="product.cat0"/>
+            <field name="name">真空事业部</field>
+        </record>
+                <record id="cat_helmet" model="product.category">
+            <field name="parent_id" ref="product.cat0"/>
+            <field name="name">安全帽事业部</field>
+        </record>
+                <record id="cat_plastic" model="product.category">
+            <field name="parent_id" ref="product.cat0"/>
+            <field name="name">塑胶制品</field>
+        </record>
+                <record id="cat_finance" model="product.category">
+            <field name="parent_id" ref="product.cat0"/>
+            <field name="name">财务部</field>
+        </record>
+                <record id="cat_other" model="product.category">
+            <field name="parent_id" ref="product.cat0"/>
+            <field name="name">其他</field>
+        </record>
+        </data>
+</openerp>

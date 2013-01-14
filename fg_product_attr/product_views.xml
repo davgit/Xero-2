@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<openerp>
+    <data>
+		<record id="product_attr_form_view" model="ir.ui.view">
+            <field name="name">product.attr.form.inherit</field>
+            <field name="model">product.product</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="product.product_normal_form_view"/>
+            <field name="arch" type="xml">
+                <notebook position="inside">
+                    <page string="产品属性">
+                        <field name="attribute_ids" colspan="4" nolabel="1" widget="many2many_list">
+							<tree string="属性">
+			                    <field name="name"/>
+								<field name="value"/>
+			                </tree>
+							<form string="属性">
+			                    <field name="name"/>
+								<field name="value"/>
+			                </form>
+						</field>
+                    </page>
+                </notebook>
+            </field>
+        </record>
+
+	</data>
+</openerp>

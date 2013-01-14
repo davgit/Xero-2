@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+                
+<record id="product_category_1" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">1代</field>
+</record>
+
+<record id="product_category_2" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">奇兵</field>
+</record>
+
+<record id="product_category_3" model="product.category">
+    <field name="parent_id" ref="cat_glass"/>
+    <field name="name">FGA玻璃</field>
+</record>
+
+<record id="product_category_4" model="product.category">
+    <field name="parent_id" ref="cat_glass"/>
+    <field name="name">FGA塑胶</field>
+</record>
+
+<record id="product_category_5" model="product.category">
+    <field name="parent_id" ref="cat_glass"/>
+    <field name="name">FGA真空</field>
+</record>
+
+<record id="product_category_6" model="product.category">
+    <field name="parent_id" ref="cat_glass"/>
+    <field name="name">健牌单层</field>
+</record>
+
+<record id="product_category_7" model="product.category">
+    <field name="parent_id" ref="cat_glass"/>
+    <field name="name">健牌悠品</field>
+</record>
+
+<record id="product_category_8" model="product.category">
+    <field name="parent_id" ref="cat_glass"/>
+    <field name="name">力德尔玻璃</field>
+</record>
+
+<record id="product_category_1155" model="product.category">
+    <field name="parent_id" ref="cat_vacuum"/>
+    <field name="name">旅行壶</field>
+</record>
+
+<record id="product_category_1156" model="product.category">
+    <field name="parent_id" ref="cat_vacuum"/>
+    <field name="name">真空运动壶</field>
+</record>
+
+<record id="product_category_763" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">直槽杯</field>
+</record>
+
+<record id="product_category_764" model="product.category">
+    <field name="parent_id" ref="cat_vacuum"/>
+    <field name="name">健牌生态</field>
+</record>
+
+<record id="product_category_704" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">休闲</field>
+</record>
+
+<record id="product_category_705" model="product.category">
+    <field name="parent_id" ref="cat_helmet"/>
+    <field name="name">安全帽</field>
+</record>
+
+<record id="product_category_231" model="product.category">
+    <field name="parent_id" ref="cat_vacuum"/>
+    <field name="name">吸管真空杯</field>
+</record>
+
+<record id="product_category_217" model="product.category">
+    <field name="parent_id" ref="cat_vacuum"/>
+    <field name="name">汽车杯</field>
+</record>
+
+<record id="product_category_217" model="product.category">
+    <field name="parent_id" ref="cat_vacuum"/>
+    <field name="name">时尚真空</field>
+</record>
+
+<record id="product_category_218" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">义乌外贸品项</field>
+</record>
+
+<record id="product_category_219" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">太空杯泡茶师</field>
+</record>
+
+<record id="product_category_220" model="product.category">
+    <field name="parent_id" ref="cat_vacuum"/>
+    <field name="name">深圳拾喜</field>
+</record>
+
+<record id="product_category_221" model="product.category">
+    <field name="parent_id" ref="cat_glass"/>
+    <field name="name">健牌</field>
+</record>
+
+<record id="product_category_222" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">黄冈配件</field>
+</record>
+
+<record id="product_category_223" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">精品</field>
+</record>
+
+<record id="product_category_390" model="product.category">
+    <field name="parent_id" ref="cat_other"/>
+    <field name="name">银奇</field>
+</record>
+
+<record id="product_category_391" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">外贸品项</field>
+</record>
+
+<record id="product_category_392" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">茶马仕</field>
+</record>
+
+<record id="product_category_393" model="product.category">
+    <field name="parent_id" ref="cat_glass"/>
+    <field name="name">处理杯</field>
+</record>
+
+<record id="product_category_394" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">恒远</field>
+</record>
+
+<record id="product_category_395" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">广州振兴</field>
+</record>
+
+<record id="product_category_396" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">长源液压件</field>
+</record>
+
+<record id="product_category_397" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">瑞彩</field>
+</record>
+
+<record id="product_category_398" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">圆点</field>
+</record>
+
+<record id="product_category_399" model="product.category">
+    <field name="parent_id" ref="cat_glass"/>
+    <field name="name">玻璃泡杯</field>
+</record>
+
+<record id="product_category_400" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">达人</field>
+</record>
+
+<record id="product_category_401" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">悠然太空杯</field>
+</record>
+
+<record id="product_category_402" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">炫动太空杯</field>
+</record>
+
+<record id="product_category_403" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">明尚系列</field>
+</record>
+
+<record id="product_category_404" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">逸致口杯</field>
+</record>
+
+<record id="product_category_405" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">炫丽口杯</field>
+</record>
+
+<record id="product_category_406" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">炫耀</field>
+</record>
+
+<record id="product_category_407" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">优优</field>
+</record>
+
+<record id="product_category_408" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">学生壶</field>
+</record>
+
+<record id="product_category_409" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">燕尾</field>
+</record>
+
+<record id="product_category_410" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">E动</field>
+</record>
+
+<record id="product_category_411" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">塑紫</field>
+</record>
+
+<record id="product_category_412" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">11代</field>
+</record>
+
+<record id="product_category_18" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">泡茶师</field>
+</record>
+
+<record id="product_category_19" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">E动</field>
+</record>
+
+<record id="product_category_20" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">欣瑞</field>
+</record>
+
+<record id="product_category_21" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">塑瓷</field>
+</record>
+
+<record id="product_category_22" model="product.category">
+    <field name="parent_id" ref="cat_vacuum"/>
+    <field name="name">银杯</field>
+</record>
+
+<record id="product_category_23" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">紫砂</field>
+</record>
+
+<record id="product_category_24" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">炫彩</field>
+</record>
+
+<record id="product_category_25" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">至尊</field>
+</record>
+
+<record id="product_category_26" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">3A</field>
+</record>
+
+<record id="product_category_27" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">二代新潮</field>
+</record>
+
+<record id="product_category_28" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">E代</field>
+</record>
+
+<record id="product_category_29" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">三代新潮</field>
+</record>
+
+<record id="product_category_30" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">健牌泡杯</field>
+</record>
+
+<record id="product_category_31" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">健牌新奥</field>
+</record>
+
+<record id="product_category_32" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">磁化杯</field>
+</record>
+
+<record id="product_category_33" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">健牌旋风</field>
+</record>
+
+<record id="product_category_34" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">健牌悠乐</field>
+</record>
+
+<record id="product_category_35" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">5号新潮</field>
+</record>
+
+<record id="product_category_36" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">水瓶</field>
+</record>
+
+<record id="product_category_326" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">新潮杯</field>
+</record>
+
+<record id="product_category_500" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">塑玻</field>
+</record>
+
+<record id="product_category_444" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">动感</field>
+</record>
+
+<record id="product_category_1251" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">玲珑</field>
+</record>
+
+<record id="product_category_556" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">自旋杯</field>
+</record>
+
+<record id="product_category_557" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">泡杯</field>
+</record>
+
+<record id="product_category_558" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">保健杯</field>
+</record>
+
+<record id="product_category_559" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">口杯</field>
+</record>
+
+<record id="product_category_560" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">晶致</field>
+</record>
+
+<record id="product_category_561" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">双莹</field>
+</record>
+
+<record id="product_category_444" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">卓尔</field>
+</record>
+
+<record id="product_category_444" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">新动感</field>
+</record>
+
+<record id="product_category_445" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">健至诚</field>
+</record>
+
+<record id="product_category_446" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">运动壶A型</field>
+</record>
+
+<record id="product_category_447" model="product.category">
+    <field name="parent_id" ref="cat_vacuum"/>
+    <field name="name">生态壶</field>
+</record>
+
+<record id="product_category_217" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">FGA系列</field>
+</record>
+
+<record id="product_category_218" model="product.category">
+    <field name="parent_id" ref="cat_vacuum"/>
+    <field name="name">保温壶</field>
+</record>
+
+<record id="product_category_217" model="product.category">
+    <field name="parent_id" ref="cat_vacuum"/>
+    <field name="name">子弹头</field>
+</record>
+
+<record id="product_category_218" model="product.category">
+    <field name="parent_id" ref="cat_vacuum"/>
+    <field name="name">E动</field>
+</record>
+
+<record id="product_category_217" model="product.category">
+    <field name="parent_id" ref="cat_vacuum"/>
+    <field name="name">顺风</field>
+</record>
+
+<record id="product_category_918" model="product.category">
+    <field name="parent_id" ref="cat_vacuum"/>
+    <field name="name">乘风</field>
+</record>
+
+<record id="product_category_217" model="product.category">
+    <field name="parent_id" ref="cat_vacuum"/>
+    <field name="name">至臻</field>
+</record>
+
+<record id="product_category_218" model="product.category">
+    <field name="parent_id" ref="cat_vacuum"/>
+    <field name="name">皮纹杯</field>
+</record>
+
+<record id="product_category_217" model="product.category">
+    <field name="parent_id" ref="cat_vacuum"/>
+    <field name="name">广告杯</field>
+</record>
+
+<record id="product_category_762" model="product.category">
+    <field name="parent_id" ref="cat_vacuum"/>
+    <field name="name">休闲杯</field>
+</record>
+
+<record id="product_category_217" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">运动壶B型</field>
+</record>
+
+<record id="product_category_218" model="product.category">
+    <field name="parent_id" ref="cat_vacuum"/>
+    <field name="name">旅行壶</field>
+</record>
+
+<record id="product_category_217" model="product.category">
+    <field name="parent_id" ref="cat_vacuum"/>
+    <field name="name">酷派</field>
+</record>
+
+<record id="product_category_217" model="product.category">
+    <field name="parent_id" ref="cat_vacuum"/>
+    <field name="name">真空多用壶</field>
+</record>
+
+<record id="product_category_218" model="product.category">
+    <field name="parent_id" ref="cat_vacuum"/>
+    <field name="name">经典三型</field>
+</record>
+
+<record id="product_category_219" model="product.category">
+    <field name="parent_id" ref="cat_vacuum"/>
+    <field name="name">水晶</field>
+</record>
+
+<record id="product_category_613" model="product.category">
+    <field name="parent_id" ref="cat_vacuum"/>
+    <field name="name">经典</field>
+</record>
+
+<record id="product_category_217" model="product.category">
+    <field name="parent_id" ref="cat_vacuum"/>
+    <field name="name">天行</field>
+</record>
+
+<record id="product_category_217" model="product.category">
+    <field name="parent_id" ref="cat_vacuum"/>
+    <field name="name">泡茶师</field>
+</record>
+
+<record id="product_category_218" model="product.category">
+    <field name="parent_id" ref="cat_vacuum"/>
+    <field name="name">二代茗派</field>
+</record>
+
+<record id="product_category_219" model="product.category">
+    <field name="parent_id" ref="cat_vacuum"/>
+    <field name="name">卓尔</field>
+</record>
+
+<record id="product_category_386" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">时尚</field>
+</record>
+
+<record id="product_category_387" model="product.category">
+    <field name="parent_id" ref="cat_vacuum"/>
+    <field name="name">茗派</field>
+</record>
+
+<record id="product_category_645" model="product.category">
+    <field name="parent_id" ref="cat_glass"/>
+    <field name="name">定制套装</field>
+</record>
+
+<record id="product_category_646" model="product.category">
+    <field name="parent_id" ref="cat_vacuum"/>
+    <field name="name">生态杯</field>
+</record>
+
+<record id="product_category_763" model="product.category">
+    <field name="parent_id" ref="cat_vacuum"/>
+    <field name="name">超炫</field>
+</record>
+
+<record id="product_category_217" model="product.category">
+    <field name="parent_id" ref="cat_glass"/>
+    <field name="name">精品</field>
+</record>
+
+<record id="product_category_1155" model="product.category">
+    <field name="parent_id" ref="cat_glass"/>
+    <field name="name">套装</field>
+</record>
+
+<record id="product_category_1156" model="product.category">
+    <field name="parent_id" ref="cat_glass"/>
+    <field name="name">极品</field>
+</record>
+
+<record id="product_category_1157" model="product.category">
+    <field name="parent_id" ref="cat_glass"/>
+    <field name="name">尊贵</field>
+</record>
+
+<record id="product_category_1158" model="product.category">
+    <field name="parent_id" ref="cat_glass"/>
+    <field name="name">精工</field>
+</record>
+
+<record id="product_category_1159" model="product.category">
+    <field name="parent_id" ref="cat_glass"/>
+    <field name="name">精彩</field>
+</record>
+
+<record id="product_category_1160" model="product.category">
+    <field name="parent_id" ref="cat_glass"/>
+    <field name="name">精致</field>
+</record>
+
+<record id="product_category_1161" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">超越</field>
+</record>
+
+<record id="product_category_1162" model="product.category">
+    <field name="parent_id" ref="cat_glass"/>
+    <field name="name">精致单层</field>
+</record>
+
+<record id="product_category_1163" model="product.category">
+    <field name="parent_id" ref="cat_plastic"/>
+    <field name="name">塑料制品</field>
+</record>
+
+<record id="product_category_542" model="product.category">
+    <field name="parent_id" ref="cat_glass"/>
+    <field name="name">精锐</field>
+</record>
+
+<record id="product_category_543" model="product.category">
+    <field name="parent_id" ref="cat_glass"/>
+    <field name="name">精英</field>
+</record>
+
+<record id="product_category_544" model="product.category">
+    <field name="parent_id" ref="cat_glass"/>
+    <field name="name">单层玻璃杯</field>
+</record>
+
+<record id="product_category_545" model="product.category">
+    <field name="parent_id" ref="cat_glass"/>
+    <field name="name">单层办公</field>
+</record>
+
+<record id="product_category_546" model="product.category">
+    <field name="parent_id" ref="cat_glass"/>
+    <field name="name">泡茶师</field>
+</record>
+
+<record id="product_category_547" model="product.category">
+    <field name="parent_id" ref="cat_glass"/>
+    <field name="name">茶壶</field>
+</record>
+
+<record id="product_category_548" model="product.category">
+    <field name="parent_id" ref="cat_glass"/>
+    <field name="name">水晶</field>
+</record>
+
+<record id="product_category_549" model="product.category">
+    <field name="parent_id" ref="cat_glass"/>
+    <field name="name">礼品</field>
+</record>
+
+<record id="product_category_550" model="product.category">
+    <field name="parent_id" ref="cat_glass"/>
+    <field name="name">银象</field>
+</record>
+
+<record id="product_category_551" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">动力</field>
+</record>
+
+<record id="product_category_27" model="product.category">
+    <field name="parent_id" ref="cat_glass"/>
+    <field name="name">磨砂</field>
+</record>
+
+<record id="product_category_28" model="product.category">
+    <field name="parent_id" ref="cat_pc"/>
+    <field name="name">配件系列</field>
+</record>
+
+<record id="product_category_29" model="product.category">
+    <field name="parent_id" ref="cat_glass"/>
+    <field name="name">茶艺</field>
+</record>
+
+<record id="product_category_30" model="product.category">
+    <field name="parent_id" ref="cat_glass"/>
+    <field name="name">彩艺</field>
+</record>
+
+<record id="product_category_31" model="product.category">
+    <field name="parent_id" ref="cat_glass"/>
+    <field name="name">多彩</field>
+</record>
+
+<record id="product_category_32" model="product.category">
+    <field name="parent_id" ref="cat_glass"/>
+    <field name="name">精艺</field>
+</record>
+
+<record id="product_category_33" model="product.category">
+    <field name="parent_id" ref="cat_glass"/>
+    <field name="name">黑晶</field>
+</record>
+
+<record id="product_category_34" model="product.category">
+    <field name="parent_id" ref="cat_glass"/>
+    <field name="name">银龙</field>
+</record>
+
+<record id="product_category_35" model="product.category">
+    <field name="parent_id" ref="cat_glass"/>
+    <field name="name">水晶精艺</field>
+</record>
+
+<record id="product_category_36" model="product.category">
+    <field name="parent_id" ref="cat_glass"/>
+    <field name="name">精艺单层</field>
+</record>
+
+<record id="product_category_37" model="product.category">
+    <field name="parent_id" ref="cat_glass"/>
+    <field name="name">欣艺</field>
+</record>
+
+                </data>
+        </openerp>

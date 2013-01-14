@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        
+        <record id="view_fg_sale_report_product_sale_toplist_export_wizard" model="ir.ui.view">
+            <field name="name">单品销售排行</field>
+            <field name="model">fg_sale.fuguang.product.sale.toplist.wizard</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+              <form string="导出统计">
+                 <group states="choose">
+                    <field name="product"/>
+                    <field name="date_start"/>
+                    <field name="date_end"/>
+                    <field invisible="1" name="state"/>
+                </group>
+                <group states="get">
+                    <separator string="导出完成, 点击'另存为'下载统计表." colspan="4"/>
+                    <field name="name" invisible="1"/>
+                    <field name="data" nolabel="1" readonly="1" filename="name" />
+                </group>
+                    <group colspan="4" col="6" states="choose">
+                        <button  icon="gtk-close" special="cancel" string="关闭"/>
+                        <button icon="gtk-ok" name="export_result" string="导出" type="object"/>
+                    </group>
+                    <group colspan="8" col="8" states="get">
+                        <separator string="" colspan="8"/>
+                        <label colspan="7" width="220"/>
+                        <button icon="gtk-close" name="button_cancel" special="cancel" string="关闭" type="object"/>
+                    </group>
+            </form>
+            </field>
+        </record>
+        
+        <record id="view_fg_sale_report_fg_partner_product_export_wizard" model="ir.ui.view">
+            <field name="name">导出客户产品销售汇总</field>
+            <field name="model">fg_sale.fuguang.partner.product.export.wizard</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+              <form string="导出统计">
+                 <group states="choose">
+                    <field name="partner_id"/>
+                    <field name="date_start"/>
+                    <field name="date_end"/>
+                    <field invisible="1" name="state"/>
+                </group>
+                <group states="get">
+                    <separator string="导出完成, 点击'另存为'下载统计表." colspan="4"/>
+                    <field name="name" invisible="1"/>
+                    <field name="data" nolabel="1" readonly="1" filename="name" />
+                </group>
+                    <group colspan="4" col="6" states="choose">
+                        <button  icon="gtk-close" special="cancel" string="关闭"/>
+                        <button icon="gtk-ok" name="export_result" string="导出" type="object"/>
+                    </group>
+                    <group colspan="8" col="8" states="get">
+                        <separator string="" colspan="8"/>
+                        <label colspan="7" width="220"/>
+                        <button icon="gtk-close" name="button_cancel" special="cancel" string="关闭" type="object"/>
+                    </group>
+            </form>
+            </field>
+        </record>
+        
+        
+        <record id="view_fg_sale_report_fga_partner_product_export_wizard" model="ir.ui.view">
+            <field name="name">导出FGA客户产品销售汇总</field>
+            <field name="model">fg_sale.fga.partner.product.export.wizard</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+              <form string="导出统计">
+                 <group states="choose">
+                    <field name="date_start"/>
+                    <field name="date_end"/>
+                    <field invisible="1" name="state"/>
+                </group>
+                <group states="get">
+                    <separator string="导出完成, 点击'另存为'下载统计表." colspan="4"/>
+                    <field name="name" invisible="1"/>
+                    <field name="data" nolabel="1" readonly="1" filename="name" />
+                </group>
+                    <group colspan="4" col="6" states="choose">
+                        <button  icon="gtk-close" special="cancel" string="关闭"/>
+                        <button icon="gtk-ok" name="export_result" string="导出" type="object"/>
+                    </group>
+                    <group colspan="8" col="8" states="get">
+                        <separator string="" colspan="8"/>
+                        <label colspan="7" width="220"/>
+                        <button icon="gtk-close" name="button_cancel" special="cancel" string="关闭" type="object"/>
+                    </group>
+            </form>
+            </field>
+        </record>
+        
+        
+        <record id="view_fg_sale_report_fga_partner_export_wizard" model="ir.ui.view">
+            <field name="name">导出FGA客户销售统计</field>
+            <field name="model">fg_sale.fga.partner.export.wizard</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+              <form string="导出统计">
+                 <group states="choose">
+                    <field name="date_start"/>
+                    <field name="date_end"/>
+                    <field name="source"/>
+                    <field invisible="1" name="state"/>
+                </group>
+                <group states="get">
+                    <separator string="导出完成, 点击'另存为'下载统计表." colspan="4"/>
+                    <field name="name" invisible="1"/>
+                    <field name="data" nolabel="1" readonly="1" filename="name" />
+                </group>
+                    <group colspan="4" col="6" states="choose">
+                        <button  icon="gtk-close" special="cancel" string="关闭"/>
+                        <button icon="gtk-ok" name="export_result" string="导出" type="object"/>
+                    </group>
+                    <group colspan="8" col="8" states="get">
+                        <separator string="" colspan="8"/>
+                        <label colspan="7" width="220"/>
+                        <button icon="gtk-close" name="button_cancel" special="cancel" string="关闭" type="object"/>
+                    </group>
+            </form>
+            </field>
+        </record>
+        
+        <record id="view_fg_sale_report_fga_product_export_wizard" model="ir.ui.view">
+            <field name="name">导出FGA产品销量统计</field>
+            <field name="model">fg_sale.fga.product.export.wizard</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+              <form string="导出统计">
+                 <group states="choose">
+                    <field name="date_start"/>
+                    <field name="date_end"/>
+                    <field invisible="1" name="state"/>
+                </group>
+                <group states="get">
+                    <separator string="导出完成, 点击'另存为'下载统计表." colspan="4"/>
+                    <field name="name" invisible="1"/>
+                    <field name="data" nolabel="1" readonly="1" filename="name" />
+                </group>
+                    <group colspan="4" col="6" states="choose">
+                        <button  icon="gtk-close" special="cancel" string="关闭"/>
+                        <button icon="gtk-ok" name="export_result" string="导出" type="object"/>
+                    </group>
+                    <group colspan="8" col="8" states="get">
+                        <separator string="" colspan="8"/>
+                        <label colspan="7" width="220"/>
+                        <button icon="gtk-close" name="button_cancel" special="cancel" string="关闭" type="object"/>
+                    </group>
+            </form>
+            </field>
+        </record>
+        
+        
+        
+        <record id="view_fg_sale_report_order_export_wizard" model="ir.ui.view">
+            <field name="name">导出订单明细</field>
+            <field name="model">fg_sale.order.export.wizard</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+              <form string="导出订单明细">
+                 <group states="choose">
+                    <field name="date_start"/>
+                    <field name="date_end"/>
+                    <field name="source"/>
+                    <field invisible="1" name="state"/>
+                </group>
+                <group states="get">
+                    <separator string="导出完成, 点击'另存为'下载统计表." colspan="4"/>
+                    <field name="name" invisible="1"/>
+                    <field name="data" nolabel="1" readonly="1" filename="name" />
+                </group>
+                    <group colspan="4" col="6" states="choose">
+                        <button  icon="gtk-close" special="cancel" string="关闭"/>
+                        <button icon="gtk-ok" name="export_excel" string="导出订单" type="object"/>
+                    </group>
+                    <group colspan="8" col="8" states="get">
+                        <separator string="" colspan="8"/>
+                        <label colspan="7" width="220"/>
+                        <button icon="gtk-close" name="button_cancel" special="cancel" string="关闭" type="object"/>
+                    </group>
+            </form>
+            </field>
+        </record>
+        
+        <record id="view_fg_sale_report_export_wizard" model="ir.ui.view">
+            <field name="name">导出单品统计</field>
+            <field name="model">fg_sale.product.export.wizard</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+              <form string="导出统计表">
+                 <group states="choose">
+                    <field name="date_start"/>
+                    <field name="date_end"/>
+                    <field invisible="1" name="state"/>
+                </group>
+                <group states="get">
+                    <separator string="统计完成, 点击'另存为'下载统计表." colspan="4"/>
+                    <field name="name" invisible="1"/>
+                    <field name="data" nolabel="1" readonly="1" filename="name" />
+                </group>
+                    <group colspan="4" col="6" states="choose">
+                        <button  icon="gtk-close" special="cancel" string="关闭"/>
+                        <button icon="gtk-ok" name="export_excel" string="导出报表" type="object"/>
+                    </group>
+                    <group colspan="8" col="8" states="get">
+                        <separator string="" colspan="8"/>
+                        <label colspan="7" width="220"/>
+                        <button icon="gtk-close" name="button_cancel" special="cancel" string="关闭" type="object"/>
+                    </group>
+            </form>
+            </field>
+        </record>
+        
+        
+        <record model="ir.ui.view" id="fg_sale_amount_resource_wizard_form_view">
+            <field name="name">fg_sale.amount.source.wizard.form</field>
+            <field name="model">fg_sale.amount.source.wizard</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="事业部销量统计">
+                    <field name="date_start"/>
+                    <field name="date_end"/>
+                    <group colspan="4" col="6">
+                        <button  icon="gtk-close" special="cancel" string="关闭"/>
+                        <button icon="gtk-ok" name="show_result" string="生成" type="object"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="fg_sale_amount_parnter_wizard_form_view">
+            <field name="name">fg_sale.amount.parnter.wizard.form</field>
+            <field name="model">fg_sale.amount.parnter.wizard</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="客户销量统计">
+                    <field name="date_start"/>
+                    <field name="date_end"/>
+                    <field name="source"/>
+                    <group colspan="4" col="6">
+                        <button  icon="gtk-close" special="cancel" string="关闭"/>
+                        <button icon="gtk-ok" name="show_result" string="显示" type="object"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="fg_sale_discount_product_wizard_form_view">
+            <field name="name">fg_sale.fuguang.product.discount.wizard.form</field>
+            <field name="model">fg_sale.fuguang.product.discount.wizard</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="促销单品统计">
+                     <field name="partner_id"/>
+                    <field name="date_start"/>
+                    <field name="date_end"/>
+                    <group colspan="4" col="6">
+                        <button  icon="gtk-close" special="cancel" string="关闭"/>
+                        <button icon="gtk-ok" name="show_result" string="生成" type="object"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+        
+        <record model="ir.actions.act_window" id="action_fg_sale_discount_product_wizard">
+            <field name="name">促销单品统计</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">fg_sale.fuguang.product.discount.wizard</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="fg_sale_discount_product_wizard_form_view"/>
+            <field name="target">new</field>
+        </record>
+        
+        
+        <record model="ir.actions.act_window" id="action_fg_sale_parnter_wizard">
+            <field name="name">客户销量统计</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">fg_sale.amount.parnter.wizard</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="fg_sale_amount_parnter_wizard_form_view"/>
+            <field name="target">new</field>
+        </record>
+        
+        
+        <record model="ir.actions.act_window" id="action_fg_sale_resource_wizard">
+            <field name="name">事业部销量统计</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">fg_sale.amount.source.wizard</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="fg_sale_amount_resource_wizard_form_view"/>
+            <field name="target">new</field>
+        </record>
+        
+        
+        <record id="action_fg_sale_report_order_export_wizard" model="ir.actions.act_window">
+            <field name="name">导出订单明细</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">fg_sale.order.export.wizard</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_fg_sale_report_order_export_wizard"/>
+            <field name="target">new</field>
+        </record>
+
+        <record id="action_fg_sale_report_export_wizard" model="ir.actions.act_window">
+            <field name="name">导出单品统计</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">fg_sale.product.export.wizard</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_fg_sale_report_export_wizard"/>
+            <field name="target">new</field>
+        </record>
+        
+        <record id="action_fg_sale_report_fga_partner_export_wizard" model="ir.actions.act_window">
+            <field name="name">导出FGA客户销售统计</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">fg_sale.fga.partner.export.wizard</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_fg_sale_report_fga_partner_export_wizard"/>
+            <field name="target">new</field>
+        </record>
+        
+        <record id="action_fg_sale_report_fga_product_export_wizard" model="ir.actions.act_window">
+            <field name="name">导出FGA产品销售统计</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">fg_sale.fga.product.export.wizard</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_fg_sale_report_fga_product_export_wizard"/>
+            <field name="target">new</field>
+        </record>
+        
+         <record id="action_fg_sale_report_fga_partner_product_export_wizard" model="ir.actions.act_window">
+            <field name="name">导出FGA客户产品销售汇总</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">fg_sale.fga.partner.product.export.wizard</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_fg_sale_report_fga_partner_product_export_wizard"/>
+            <field name="target">new</field>
+        </record>
+         
+         <record id="action_fg_sale_report_fg_partner_product_export_wizard" model="ir.actions.act_window">
+            <field name="name">导出客户产品销售汇总</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">fg_sale.fuguang.partner.product.export.wizard</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_fg_sale_report_fg_partner_product_export_wizard"/>
+            <field name="target">new</field>
+        </record>
+         
+         <record id="action_fg_sale_report_product_sale_toplist_export_wizard" model="ir.actions.act_window">
+            <field name="name">导出单品销售排行</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">fg_sale.fuguang.product.sale.toplist.wizard</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_fg_sale_report_product_sale_toplist_export_wizard"/>
+            <field name="target">new</field>
+        </record>
+        
+    </data>
+</openerp>

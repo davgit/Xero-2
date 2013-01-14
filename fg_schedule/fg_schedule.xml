@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        
+        <record model ="ir.ui.view" id= "conf_task_tree_view">
+            <field name="name">物料推进任务名称</field>
+            <field name="model">conf_task</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree colors="red:priority == 1" string="任务">
+                    <field name="priority" select="1"/>
+                    <field name="name" select="1"/>
+                </tree>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="conf_task_form_view">
+            <field name="name">物料推进任务名称</field>
+            <field name="model">conf_task</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="任务">
+                    <field name="priority" select="1"/>
+                    <field name="name" select="1"/>
+                </form>
+            </field>
+        </record>
+        
+        <record model ="ir.ui.view" id= "project_tree_view">
+            <field name="name">配置物料推进项目名称</field>
+            <field name="model">fg_schedule.project</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="项目" >
+                    <field name='name'/>
+                    <field name='to'/>
+                    <field name='charge'/>
+                    <field name='date_start' />
+                    <field name='date_end'/>
+                    <field name='state'/>
+                </tree>                    
+            </field>
+        </record>
+        <record model="ir.ui.view" id="project_form_view">
+            <field name="name">conf_task_form_view</field>
+            <field name="model">fg_schedule.project</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="项目">
+                    <label string="" colspan="4"/>
+                    <label string="" colspan="4"/>
+                    <field name='name'/>
+                    <label string="" colspan="4"/>
+                    <newline/>
+                    <field name='to'/>
+                    <field name='charge'/>
+                    <field name='date_start'/>
+                    <field name='date_end'/>
+                    <newline/>
+                    <field name='note' colspan="4"/>
+                    <field name='img' colspan="4" widget="image"/>
+                    <separator colspan="4"/>
+                    <group colspan="4" col="6">
+                        <field name="state" widget="statusbar" statusbar_visible="draft,done" statusbar_colors='{"draft":"blue","done":"red"}'/>
+                        <button name="case_done"  string="项目结束(完成)" type='object' states="draft" icon="gtk-apply"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="materiel_push_tree_view">
+            <field name="name">Materiel Push Tree View</field>
+            <field name="model">fg_project.task</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="物料推进" >
+                    <field name='project'/>
+                    <field name='name'/>
+                    <field name='executor'/>
+                    <field name='order' />
+                    <field name='order_time'/>
+                    <field name='need_endtime'/>
+                    <field name='end_time'/>
+                    <field name='accept'/>
+                    <field name='state'/>
+                    <field name='rate' widget="progressbar"/>
+                </tree>                    
+            </field>
+        </record>
+        <record model="ir.ui.view" id="materiel_push_form_view">
+            <field name="name">Materiel Push Form View</field>
+            <field name="model">fg_project.task</field>
+            <field name="arch" type="xml">
+                <group col="6" colspan="4">
+                    <field name='project' attrs="{'readonly':[('state','=','done')]}"/>
+                    <field name='name' attrs="{'readonly':[('state','=','done')]}"/>
+                    <label string="状态:"/>
+                    <group col='3' colspan='1'>
+                        <field name="stated" nolabel='1'/>
+                        <button name="change_stage"  string="" type='object' icon="gtk-go-forward" />
+                    </group>
+                    <field name='executor' attrs="{'readonly':[('state','=','done')]}"/>
+                    <field name='accept' attrs="{'readonly':[('state','=','done')]}"/>
+                    <field name ='order_time' attrs="{'readonly':[('state','=','done')]}"/>
+                    <field name='order' attrs="{'readonly':[('state','=','done')]}"/>
+                    <field name='need_endtime' attrs="{'readonly':[('state','=','done')]}"/>
+                    <field name='end_time' attrs="{'readonly':[('state','=','done')]}"/>
+                </group>
+                <newline/>
+                <label string="" colspan="4"/>
+                <notebook colspan="4">
+                    <page string="信息">
+                        <group col="2" colspan="2">
+                            <group colspan='40' col='40'>
+                                <field name='rate' attrs="{'readonly':[('state','=','done')]}" />
+                                <label string='%%' colspan='35'/>
+                            </group>
+                            <newline/>
+                            <group colspan='4'>
+                                <field name="detil" attrs="{'readonly':[('state','=','done')]}" colspan='3'/>
+                            </group>
+                        </group>
+                        <group col='2' colspan='2'>
+                                <field name='img' widget="image" attrs="{'readonly':[('state','=','done')]}" nolabel='1'/>
+                        </group>
+                    </page>
+                    <page string="项目说明(要求)">
+                        <field name ='explain' nolabel='1' colspan="4" attrs="{'readonly':[('state','=','done')]}"/>
+                    </page>
+                    <page string="备注">
+                        <field name ='note' nolabel='1' colspan="4" attrs="{'readonly':[('state','=','done')]}"/>
+                    </page>
+                    <!--<page string="产品颜色">
+                        <field name="colour" nolabel="1" colspan='4'>
+                            <tree string="产品颜色进度" editable='top'>
+                                <field name="executor"/>
+                                <field name="schedule_start"/>
+                                <field name="note"/>
+                            </tree>
+                        </field>
+                        <label string="" colspan="4"/>
+                    </page>
+                    <page string="条形码申报">
+                        <field name="barcode" nolabel="1" colspan='4'>
+                            <tree string="条形码申报进度" editable='top'>
+                                <field name="executor"/>
+                                <field name="schedule_start"/>
+                                <field name="note"/>
+                            </tree>
+                        </field>
+                        <label string="" colspan="4"/>
+                    </page>
+                    <page string="产品说明书">
+                        <field name="productbook" nolabel="1" colspan='4'>
+                            <tree string="产品说明书进度" editable='top'>
+                                <field name="executor"/>
+                                <field name="schedule_start"/>
+                                <field name="note"/>
+                            </tree>
+                        </field>
+                        <label string="" colspan="4"/>
+                    </page>
+                    <page string="色板确认">
+                        <field name="colorboard" nolabel="1" colspan='4'>
+                            <tree string="色板确认进度" editable='top'>
+                                <field name="executor"/>
+                                <field name="schedule_start"/>
+                                <field name="note"/>
+                            </tree>
+                        </field>
+                        <label string="" colspan="4"/>
+                    </page>
+                    <page string="辅料采购">
+                        <field name="accessorypurchaser" nolabel="1" colspan='4'>
+                            <tree string="辅料采购进度" editable='top'>
+                                <field name="executor"/>
+                                <field name="schedule_start"/>
+                                <field name="note"/>
+                            </tree>
+                        </field>
+                        <label string="" colspan="4"/>
+                    </page>
+                    <page string="网版制作">
+                        <field name="screenmaking" nolabel="1" colspan='4'>
+                            <tree string="网版制作进度" editable='top'>
+                                <field name="executor"/>
+                                <field name="schedule_start"/>
+                                <field name="note"/>
+                            </tree>
+                        </field>
+                        <label string="" colspan="4"/>
+                    </page>
+                    <page string="产品打样">
+                        <field name="productsample" nolabel="1" colspan='4'>
+                            <tree string="产品打样进度" editable='top'>
+                                <field name="executor"/>
+                                <field name="schedule_start"/>
+                                <field name="note"/>
+                            </tree>
+                        </field>
+                        <label string="" colspan="4"/>
+                    </page>
+                    <page string="产品包装">
+                        <field name="productpack" nolabel="1" colspan='4'>
+                            <tree string="产品包装进度" editable='top'>
+                                <field name="executor"/>
+                                <field name="schedule_start"/>
+                                <field name="note"/>
+                            </tree>
+                        </field>
+                        <label string="" colspan="4"/>
+                    </page>
+                    <page string="产品拍摄及修图">
+                        <field name="productshoot" nolabel="1" colspan='4'>
+                            <tree string="产品拍摄及修图进度" editable='top'>
+                                <field name="executor"/>
+                                <field name="schedule_start"/>
+                                <field name="note"/>
+                            </tree>
+                        </field>
+                        <label string="" colspan="4"/>
+                    </page>
+                    <page string="吊牌,插卡,标签">
+                        <field name="producttag" nolabel="1" colspan='4'>
+                            <tree string="吊牌,插卡,标签进度" editable='top'>
+                                <field name="executor"/>
+                                <field name="schedule_start"/>
+                                <field name="note"/>
+                            </tree>
+                        </field>
+                        <label string="" colspan="4"/>
+                    </page>
+                    <page string="OPP袋,低压袋">
+                        <field name="productopp" nolabel="1" colspan='4'>
+                            <tree string="OPP袋,低压袋进度" editable='top'>
+                                <field name="executor"/>
+                                <field name="schedule_start"/>
+                                <field name="note"/>
+                            </tree>
+                        </field>
+                        <label string="" colspan="4"/>
+                    </page>
+                    <page string="产品外箱">
+                        <field name="productcontainer" nolabel="1" colspan='4'>
+                            <tree string="产品外箱进度" editable='top'>
+                                <field name="executor"/>
+                                <field name="schedule_start"/>
+                                <field name="note"/>
+                            </tree>
+                        </field>
+                        <label string="" colspan="4"/>
+                    </page>
+                    <page string="海报">
+                        <field name="productposter" nolabel="1" colspan='4'>
+                            <tree string="海报进度" editable='top'>
+                                <field name="executor"/>
+                                <field name="schedule_start"/>
+                                <field name="note"/>
+                            </tree>
+                        </field>
+                        <label string="" colspan="4"/>
+                    </page>
+                    <page string="其他">
+                        <field name="productelse" nolabel="1" colspan='4'>
+                            <tree string="其他进度" editable='top'>
+                                <field name="executor"/>
+                                <field name="schedule_start"/>
+                                <field name="note"/>
+                            </tree>
+                        </field>
+                        <label string="" colspan="4"/>
+                    </page>-->
+                </notebook>
+                <newline/>
+                <label string="" colspan="4"/>
+                <separator colspan="4"/>
+                <group colspan="4" col="6">
+                        <field name="state" widget="statusbar" statusbar_visible="draft,processing,done" statusbar_colors='{"draft":"red","processing":"red","cancelled":"red","done":"red"}'/>
+                        <button name="case_draft" string="新建" type='object' states="cancelled" icon="gtk-yes" invisible="1"/>
+                        <button name="case_cancelled" string="取消"  type='object' states='processing,draft' icon="gtk-cancel" invisible="1"/>
+                        <button name="case_processing" string="执行中"  type='object' states="draft" icon="gtk-go-forward" invisible="1"/>
+                        <button name="case_done"  string="完成" type='object' states="processing" icon="gtk-apply" invisible="1"/>
+                </group>
+            </field>             
+        </record>
+
+        <record id="view_task_gantt" model="ir.ui.view">
+            <field name="name">物料推进</field>
+            <field name="model">fg_project.task</field>
+            <field name="type">gantt</field>
+            <field eval="2" name="priority"/>
+            <field name="arch" type="xml">
+                <gantt date_start="order_time" date_stop="end_time" string="Tasks">
+                </gantt>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="materiel_push_kanban_view">
+            <field name="name">Materiel Task Kanban View</field>
+            <field name="model">fg_project.task</field>
+            <field name="type">kanban</field>
+            <field name="arch" type="xml">
+                <kanban default_group_by="project" >
+                    <field name='project'/>
+                    <templates>
+                        <t t-name="task_details">
+                            <ul class="oe_kanban_tooltip" t-if="record.name">
+                                <li><b>产品名称 :</b><b><field name="project"/></b></li>
+                                <li><b>工作内容 :</b><b><field name="name"/></b></li>
+                                <li><b>执行人 :</b><b><field name="executor"/></b></li>
+                                <li><b>状态 :</b><b><field name="state"/></b></li>
+                            </ul>
+                        </t>
+                        <t t-name="kanban-box">
+                            <t t-if="record.state.raw_value === 'processing'" t-set="border">oe_kanban_color_red</t>
+                            <t t-if="record.state.raw_value === 'done'" t-set="border">oe_kanban_color_bgdark</t>
+                            <div t-attf-class="#{kanban_color(red)} #{border || ''}">
+                                <div class="oe_kanban_box oe_kanban_color_border">
+                                    <table class="oe_kanban_table oe_kanban_box_header oe_kanban_color_bgdark oe_kanban_color_border oe_kanban_box_show_onclick_trigger">
+                                        <tr>
+                                            <td align="left" valign="middle" class="oe_kanban_title" tooltip="task_details">
+                                                <a t-if="record.state.raw_value === 'processing'" icon="star-on" type="object" name='button'  width="16"/>
+                                                <a t-if="record.state.raw_value === 'done'" icon="STOCK_APPLY" type="object" name='button'  width="16"/>
+                                                <a t-if="record.state.raw_value === 'draft'" icon="terp-gtk-media-pause" type="object" name='button'  width="16"/>
+                                                <a style="font-size:15px"><b><field name="name"/></b><b>(</b><field name = "state"/><b>)</b></a>
+                                                <br></br>
+                                                <br></br>
+                                                <a style="float:below;font-weight:normal">工作摘要 : <field name="detil"/></a>
+                                            </td>
+                                            <td valign="top" align="right">
+                                                <a type='page'><img t-att-src="kanban_image('fg_project.task', 'executor_img', record.id.value)" width="60" height="60"/></a>
+                                                <div style="float:below"><b><field name="executor"/></b></div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="oe_kanban_box_content oe_kanban_color_bglight oe_kanban_box_show_onclick_trigger">
+                                        <div>
+                                            <b>要求完成时间 : </b><field name="need_endtime"/>
+                                            <div style="float:right;"><b>实际完成时间 : </b><field name="end_time"/></div>
+                                        </div>
+                                        <div class="oe-field-cell oe-number" data-field="rate">
+                                            <b>进度 : </b><field name="rate" widget="progressbar"/><b>%%</b>
+                                        </div>
+                                    </div>
+                                    <div class="oe_kanban_buttons_set oe_kanban_color_border oe_kanban_color_bglight oe_kanban_box_show_onclick">
+                                        <div class="oe_kanban_left">
+                                            <a string="编辑" icon="gtk-edit" type="edit" states='cancelled,processing,draft'/>
+                                            <a name="case_draft" string="新建" type='object' states="cancelled" icon="gtk-yes"/>
+                                            <a name="case_cancelled" string="取消(删除)"  type='object' states='processing,draft' icon="gtk-cancel"/>
+                                            <a name="case_processing" string="执行中"  type='object' states="draft" icon="gtk-go-forward"/>
+                                            <a name="case_done"  string="完成" type='object' states="processing" icon="gtk-apply"/>
+                                        </div>
+                                        <div class="oe_kanban_right">
+                                        </div>
+                                        <br class="oe_kanban_clear"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+        
+        <record model ="ir.ui.view" id= "conf_fg_jobcontent_tree_view">
+            <field name="name">工作项目进度</field>
+            <field name="model">fg_jobcontent</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="工作项目进度">
+                    <field name="name"/>
+                    <field name="executor"/>
+                    <field name="accept"/>
+                    <field name="charge"/>
+                    <field name="date_start"/>
+                    <field name="end_time"/>
+                    <field name="date_end"/>
+                    <field name="jobstate"/>
+                </tree>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="conf_fg_jobcontent_form_view">
+            <field name="name">工作项目进度</field>
+            <field name="model">fg_jobcontent</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="项目">
+                    <group col='6'  colspan='4'>
+                        <field name="name" attrs="{'readonly':[('jobstate','=','done')]}"/>
+                        <field name="executor" attrs="{'readonly':[('jobstate','=','done')]}"/>
+                        <field name="accept" attrs="{'readonly':[('jobstate','=','done')]}"/>
+                        <field name="charge" attrs="{'readonly':[('jobstate','=','done')]}"/>
+                        <field name="date_start" attrs="{'readonly':[('jobstate','=','done')]}"/>
+                        <field name="jobstate" attrs="{'readonly':[('jobstate','=','done')]}"/>
+                        <field name="end_time" attrs="{'readonly':[('jobstate','=','done')]}"/>
+                        <field name="date_end" attrs="{'readonly':[('jobstate','=','done')]}"/>
+                    </group>
+                    <newline/>
+                    <notebook colspan="4">
+                        <page string='工作进度'>
+                            <field name="rate" nolabel='1' attrs="{'readonly':[('jobstate','=','done')]}"/>
+                        </page>
+                        <page string="说明(要求)">
+                            <field name="explain" nolabel='1' attrs="{'readonly':[('jobstate','=','done')]}"/>
+                        </page>
+                        <page string="备注">
+                            <field name="note" nolabel='1' attrs="{'readonly':[('jobstate','=','done')]}"/>
+                        </page>
+                    </notebook>
+                    <separator colspan="4"/>
+                </form>
+            </field>
+        </record>
+        
+        <record model="ir.actions.act_window" id="action_materiel_task">
+            <field name="name">物料推进项目任务</field>
+            <field name="res_model">fg_project.task</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">kanban,gantt,tree,form</field>
+            <field name="limit">100</field>
+        </record>
+        <record model="ir.actions.act_window" id="action_materiel_push">
+            <field name="name">配置物料推进项目</field>
+            <field name="res_model">fg_schedule.project</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="limit">100</field>
+        </record>
+        <record model="ir.actions.act_window" id="action_conf_task">
+            <field name="name">配置物料推进任务</field>
+            <field name="res_model">conf_task</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="limit">100</field>
+        </record>
+        <record model="ir.actions.act_window" id="action_fg_jobcontent">
+            <field name="name">工作项目进度</field>
+            <field name="res_model">fg_jobcontent</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="limit">100</field>
+        </record>
+        
+        <menuitem id='materiel_push' name='物料推进' groups="group_project_schedule_user,group_project_schedule_manager" web_icon="icon/knowledge.png" web_icon_hover="icon/knowledge-hover.png"/>
+        <menuitem id="materiel_push_menu" name="物料推进" parent="materiel_push" />
+        <menuitem id="materiel_task" name="物料推进进度" parent="materiel_push_menu" action="action_materiel_task" sequence='1'/>
+        <menuitem id='fg_jobcontent' name="工作项目进度" parent = "materiel_push_menu" action="action_fg_jobcontent" sequence='5' />
+        <menuitem id="materiel_push_config" name="配置" parent="materiel_push" groups="group_project_schedule_manager"/>
+        <menuitem id="materiel_project" name="项目" parent="materiel_push_config" action="action_materiel_push"/>
+
+    </data>
+</openerp>

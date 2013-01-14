@@ -1,0 +1,19 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"clivia_analysis_stocked_product_manager","group_analysis_manager clivia_analysis.stocked_product","model_clivia_analysis_stocked_product","clivia_analysis.group_analysis_manager",1,1,1,1
+"clivia_analysis_stocked_product_admin","group_analysis_manager clivia_analysis.stocked_product","model_clivia_analysis_stocked_product","clivia_analysis.group_analysis_admin",1,1,1,1
+"clivia_analysis_stocked_product_user","group_analysis_user clivia_analysis.stocked_product","model_clivia_analysis_stocked_product","clivia_analysis.group_analysis_user",1,0,0,0
+"clivia_analysis_monthly_plan_manager","group_analysis_manager clivia_analysis.monthly_plan","model_clivia_analysis_monthly_plan","clivia_analysis.group_analysis_manager",1,1,1,1
+"clivia_analysis_monthly_plan_admin","group_analysis_admin clivia_analysis.monthly_plan","model_clivia_analysis_monthly_plan","clivia_analysis.group_analysis_admin",1,1,1,1
+"clivia_analysis_monthly_plan_user","group_analysis_user clivia_analysis.monthly_plan","model_clivia_analysis_monthly_plan","clivia_analysis.group_analysis_user",1,0,0,0
+"clivia_analysis_monthly_plan_line_manager","group_analysis_manager clivia_analysis.monthly_plan_line","model_clivia_analysis_monthly_plan_line","clivia_analysis.group_analysis_manager",1,1,1,1
+"clivia_analysis_monthly_plan_line_admin","group_analysis_admin clivia_analysis.monthly_plan_line","model_clivia_analysis_monthly_plan_line","clivia_analysis.group_analysis_admin",1,1,1,1
+"clivia_analysis_monthly_plan_line_user","group_analysis_user clivia_analysis.monthly_plan_line","model_clivia_analysis_monthly_plan_line","clivia_analysis.group_analysis_user",1,1,1,1
+"clivia_analysis_daily_report_manager","group_analysis_manager clivia_analysis.daily_report","model_clivia_analysis_daily_report","clivia_analysis.group_analysis_manager",1,1,1,0
+"clivia_analysis_daily_report_admin","group_analysis_admin clivia_analysis.daily_report","model_clivia_analysis_daily_report","clivia_analysis.group_analysis_admin",1,1,1,0
+"clivia_analysis_daily_report_user","group_analysis_user clivia_analysis.daily_report","model_clivia_analysis_daily_report","clivia_analysis.group_analysis_user",1,1,1,0
+"clivia_analysis_daily_report_line_manager","group_analysis_manager clivia_analysis.daily_report_line","model_clivia_analysis_daily_report_line","clivia_analysis.group_analysis_manager",1,1,1,1
+"clivia_analysis_daily_report_line_admin","group_analysis_admin clivia_analysis.daily_report_line","model_clivia_analysis_daily_report_line","clivia_analysis.group_analysis_admin",1,1,1,1
+"clivia_analysis_daily_report_line_user","group_analysis_user clivia_analysis.daily_report_line","model_clivia_analysis_daily_report_line","clivia_analysis.group_analysis_user",1,1,1,1
+"clivia_analysis_production_report_manager","group_analysis_manager clivia_analysis.production_report","model_clivia_analysis_production_report","clivia_analysis.group_analysis_manager",1,0,0,0
+"clivia_analysis_production_report_admin","group_analysis_admin clivia_analysis.production_report","model_clivia_analysis_production_report","clivia_analysis.group_analysis_admin",1,0,0,0
+"clivia_analysis_production_report_user","group_analysis_user clivia_analysis.production_report","model_clivia_analysis_production_report","clivia_analysis.group_analysis_user",1,0,0,0

@@ -1,0 +1,205 @@
+.fg_online_shop {
+    width: 100%;
+    font-size: larger !important;
+    font-family:"微软雅黑" !important;
+    font-size: bolder !important;
+    text-decoration: underline !important;
+}
+.fg_online_shop:hover{
+    background-color: black !important}
+.imgstyle {
+    width:150px !important;
+    background-color: red !important;
+}
+
+.imgstyle:hover {
+    background-color: green !important;
+}
+.test {
+    height : 200px !important;
+    width: 700px !important;
+    background-image: url("/web/static/src/img/backspace.png");
+}
+.test2 {
+    width: 300px !important;
+    margin-top: 50px !important;
+    font-size: 100px;
+    font-family:"微软雅黑" !important;
+    font-weight: bolder !important;
+}
+.test2:hover{
+    
+    background-color: gray !important;
+    
+}
+.h11:hover{
+    
+    background-color: blue !important;
+    
+}
+
+article {
+	display: inline-block;
+	margin: 20px;
+}
+
+.ull {
+	position: relative;
+	width: 230px;
+	height: 480px;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	list-style: none;
+
+	-webkit-perspective: 400px;
+	   -moz-perspective: 400px;
+	    -ms-perspective: 400px;
+	     -o-perspective: 400px;
+	        perspective: 400px;
+}
+.ull li {
+		position: relative;
+		padding: 16px;
+		background: green;
+		color: #252525;
+		font-size: 18px;
+		z-index: 2;
+
+		-webkit-transform: translateZ(0px);
+		   -moz-transform: translateZ(0px);
+		    -ms-transform: translateZ(0px);
+		     -o-transform: translateZ(0px);
+		        transform: translateZ(0px);
+	}
+.ull li:nth-child(odd) {
+		background: blue;
+	}
+        
+        
+/**
+ * Tilt styles
+ */
+.tilt {
+	-webkit-perspective: 800px;
+	   -moz-perspective: 800px;
+	    -ms-perspective: 800px;
+	     -o-perspective: 800px;
+	        perspective: 800px;
+
+	-webkit-perspective-origin: 50% 50%;
+	   -moz-perspective-origin: 50% 50%;
+	    -ms-perspective-origin: 50% 50%;
+	     -o-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
+}
+
+	.tilt li {
+		position: relative;
+
+		-webkit-transition: all 1000ms cubic-bezier(0.260, 0.860, 0.440, 0.985),
+							opacity 300ms ease;
+		   -moz-transition: all 1000ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+		    -ms-transition: all 1000ms cubic-bezier(0.260, 0.860, 0.440, 0.985),
+		    				opacity 300ms ease;
+		     -o-transition: all 1000ms cubic-bezier(0.260, 0.860, 0.440, 0.985),
+		    				opacity 300ms ease;
+		        transition: all 1000ms cubic-bezier(0.260, 0.860, 0.440, 0.985),
+		        			opacity 300ms ease;
+	}
+		.tilt li.past {
+			opacity: 0;
+
+			-webkit-transform: translateY( 100% ) translateZ(-200px);
+			   -moz-transform: translateY( 100% ) translateZ(-200px);
+			    -ms-transform: translateY( 100% ) translateZ(-200px);
+			     -o-transform: translateY( 100% ) translateZ(-200px);
+			        transform: translateY( 100% ) translateZ(-200px);
+		}
+		.tilt li.future {
+			opacity: 0;
+
+			-webkit-transform: translateY( -100% ) translateZ(-200px);
+			   -moz-transform: translateY( -100% ) translateZ(-200px);
+			    -ms-transform: translateY( -100% ) translateZ(-200px);
+			     -o-transform: translateY( -100% ) translateZ(-200px);
+			        transform: translateY( -100% ) translateZ(-200px);
+		}
+ 
+ 
+                
+.forkit {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 200px;
+	height: 150px;
+
+	font-family: 'Lato', sans-serif;
+	text-decoration: none;
+}
+	.forkit .tag {
+		display: block;
+		height: 30px;
+		width: 200px;
+
+		color: #fff;
+		background: #aa0000;
+		text-align: center;
+		font-size: 13px;
+		font-weight: bold;
+		line-height: 30px;
+		box-shadow: 0px 0px 10px rgba( 0, 0, 0, 0.4 );
+
+		-webkit-transform-origin: 15px 0px;
+		   -moz-transform-origin: 15px 0px;
+		    -ms-transform-origin: 15px 0px;
+		     -o-transform-origin: 15px 0px;
+		        transform-origin: 15px 0px;
+	}
+	.forkit .tag:after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 196px;
+		height: 26px;
+		margin: 1px;
+		border: 1px solid rgba( 255, 255, 255, 0.4 );
+	}
+	.forkit .string {
+		display: block;
+		height: 1px;
+		width: 0px;
+		position: absolute;
+
+		background: rgba( 255, 255, 255, 0.7 );
+		box-shadow: 0px 0px 10px rgba( 0, 0, 0, 0.4 );
+
+		-webkit-transform-origin: 0px 0px;
+		   -moz-transform-origin: 0px 0px;
+		    -ms-transform-origin: 0px 0px;
+		     -o-transform-origin: 0px 0px;
+		        transform-origin: 0px 0px;
+	}
+
+
+.forkit-curtain {
+	width: 100%;
+	height: 100%;
+	top: -100%;
+	text-align: center;
+	padding-top: 10%;
+}
+	.forkit-curtain  .close-button {
+		position: absolute;
+		width: 32px;
+		height: 32px;
+		right: 20px;
+		top: 20px;
+		cursor: pointer;
+                background-color: black;
+                background: url("/web/static/src/img/warning.png");
+}
