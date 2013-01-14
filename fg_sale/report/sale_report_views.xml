@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+    
+    <record model="ir.ui.view" id="fg_sale_order_report_daily_tree_view">
+        <field name="name">fg_sale.order.report.daily.tree</field>
+        <field name="model">fg_sale.order.report.daily</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="每日销售统计">
+                <field name="date" />
+                <field name="amount" />
+                <field name="partner_id"/>
+                <field name="source" />
+            </tree>
+        </field>
+    </record>
+    
+    <record model="ir.ui.view" id="fg_sale_progress_report_month_tree_view">
+        <field name="name">fg_sale.progress.report.month.tree</field>
+        <field name="model">fg_sale.plan.progress.month</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="销售计划">
+                <field name="plan_month"/>
+                <field name="partner_id"/>
+                <field name="plastic"/>
+                <field name="plastic_plan"/>
+                <field name="glass"/>
+                <field name="glass_plan"/>
+                <field name="vacuume"/>
+                <field name="vacuume_plan"/>
+            </tree>
+        </field>
+    </record>
+    
+    <record model="ir.actions.act_window" id="action_fg_sale_progress_report_month_tree_view">
+        <field name="name">月度计划跟踪</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">fg_sale.plan.progress.month</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="fg_sale_progress_report_month_tree_view"/>
+    </record>
+    
+    
+    <record model="ir.actions.act_window" id="action_fg_sale_order_report_daily_view">
+        <field name="name">每日销售统计</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">fg_sale.order.report.daily</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="fg_sale_order_report_daily_tree_view"/>
+    </record>
+    
+    <record model="ir.ui.view" id="fg_sale_order_report_daily_source_tree_view">
+        <field name="name">fg_sale.order.report.daily.source.tree</field>
+        <field name="model">fg_sale.order.report.daily.source</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="每日销售统计">
+                <field name="date" />
+                <field name="amount" />
+                <field name="source" />
+            </tree>
+        </field>
+    </record>
+    
+    <record id="fg_sale_order_report_daily_source_graph_view" model="ir.ui.view">
+         <field name="name">fg_sale.order.report.daily.source.graph</field>
+         <field name="model">fg_sale.order.report.daily.source</field>
+         <field name="type">graph</field>
+         <field name="arch" type="xml">
+             <graph string="每日销售统计" type="line">
+                 <field name="date"/>
+                 <field name="amount" />
+                 <field name="source"/>
+             </graph>
+         </field>
+    </record>
+    
+    <record id="fg_sale_order_report_daily_source__filter_view" model="ir.ui.view">
+        <field name="name">fg_sale.order.report.daily.source.select</field>
+        <field name="model">fg_sale.order.report.daily.source</field>
+        <field name="type">search</field>
+        <field name="arch" type="xml">
+            <search string="统计范围">
+                <field name="due_date_from" filter_domain="[('date','&gt;=',self)]"/>
+                <field name="due_date_to" filter_domain="[('date','&lt;=',self)]"/>
+            </search>
+        </field>
+    </record>
+    
+    <record model="ir.actions.act_window" id="action_fg_sale_order_report_daily_source_tree_view">
+        <field name="name">每日事业部销售统计(3个月)</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">fg_sale.order.report.daily.source</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">graph,tree</field>
+        <field name="view_id" ref="fg_sale_order_report_daily_source_graph_view"/>
+        <field name="search_view_id" ref="fg_sale_order_report_daily_source__filter_view"/>
+    </record>
+    
+    <record model="ir.actions.act_window" id="action_fg_sale_order_report_daily_source_tree_view_2">
+        <field name="name">10天销售统计</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">fg_sale.order.report.daily.source</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">graph</field>
+        <field name="domain">[('date','&gt;=',(datetime.date.today()-relativedelta(days=10)).strftime('%Y-%m-%d'))]</field>
+        <field name="view_id" ref="fg_sale_order_report_daily_source_graph_view"/>
+    </record>
+    
+
+    <record id="view_fg_sale_order_report_monthly_tree" model="ir.ui.view">
+        <field eval="1" name="priority"/>
+        <field name="name">fg_sale.order.report.monthly.tree</field>
+        <field name="model">fg_sale.order.report.monthly</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="每月销售统计">
+                <field name="date" />
+                <field name="amount" />
+                <field name="source" />
+            </tree>
+        </field>
+    </record>
+    
+    <record id="view_fg_sale_order_report_monthly_graph" model="ir.ui.view">
+         <field name="name">fg_sale.order.report.monthly.graph</field>
+         <field name="model">fg_sale.order.report.monthly</field>
+         <field name="type">graph</field>
+         <field name="arch" type="xml">
+             <graph string="每月销售统计" type="line">
+                 <field name="date"/>
+                 <field name="amount" />
+                 <field name="source"/>
+             </graph>
+         </field>
+    </record>
+    
+    <record id="view_fg_sale_order_report_monthly_by_year_filter" model="ir.ui.view">
+            <field name="name">fg_sale.order.report.monthly.select</field>
+            <field name="model">fg_sale.order.report.monthly</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="搜索订单">
+                    <filter icon="terp-stock_effects-object-colorize" string="塑胶事业部" domain="[('source','=','塑胶事业部')]"/>
+                    <filter icon="terp-stock_effects-object-colorize" string="真空事业部" domain="[('source','=','真空事业部')]"/>
+                    <filter icon="terp-stock_effects-object-colorize" string="玻璃事业部" domain="[('source','=','玻璃事业部')]"/>
+                </search>
+            </field>
+        </record>
+    
+    <record id="view_fg_sale_order_report_monthly_by_year_graph" model="ir.ui.view">
+         <field name="name">fg_sale.order.report.monthly.graph</field>
+         <field name="model">fg_sale.order.report.monthly</field>
+         <field name="type">graph</field>
+         <field name="arch" type="xml">
+             <graph string="年度销售对比" type="line">
+                 <field name="month"/>
+                 <field name="amount" />
+                 <field name="year"/>
+             </graph>
+         </field>
+    </record>
+    
+    
+    <record id="action_fg_sale_report_by_month" model="ir.actions.act_window">
+        <field name="name">每月销售统计</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">fg_sale.order.report.monthly</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">graph,tree</field>
+        <field name="view_id" ref="view_fg_sale_order_report_monthly_graph"/>
+    </record>    
+    <record id="action_fg_sale_report_by_year" model="ir.actions.act_window">
+        <field name="name">年度销售对比</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">fg_sale.order.report.monthly</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">graph</field>
+        <field name="view_id" ref="view_fg_sale_order_report_monthly_by_year_graph"/>
+        <field name="search_view_id" ref="view_fg_sale_order_report_monthly_by_year_filter"/>
+    </record>    
+        
+</data>
+</openerp>

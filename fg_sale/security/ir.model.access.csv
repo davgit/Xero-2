@@ -1,0 +1,38 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"fg_sale_order_user","group_fg_sale_user fg_sale_order","model_fg_sale_order","fg_sale.group_fg_sale_user",1,1,1,0
+"fg_sale_order_manager","group_fg_sale_manager fg_sale_order","model_fg_sale_order","fg_sale.group_fg_sale_manager",1,1,1,0
+"fg_sale_order_chart","group_fg_sale_chart fg_sale_order","model_fg_sale_order","fg_sale.group_fg_sale_chart",1,0,0,0
+"fg_sale_order_fga","group_fg_sale_fga fg_sale_order","model_fg_sale_order","fg_sale.group_fg_sale_fga",1,0,0,0
+
+"fg_sale_order_line_user","group_fg_sale_user fg_sale_order_line","model_fg_sale_order_line","fg_sale.group_fg_sale_user",1,1,1,1
+"fg_sale_order_line_manager","group_fg_sale_manager fg_sale_order_line","model_fg_sale_order_line","fg_sale.group_fg_sale_manager",1,1,1,1
+"fg_sale_order_line_chart","group_fg_sale_chart fg_sale_order_line","model_fg_sale_order_line","fg_sale.group_fg_sale_chart",1,0,0,0
+"fg_sale_order_line_fga","group_fg_sale_fga fg_sale_order_line","model_fg_sale_order_line","fg_sale.group_fg_sale_fga",1,0,0,0
+
+"fg_sale_order_report_monthly_chart","group_fg_sale_chart fg_sale_order_report_monthly","model_fg_sale_order_report_monthly","fg_sale.group_fg_sale_chart",1,0,0,0
+"fg_sale_order_report_daily_source_chart","group_fg_sale_chart fg_sale_order_report_daily_source","model_fg_sale_order_report_daily_source","fg_sale.group_fg_sale_chart",1,0,0,0
+
+"fg_sale_user_partner","group_fg_sale_user res_partner","base.model_res_partner","fg_sale.group_fg_sale_user",1,1,1,0
+"fg_sale_user_partner_address","group_fg_sale_user res_partner_address","base.model_res_partner_address","fg_sale.group_fg_sale_user",1,1,1,0
+
+"fg_sale_monthly_plan_manager","group_fg_sale_manager fg_sale_monthly_plan","model_fg_sale_monthly_plan","fg_sale.group_fg_sale_manager",1,1,1,0
+"fg_sale_monthly_plan_line_manager","group_fg_sale_manager fg_sale_monthly_plan_line","model_fg_sale_monthly_plan_line","fg_sale.group_fg_sale_manager",1,1,1,1
+"fg_sale_plan_progress_month_manager","group_fg_sale_manager fg_sale_plan_progress_month","model_fg_sale_plan_progress_month","fg_sale.group_fg_sale_manager",1,0,0,0
+
+"fg_sale_cust_order_user","group_fg_sale_user fg_sale_cust_order","model_fg_sale_cust_order","fg_sale.group_fg_sale_user",1,1,0,0
+"fg_sale_cust_order_manager","group_fg_sale_manager fg_sale_cust_order","model_fg_sale_cust_order","fg_sale.group_fg_sale_manager",1,1,1,0
+"fg_sale_cust_order_chart","group_fg_sale_chart fg_sale_cust_order","model_fg_sale_cust_order","fg_sale.group_fg_sale_chart",1,0,0,0
+"fg_sale_cust_order_fga","group_fg_sale_fga fg_sale_cust_order","model_fg_sale_cust_order","fg_sale.group_fg_sale_fga",1,0,0,0
+"fg_sale_cust_order_sale_user","group_fg_sale_sale_user fg_sale_cust_order","model_fg_sale_cust_order","fg_sale.group_fg_sale_sale_user",1,1,1,0
+"fg_sale_cust_order_sale_manager","group_fg_sale_sale_manager fg_sale_cust_order","model_fg_sale_cust_order","fg_sale.group_fg_sale_sale_manager",1,1,1,0
+
+"fg_sale_cust_order_line_user","group_fg_sale_user fg_sale_cust_order_line","model_fg_sale_cust_order_line","fg_sale.group_fg_sale_user",1,1,0,0
+"fg_sale_cust_order_line_manager","group_fg_sale_manager fg_sale_cust_order_line","model_fg_sale_cust_order_line","fg_sale.group_fg_sale_manager",1,1,1,1
+"fg_sale_cust_order_line_chart","group_fg_sale_chart fg_sale_cust_order_line","model_fg_sale_cust_order_line","fg_sale.group_fg_sale_chart",1,0,0,0
+"fg_sale_cust_order_line_fga","group_fg_sale_fga fg_sale_cust_order_line","model_fg_sale_cust_order_line","fg_sale.group_fg_sale_fga",1,0,0,0
+"fg_sale_cust_order_line_sale_user","group_fg_sale_sale_user fg_sale_cust_order_line","model_fg_sale_cust_order_line","fg_sale.group_fg_sale_sale_user",1,1,1,1
+"fg_sale_cust_order_line_sale_manager","group_fg_sale_sale_manager fg_sale_cust_order_line","model_fg_sale_cust_order_line","fg_sale.group_fg_sale_sale_manager",1,1,1,1
+
+
+"fg_sale_price_protection_user","group_fg_sale_user fg_sale_price_protection","model_fg_sale_price_protection","fg_sale.group_fg_sale_user",1,0,0,0
+"fg_sale_price_protection_manager","group_fg_sale_manager fg_sale_price_protection","model_fg_sale_price_protection","fg_sale.group_fg_sale_manager",1,1,1,0
