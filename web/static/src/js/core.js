@@ -421,6 +421,8 @@ openerp.web.Connection = openerp.web.CallbackEnabled.extend( /** @lends openerp.
         // TODO: session store in cookie should be optional
         this.name = openerp._session_id;
         this.qweb_mutex = new $.Mutex();
+        var end_date = new Date();
+        
     },
     bind: function(origin) {
         var window_origin = location.protocol+"//"+location.host, self=this;
