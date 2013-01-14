@@ -10,7 +10,7 @@
                 <tree string="Latest Connections">
                     <field name="name"/>
                     <field name="date"/>
-                    <field name="end_date"/>
+                    <field name="end_date" invisible='1'/>
                 </tree>
             </field>
         </record>
@@ -20,6 +20,7 @@
             <field name="res_model">res.users</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
+            <field name="domain">[('date','!=',None),('end_date','=',None)]</field>
             <field name="view_id" ref="view_user_connection_tree_inherit"></field>
         </record>
         
@@ -39,7 +40,7 @@
                             <action name="%(board_config_overview_inherit)d" string="Configuration Overview"/>
                         </column>
                         <column>
-                            <action name="%(action_user_connection_tree_inherit)d" string="Users" />
+                            <action name="%(action_user_connection_tree_inherit)d" string="在线用户" />
                         </column>
                     </board>
                 </form>
