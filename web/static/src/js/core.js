@@ -421,8 +421,12 @@ openerp.web.Connection = openerp.web.CallbackEnabled.extend( /** @lends openerp.
         // TODO: session store in cookie should be optional
         this.name = openerp._session_id;
         this.qweb_mutex = new $.Mutex();
-        var end_date = new Date();
-        
+        var obj = this;
+        console.log(this);
+        $(window).bind('beforeunload', function (e) {
+            if (true) {
+                    return 'You have unsaved changes';}
+                });
     },
     bind: function(origin) {
         var window_origin = location.protocol+"//"+location.host, self=this;
