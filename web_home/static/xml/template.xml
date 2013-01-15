@@ -1,0 +1,21 @@
+<template>
+    
+<div t-name="Homepage" class="oe-dashboard-config-overview"/>
+<t t-name="Homepage.content">
+<div id="parent">
+    
+    <div id="homepagebox" style="width:auto;min-height:300px"></div>
+    <hr/>
+
+    <div class="textarea-wrappers">
+	<textarea class="living-textarea validate[required]" id="living-effect" type="text" ></textarea>
+    </div>	
+    
+    <div class="submit-wrapper">
+	<input id="btn" type="button" onclick="fnsubmit()" value="发表留言"/>
+    </div>
+    
+</div>
+</t>
+
+</template>

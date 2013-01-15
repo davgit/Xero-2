@@ -12,6 +12,16 @@ class users(osv.osv):
         'end_date': fields.datetime('Connection End', readonly=True),
     }
     
+    def get_employee(self, cr, uid, context={}):
+        obj = self.pool.get('hr.employee')
+        ids = obj.search(cr, uid, [('user_id','=',uid)])
+        res = obj.read(cr, uid, ids, ['id','name'], context)
+        return res and res[0]['id'] or 0
+    
+    def button(self,cr, uid, context=None):
+        
+        return True
+        
     def login(self, db, login, password):
         
         super(users, self).login(db, login, password)
@@ -35,7 +45,7 @@ class users(osv.osv):
                                 AND active FOR UPDATE NOWAIT""",
                        (tools.ustr(login), tools.ustr(password)))
             cr.execute("""UPDATE res_users
-                            SET date = now(),end_date = Null
+                            SET date = now() AT TIME ZONE 'UTC',end_date = Null
                             WHERE login=%s AND password=%s AND active
                             RETURNING id""",
                        (tools.ustr(login), tools.ustr(password)))

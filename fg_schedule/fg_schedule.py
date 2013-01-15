@@ -176,7 +176,6 @@ class project(osv.osv):
     
     def create(self, cr, uid, vals, context={}):
 	result = super(project, self).create(cr, uid, vals, context=context)
-        print result,'------------'
 	obj = self.pool.get('fg_project.task')
         obj.create(cr, uid, {'name':'产品颜色','project':result,'executor':uid,'state':'draft','stated':'draft','need_endtime':None}, context=context)
 	obj.create(cr, uid, {'name':'条形码申报','project':result,'executor':uid,'state':'draft','stated':'draft','need_endtime':None}, context=context)

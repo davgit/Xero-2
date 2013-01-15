@@ -13,9 +13,13 @@
         "security/group.xml",
         "security/ir.model.access.csv",
     ],
-    "depends": ["base",],
+    "depends": ["base","web_dashboard"],
     "js": ["static/js/*.js",],
-    #"css": ["static/css/*.css",],
+    'qweb' : [
+        "static/xml/*.xml",
+    ],
+    "css": ["static/css/*.css",],
     'auto_install': False,
     #'web_preload': False,
+    
 }

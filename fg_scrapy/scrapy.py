@@ -356,8 +356,6 @@ class scrapy_stores(osv.osv):
                     data = res.read()
                     reg = 'class="page-info">.*?/(.*?)<'
                     num = re.findall(reg,data)
-                    print num
-                    print url,'-----'
                     if num:
                         if num[0] == '0':continue
                         #cr.execute('delete from scrapy_stores \

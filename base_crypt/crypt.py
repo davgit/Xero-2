@@ -189,7 +189,6 @@ class users(osv.osv):
     def _login(self, cr, db, login, password):
         cr.execute( 'SELECT password, id FROM res_users WHERE login=%s AND active',
             (login.encode('utf-8'),))
-        print login,password,'-----'
         if cr.rowcount:
             stored_pw, id = cr.fetchone()
         else:

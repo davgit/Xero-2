@@ -423,7 +423,8 @@ openerp.web.Connection = openerp.web.CallbackEnabled.extend( /** @lends openerp.
         this.qweb_mutex = new $.Mutex();
         var obj = this;
         $(window).bind('beforeunload', function (e) {
-            if (obj.session_logout()) {
+            obj.synch = 1;
+            if (obj.session_logout_rpc()) {
                     return 'You have unsaved changes';}
                 });},
     bind: function(origin) {
@@ -676,6 +677,16 @@ openerp.web.Connection = openerp.web.CallbackEnabled.extend( /** @lends openerp.
             return self.load_modules();
         });
     },
+    session_logout_rpc:function(){
+        var end_date = new Date();
+        this.rpc('/web/dataset/save', {
+            model: 'res.users',
+            id: this.uid,
+            data: {end_date:end_date},
+            context:this.user_context,
+        });
+        return true
+        },
     session_logout: function() {
         var end_date = new Date();
         this.rpc('/web/dataset/save', {

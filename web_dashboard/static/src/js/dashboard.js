@@ -280,6 +280,7 @@ openerp.web.form.widgets.add('board', 'openerp.web.form.DashBoard');
  * This client action designed to be used as a dashboard widget display
  * ir.actions.todo in a fancy way
  */
+
 openerp.web.client_actions.add( 'board.config.overview', 'openerp.web_dashboard.ConfigOverview');
 openerp.web_dashboard.ConfigOverview = openerp.web.View.extend({
     template: 'ConfigOverview',
