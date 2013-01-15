@@ -35,7 +35,7 @@
             <field name="type">form</field>
             <field name="arch" type="xml">
                 <form string="Administration Dashboard">
-                    <board style="1-1">
+                    <board style="2-1">
                         <column>
                             <action name="%(board_config_overview_inherits)d" string="留言板"/>
                         </column>
