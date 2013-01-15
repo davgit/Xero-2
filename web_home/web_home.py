@@ -18,7 +18,7 @@ class users(osv.osv):
         res = obj.read(cr, uid, ids, ['id','name'], context)
         return res and res[0]['id'] or 0
     
-    def button(self,cr, uid, context=None):
+    def button(self,cr, uid, ids,context=None):
         
         return True
         
