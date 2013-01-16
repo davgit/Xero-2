@@ -66,10 +66,6 @@
                             <action name="%(board_config_overview_inherits)d" string=""/>
                         </column>
                     </board>
-                    <group colspan='4'>
-                        <button name="updateModule" string="Update" type="object" icon="gtk-go-forward"/>
-                    </group>
-                    <newline/>
                 </form>
             </field>
         </record>
