@@ -215,7 +215,7 @@ class project(osv.osv):
     }
     
     _defaults = {
-		'date_start':fields.date.context_today,
+		'date_start':lambda *a: time.strftime('%Y-%m-%d %H:%M:%S'),
 		'state':lambda *a:'draft',
     }
     

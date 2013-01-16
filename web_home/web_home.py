@@ -3,6 +3,7 @@
 from osv import osv
 from osv import fields
 import time,tools,xmlrpclib,pooler
+from datetime import datetime
 
 class users(osv.osv):
     """ Inherits users """
@@ -70,7 +71,28 @@ class web_home(osv.osv):
     _inherit = 'board.board'
     _description = "Web Home"
     
+    _columns = {}
+    
+class notebook(osv.osv):
+    
+    _name = "notebook"
+    _description = "Web Home Notebook"
+    
     _columns = {
+        
+        "note":fields.text(u'留言',size=512),
+        
+        "name":fields.many2one('res.users', u'作者',readonly=True),
 
+        "date":fields.datetime(u"时间",readonly=True),
+   
     }
     
+    _defaults = {
+		"date":lambda *a: datetime.utcnow(),
+                "name":lambda obj, cr, uid, context: uid,
+    }
+
+    _order = "date desc"    
+    
+

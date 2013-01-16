@@ -4,20 +4,16 @@
 <t t-name="Homepage.content">
 <div id="parent">
     
-    <div style="width:auto;min-height:300px">
-	<div id="homepagebox"></div>
-    </div>
-    
     <hr style="opacity:0.5"/>
 
     <div class="textarea-wrappers">
 	<textarea class="living-textarea validate[required]" style="min-height:50px" id="living-effect" type="text" ></textarea>
     </div>	
     
-    <div class="submit-wrapper">
-	<input id="btn" type="button" onclick="fnsubmit()" value="发表留言"/>
+    <div class="submit-wrapper" style="float:right">
+	<input id="btn" type="button" value="发表留言"/>
     </div>
-    <p id ="username"><t t-esc="user.name"/></p>
+
 </div>
 </t>
 
