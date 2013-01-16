@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+    <record model="ir.ui.view" id="view_edma_jabber_tree">
+      <field name="name">edma.jabber.tree</field>
+      <field name="model">edma.jabber</field>
+      <field name="type">tree</field>
+      <field name="arch" type="xml">
+        <tree string="Comptes XMPP">
+          <field name="name"/>
+          <field name="server"/>
+          <field name="port"/>
+          <field name="secure"/>
+          <field name="resource"/>
+        </tree>
+      </field>
+    </record>
+    <record model="ir.ui.view" id="view_edma_jabber_form">
+      <field name="name">edma.jabber.form</field>
+      <field name="model">edma.jabber</field>
+      <field name="type">form</field>
+      <field name="arch" type="xml">
+        <form string="Dades connexió XMPP">
+          <notebook>
+            <page string="Paràmetres">
+              <field name="name"/>
+              <field name="password"/>
+              <field name="server"/>
+              <field name="port"/>
+              <field name="secure"/>
+              <field name="resource"/>
+            </page>
+          </notebook>
+        </form>
+      </field>
+    </record>
+
+    
+    <record model="ir.actions.act_window" id="action_edma_jabber_tree">
+      <field name="name">Comptes XMPP</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">edma.jabber</field>
+      <field name="view_type">tree</field>
+      <field name="view_id" ref="view_edma_jabber_tree"/>
+    </record> 
+
+    <record model="ir.actions.act_window" id="action_edma_jabber_form">
+      <field name="name">Compte XMPP</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">edma.jabber</field>
+      <field name="view_type">form</field>
+      <field name="view_id" ref="view_edma_jabber_form"/>
+    </record> 
+
+    <menuitem name="XMPP" id="menu_xmpp"/>
+    <menuitem name="XMPP/Comptes" id="menu_xmpp_comptes" action="action_edma_jabber_tree"/>
+    <menuitem name="XMPP/Crear nou compte" id="menu_xmpp_nou_compte" action="action_edma_jabber_form"/>
+  </data>
+</openerp>
