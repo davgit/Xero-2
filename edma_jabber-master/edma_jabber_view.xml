@@ -53,7 +53,7 @@
     </record> 
 
     <menuitem name="XMPP" id="menu_xmpp"/>
-    <menuitem name="XMPP/Comptes" id="menu_xmpp_comptes" action="action_edma_jabber_tree"/>
-    <menuitem name="XMPP/Crear nou compte" id="menu_xmpp_nou_compte" action="action_edma_jabber_form"/>
+    <menuitem name="XMPP/Comptes" id="menu_xmpp_comptes" parent="menu_xmpp" action="action_edma_jabber_tree"/>
+    <menuitem name="XMPP/Crear nou compte" id="menu_xmpp_nou_compte" parent="menu_xmpp" action="action_edma_jabber_form"/>
   </data>
 </openerp>

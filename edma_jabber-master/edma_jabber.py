@@ -20,11 +20,13 @@
 
 from osv import fields, osv
 import pooler
+import logging
 
 from threading import Thread
 import netsvc
 import tools
-
+import openerp.service.security
+from openerp.service.security import login
 
 from jabberbot import JabberBot
 import datetime
@@ -56,25 +58,23 @@ class EDMABotSessions():
         return self._sessions[jid]
 
 class EDMABot(JabberBot):
-    logger = netsvc.Logger()
+    logger = logging.getLogger()
     _logged_in = False
     _sessions = EDMABotSessions()
-    _commonService = netsvc.LocalService('common')
     _objectService = openerp.osv.osv.object_proxy
 
     def log(self, s):
         """Overloads JabberBot.log to use the OpenERP logging service.
         """
-        self.logger.notifyChannel("jabber", netsvc.LOG_INFO, s)
+        print ("jabber", netsvc.LOG_INFO, s)
 
     def elog(self, s):
-        self.logger.notifyChannel("jabber", netsvc.LOG_ERROR, s)
+        print ("jabber", netsvc.LOG_ERROR, s)
 
     def set_db(self, dbname):
         """Sets de database to use.
         """
-        self._dbname = dbname
-
+        self._dbname = 'WEB'
     def set_startuptime(self, time):
         """Sets the server startup time.
         """
@@ -99,7 +99,7 @@ class EDMABot(JabberBot):
         It expects only two parameters: user and password
         """
         (user, password) = args.split()[0:2]
-        uid = self._commonService.login(self._dbname, user, password)
+        uid = login(self._dbname, user, password)
         if uid:
             self._sessions.login(mess.getFrom(), datetime.datetime.now(), uid, password)
             if self._sessions.sessions().has_key(mess.getFrom()):
@@ -230,13 +230,14 @@ edma_jabber()
 class JabberBot(Thread):
     def __init__(self):
         Thread.__init__(self)
+        self.db_name = 'WEB'
 
     def set_startuptime(self, time):
         self.startup = time
 
     def run(self):
-        pool = osv.pooler.get_pool(tools.config['db_name'])
-        cr = osv.pooler.get_db(tools.config['db_name']).cursor()
+        pool = osv.pooler.get_pool(self.db_name)
+        cr = osv.pooler.get_db(self.db_name).cursor()
         # dirty hack while we discover the problem here ...
         import time
         time.sleep(1)
@@ -246,7 +247,7 @@ class JabberBot(Thread):
         if len(ids):
             gj = gjobj.browse(cr, 1, ids[0])
             bot = EDMABot(gj.name, gj.password, res=gj.resource, server=gj.server, port=gj.port, secure=gj.secure)
-            bot.set_db(tools.config['db_name'])
+            bot.set_db(self.db_name)
             bot.set_startuptime(self.startup)
             bot.serve_forever()
         else:
@@ -257,4 +258,5 @@ if tools.config['jabber']:
     jabber = JabberBot()
     jabber.set_startuptime(datetime.datetime.now())
     jabber.start()
+    print '--------------'
 

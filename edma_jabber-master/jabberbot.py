@@ -82,8 +82,8 @@ class JabberBot(object):
         self.jid = xmpp.JID( jid)
         self.password = password
         self.res = (res or self.__class__.__name__)
-        self.server = server
-        self.port = port
+        self.server = 'http://localhost'
+        self.port = 8069
         self.secure = secure
         self.conn = None
         self.__finished = False
@@ -100,8 +100,10 @@ class JabberBot(object):
     def connect( self):
         if not self.conn:
             conn = xmpp.Client( self.jid.getDomain(), debug = [])
-
+            print conn,'-------',self.jid.getDomain()
+            print self.server,self.port,self.secure,'------------------'
             s = conn.connect(server=(self.server, self.port), secure=self.secure)
+            print s,'----------'
             if not s:
                 self.log( 'unable to connect to server.')
                 return None
