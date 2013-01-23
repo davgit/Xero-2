@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_group_web_home,access_group_web_home user,model_notebook,group_web_home,1,0,1,0

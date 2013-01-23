@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record model="ir.actions.client" id="action_xmpp">
+              <field name="name">Xmpp</field>
+              <field name="tag">xmpp.ui</field>
+        </record>
+
+        <record id="menu_xmpp_root_touchscreen" model="ir.ui.menu">
+          <field name="name">Xmpp Xero</field>
+          <field name="sequence" eval="5"/>
+          <field name="action" ref="action_xmpp"/>
+        </record>
+        
+        <menuitem id='menu_xmpp_root_touchscreen' web_icon_hover="images/alert2.png" web_icon="images/alert.png"/>
+
+    </data>
+</openerp>
+
+
+
+
+
+
+
