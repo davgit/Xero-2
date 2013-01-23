@@ -15,7 +15,7 @@
                 "bi.xml",],
     "demo_xml": [],
     "installable": True,
-    "active": True,
+    "active": False,
     "application":True,
     
     "js":[

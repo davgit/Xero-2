@@ -1,19 +1,19 @@
 <template id="template" xml:space="preserve">
-
-<t t-name="xmpp">
-<div id="parent">
+<div t-name="Homepage" class="oe-dashboard-config-overview"/>
+<t t-name="Homepage.content">
+    <div id="parent">
+        
+        <hr style="opacity:0.5"/>
     
-    <hr style="opacity:0.5"/>
-
-    <div class="textarea-wrappers">
-	<textarea class="living-textarea validate[required]" style="min-height:50px" id="living-effect" type="text" ></textarea>
-    </div>	
+        <div class="textarea-wrappers">
+            <textarea class="living-textarea validate[required]" style="min-height:50px" id="living-effect" type="text" ></textarea>
+        </div>	
+        
+        <div class="submit-wrapper" style="float:right">
+            <input id="btn" type="button" value="发表留言"/>
+        </div>
     
-    <div class="submit-wrapper" style="float:right">
-	<input id="btn" type="button" value="发表留言"/>
     </div>
-
-</div>
 </t>
 
 </template>

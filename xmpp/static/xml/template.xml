@@ -1,20 +1,40 @@
 <template>
     
-<div t-name="Homepage" class="oe-dashboard-config-overview"/>
-<t t-name="Homepage.content">
-<div id="parent">
+<t t-name="xmpp">
     
-    <hr style="opacity:0.5"/>
-
-    <div class="textarea-wrappers">
-	<textarea class="living-textarea validate[required]" style="min-height:50px" id="living-effect" type="text" ></textarea>
-    </div>	
+    <div id='toolbar'>
+	<hr style="opacity:0.5"/>
+	<input id='leave' type='button' value='Leave Room' disabled='disabled'></input>
+    </div>
     
-    <div class="submit-wrapper" style="float:right">
-	<input id="btn" type="button" value="发表留言"/>
+    <div>
+	<div>
+	    <span id='room-name'></span>
+	    <span id='room-topic'></span>
+	</div>
+    
+	<div id='chat'></div>
+    
+	<textarea id='input'></textarea>
+    
     </div>
 
-</div>
+    <div id='participants'>
+	<ul id='participant-list'></ul>
+    </div>
+    
+    <!-- login dialog -->
+    <div id='login_dialog' class='hidden'>
+	<label>JID:</label><input type='text' id='jid' value="admin@127.0.0.1"></input>
+	<br/>
+	<label>Password:</label><input type='password' id='password' value="admin"></input>
+	<br/>
+	<label>Chat Room:</label><input type='text' id='room' value="123@conference.127.0.0.1"></input>
+	<br/>
+	<label>Nickname:</label><input type='text' id='nickname' value="xero"></input>
+	<br/>
+    </div>
+
 </t>
 
 </template>

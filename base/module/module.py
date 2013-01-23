@@ -465,9 +465,9 @@ class module(osv.osv):
         # iterate through detected modules and update/create them in db
         for mod_name in addons.get_modules():
             mod = known_mods_names.get(mod_name)
+            #delete no exist mod
             terp = self.get_module_info(mod_name)
             values = self.get_values_from_terp(terp)
-
             if mod:
                 updated_values = {}
                 for key in values:
