@@ -484,6 +484,9 @@ class Root(object):
         elif request.path == '/mobile':
             return werkzeug.utils.redirect(
                 '/web_mobile/static/src/web_mobile.html', 301)(environ, start_response)
+        elif request.path == '/web/webclient/flXHR.swf':
+            return werkzeug.utils.redirect(
+                'web/static/src/js/flXHR.swf', 301)(environ, start_response)
 
         handler = self.find_handler(*(request.path.split('/')[1:]))
 

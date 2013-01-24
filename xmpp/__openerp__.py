@@ -13,10 +13,12 @@
         "xmpp.xml",
     ],
     
-    "depends": ["base",'web'],
+    "depends": ["base"],
     
     "js":  [
+            "../web/static/src/js/deploy/*.js",
             "static/js/strophe.js",
+            "static/js/strophe.flxhr.js",
             "static/js/xmpp.js",
             ],
     
@@ -27,6 +29,7 @@
     "css": ["static/css/*.css",],
 
     'auto_install': False,
+    'application' : True,
     #'web_preload': False,
     
 }

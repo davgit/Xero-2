@@ -29,9 +29,9 @@
 	<br/>
 	<label>Password:</label><input type='password' id='password' value="admin"></input>
 	<br/>
-	<label>Chat Room:</label><input type='text' id='room' value="123@conference.127.0.0.1"></input>
+	<label>Chat Room:</label><input type='text' id='room' value="test@admin.127.0.0.1"></input>
 	<br/>
-	<label>Nickname:</label><input type='text' id='nickname' value="xero"></input>
+	<label>Nickname:</label><input type='text' id='nickname' value="admin"></input>
 	<br/>
     </div>
 
