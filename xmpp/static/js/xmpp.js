@@ -268,8 +268,7 @@ openerp.xmpp = function(openerp) {
             
             //extend
             
-            $(".oe-shortcuts").append(" <b>Hello world!</b>")
-            
+            $(".oe-shortcuts ul").append("<button type='button' class='chat-dock-wrapper clearfix unavailable'>Hello world!</button>")
             
             //end
         },
