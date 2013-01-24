@@ -268,7 +268,32 @@ openerp.xmpp = function(openerp) {
             
             //extend
             
-            $(".oe-shortcuts ul").append("<button type='button' class='chat-dock-wrapper clearfix unavailable'>Hello world!</button>")
+            $(".oe-shortcuts ul").append("<div id='ember224' class='ember-view chat-dock-wrapper clearfix unavailable'>\
+                                            <div id='ember229' class='ember-view chat-tab-list clearfix'>asdfasd</div>\
+                                            <div id='ember233' class='ember-view roster chat-tab'>\
+                                                <a id='ember236' class='ember-view chat-button'>\
+                                                    <div class='chat-button-rule'>\
+                                                        <div class='image-block clearfix'>\
+                                                            <img class='image-block-image icon' src='/web/static/src/img/empty.gif' width='1' height='1'/>\
+                                                            <div class='image-block-content chat-button-content clearfix'>\
+                                                                <span class='label'>Chat <span>\
+                                                                    <strong class='count'></strong>\
+                                                                    </span>\
+                                                                </span>\
+                                                            </div>\
+                                                        </div>\
+                                                    </div>\
+                                                </a>\
+                                                <div id='ember239' class='ember-view chat-flyout' style='display:none;'>\
+                                                    <div class='chat-flyout-titlebar clearfix'>\
+                                                        <div class='titlebar-text-wrapper'>\
+                                                            <div class='titlebar-text'>Chat</div>\
+                                                        </div>\
+                                                    </div>\
+                                                    <div id='ember248' class='ember-view chat-flyout-body chat-friend-list'></div>\
+                                                </div>\
+                                            </div>\
+                                        </div>");
             
             //end
         },
@@ -277,6 +302,8 @@ openerp.xmpp = function(openerp) {
     
     //end
 }
+
+
 
 
 
