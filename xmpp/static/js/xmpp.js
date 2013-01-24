@@ -16,23 +16,38 @@ openerp.xmpp = function(openerp) {
                 var room = Strophe.getBareJidFromJid(from);
                 // make sure this presence is for the right room
                 if (room === Groupie.room) {
-                        var nick = Strophe.getResourceFromJid(from);
+                    var nick = Strophe.getResourceFromJid(from);
                     if ($(presence).attr('type') === 'error' && !Groupie.joined) {
                         // error joining room; reset app
-                        Groupie.connection.disconnect();}
-                    else if (!Groupie.participants[nick] && $(presence).attr('type') !== 'unavailable')
-                    {   // add to participant list
+                        Groupie.connection.disconnect();
+                    }
+                    else if (!Groupie.participants[nick] && $(presence).attr('type') !== 'unavailable') {
+                        // add to participant list
                         Groupie.participants[nick] = true;
-                        $('#participant-list').append('<li>' + nick + '</li>');}
+                        $('#participant-list').append('<li>' + nick + '</li>');
+                        if (Groupie.joined) {
+                            $(document).trigger('user_joined', nick);
+                        }   
+                    }
+                    else if (Groupie.participants[nick] && $(presence).attr('type') === 'unavailable') {
+                        // remove from participants list
+                        $('#participant-list li').each(function () {
+                            if (nick === $(this).text()) {
+                                $(this).remove();
+                                return false;
+                            }
+                        });
+                        $(document).trigger('user_left', nick);
+                    }
                     if ($(presence).attr('type') !== 'error' && !Groupie.joined) {
                         // check for status 110 to see if it's our own presence
                         if ($(presence).find("status[code='110']").length > 0) {
                             // check if server changed our nick
                             if ($(presence).find("status[code='210']").length > 0) {
-                            Groupie.nickname = Strophe.getResourceFromJid(from);}
-                            // room join complete
-                            $(document).trigger("room_joined");
+                                Groupie.nickname = Strophe.getResourceFromJid(from);
+                            }
                         }
+                        $(document).trigger("room_joined");
                     }
                 }
                 return true;
@@ -51,17 +66,41 @@ openerp.xmpp = function(openerp) {
                         nick_class += " self";
                     }
                     var body = $(message).children('body').text();
+                    var delayed = $(message).children("delay").length > 0 || $(message).children("x[xmlns='jabber:x:delay']").length > 0;
                     if (!notice) {
-                        Groupie.add_message("<div class='message'>" +
-                                            "&lt;<span class='" + nick_class + "'>" +
-                                            nick + "</span>&gt; <span class='body'>" +
-                                            body + "</span></div>");}
+                        var delay_css = delayed ? " delayed": "";
+                        var action = body.match(/\/me (.*)$/);
+                        if (!action) {
+                            Groupie.add_message("<div class='message" + delay_css + "'>" +
+                                                "&lt;<span class='" + nick_class + "'>" +
+                                                nick + "</span>&gt; <span class='body'>" +
+                                                body + "</span></div>");
+                        }
+                        else {
+                            Groupie.add_message("<div class='message action " + delay_css + "'>" +
+                                                "* " + nick + " " + action[1] + "</div>");
+                        }
+                    }
                     else {
                         Groupie.add_message("<div class='notice'>*** " + body + "</div>");
-                    };
+                    }
                 };
                 return true;
             },
+            on_private_message: function (message) {
+                var from = $(message).attr('from');
+                var room = Strophe.getBareJidFromJid(from);
+                var nick = Strophe.getResourceFromJid(from);
+                // make sure this message is from the correct room
+                if (room === Groupie.room) {
+                var body = $(message).children('body').text();
+                Groupie.add_message("<div class='message private'>" +
+                "@@ &lt;<span class='nick'>" +
+                nick + "</span>&gt; <span class='body'>" +
+                body + "</span> @@</div>");
+                }
+                return true;
+                },
             add_message: function (msg) {
                 // detect if we are scrolled all the way down
                 var chat = $('#chat').get(0);
@@ -97,25 +136,56 @@ openerp.xmpp = function(openerp) {
             var self = this;
             $('.secondary_menu').hide();
             $('#leave').click(function () {
-                Groupie.connection.send(
-                $pres({to: Groupie.room + "/" + Groupie.nickname,type: "unavailable"}));
+                Groupie.connection.send($pres({to: Groupie.room + "/" + Groupie.nickname,type: "unavailable"}));
                 Groupie.connection.disconnect();
             });
-            $('#input').keypress(function (ev) {
+            $('#input').keypress( function (ev) {
                 if (ev.which === 13) {
-                ev.preventDefault();
-                var body = $(this).val();
-                Groupie.connection.send(
-                $msg({
-                to: Groupie.room,
-                type: "groupchat"}).c('body').t(body));
-                $(this).val('');
+                    ev.preventDefault();
+                    var body = $(this).val();
+                    var match = body.match(/^\/(.*?)(?: (.*))?$/);
+                    var args = null;
+                    if (match) {
+                        if (match[1] === "msg") {
+                            args = match[2].match(/^(.*?) (.*)$/);
+                            if (Groupie.participants[args[1]]) {
+                                Groupie.connection.send($msg({to: Groupie.room + "/" + args[1],type: "chat"}).c('body').t(body));
+                                Groupie.add_message("<div class='message private'>" +
+                                                    "@@ &lt;<span class='nick self'>" +
+                                                    Groupie.nickname + "</span>&gt; <span class='body'>" +
+                                                    args[2] + "</span> @@</div>");}
+                            else {Groupie.add_message("<div class='notice error'>" + "Error: User not in room." +"</div>");}
+                        }
+                        else if (match[1] === "me" || match[1] === "action") {
+                            Groupie.connection.send($msg({to: Groupie.room,type: "groupchat"})
+                                                    .c('body').t('/me ' + match[2]));
+                        }
+                        else if (match[1] === "topic") {
+                            Groupie.connection.send($msg({to: Groupie.room,type: "groupchat"}).c('subject').t(match[2]));
+                        }
+                        else if (match[1] === "kick"){Groupie.connection.sendIQ($iq({to: Groupie.room,type: "set"})
+                                                    .c('query', {xmlns: Groupie.NS_MUC + "#admin"})
+                                                    .c('item', {nick: match[2],role: "none"}));
+                        }
+                        else if (match[1] === "ban") {Groupie.connection.sendIQ($iq({to: Groupie.room,type: "set"})
+                                                    .c('query', {xmlns: Groupie.NS_MUC + "#admin"})
+                                                    .c('item', {jid: Groupie.participants[match[2]],affiliation: "outcast"}));
+                        }
+                        else {
+                            Groupie.add_message("<div class='notice error'>" +
+                                                "Error: Command not recognized." + "</div>");
+                        }
+                    }
+                    else {
+                        Groupie.connection.send(
+                        $msg({to: Groupie.room,type: "groupchat"}).c('body').t(body));
+                    }
+                    $(this).val('');
                 }
-                });
+            });
             self.login();
         },
         login:function () {
-            
             $('#login_dialog').dialog({
                 autoOpen: true,
                 draggable: false,
@@ -157,6 +227,7 @@ openerp.xmpp = function(openerp) {
         Groupie.connection.send($pres().c('priority').t('-1'));
         Groupie.connection.addHandler(Groupie.on_presence,null, "presence");
         Groupie.connection.addHandler(Groupie.on_public_message,null, "message", "groupchat");
+        Groupie.connection.addHandler(Groupie.on_private_message,null, "message", "chat");
         Groupie.connection.send($pres({to: Groupie.room + "/" + Groupie.nickname}).c('x', {xmlns: Groupie.NS_MUC}));
     });
             
@@ -175,6 +246,38 @@ openerp.xmpp = function(openerp) {
         $('#room-name').text(Groupie.room);
         $('#chat').append("<div class='notice'>*** Room joined.</div>")
     });
-
+    
+    $(document).bind('user_joined', function (ev, nick) {
+        Groupie.add_message("<div class='notice'>*** " + nick + " joined.</div>");
+    });
+   
+    $(document).bind('user_left', function (ev, nick) {
+        Groupie.add_message("<div class='notice'>*** " + nick + " left.</div>");
+    });
+    
+    //extend
+    
+    openerp.web.Menu.include({
+    
+        on_loaded: function(data) {
+            this.data = data;
+            this.$element.html(QWeb.render("Menu", { widget : this }));
+            this.$secondary_menu.html(QWeb.render("Menu.secondary", { widget : this }));
+            this.$element.add(this.$secondary_menu).find("a").click(this.on_menu_click);
+            this.$secondary_menu.find('.oe_toggle_secondary_menu').click(this.on_toggle_fold);
+            
+            //extend
+            
+            $(".oe-shortcuts").append(" <b>Hello world!</b>")
+            
+            
+            //end
+        },
+    
+    })
+    
+    //end
 }
+
+
 

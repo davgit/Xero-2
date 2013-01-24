@@ -20,6 +20,7 @@
             "static/js/strophe.js",
             "static/js/strophe.flxhr.js",
             "static/js/xmpp.js",
+            "static/js/chat.js",
             ],
     
     'qweb' : [

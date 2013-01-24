@@ -1039,7 +1039,6 @@ openerp.web.WebClient = openerp.web.OldWidget.extend(/** @lends openerp.web.WebC
         var self = this;
         this._super(parent);
         openerp.webclient = this;
-
         this._current_state = null;
     },
     start: function() {
