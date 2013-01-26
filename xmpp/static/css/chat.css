@@ -470,29 +470,30 @@
     display: none;
 }
 .msgblank{
+    z-index: 700;
     position: fixed ;
-    bottom: 0 ;
-    left: auto ;
-    right: 0 ;
-    width: 200px;
-    height: 200px;
+    bottom: 0px ;
+    right: 137px ;
+    width: 200px !important;
+    height: 200px !important;
     display: block;
-    height: auto;
-    width: 100px;
     color: #4C4C4C;
     border: 5px solid rgba(0, 0, 0, 0.3) ;
     border-width:1px ;
-    margin-bottom: 25px;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
     background: white;
-    -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
-    -ms-border-radius: 6px;
     border-radius: 6px;
-    -moz-box-shadow: 0 1px 2px #bbb;
     -webkit-box-shadow: 0 1px 2px #bbb;
-    -o-box-shadow: 0 1px 2px #bbb;
     box-shadow: 0 1px 2px #bbb;
+    height: auto;
+}
+.inputin {
+    position: fixed;
+    margin-left: 30px;
+    bottom:0;
+    
+    
 }

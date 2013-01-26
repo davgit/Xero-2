@@ -258,5 +258,4 @@ if tools.config['jabber']:
     jabber = JabberBot()
     jabber.set_startuptime(datetime.datetime.now())
     jabber.start()
-    print '@@@@@@@@@@@@@@@@@@@@@'
 

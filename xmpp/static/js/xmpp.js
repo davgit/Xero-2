@@ -13,7 +13,6 @@ openerp.xmpp = function(openerp) {
             NS_MUC: "http://jabber.org/protocol/muc",
             joined: null,
             keeplive: function () {
-                console.log("keeplive");
                 Groupie.connection.send($pres().c('priority').t('-1'));
                 },
             participants: null,
@@ -32,8 +31,8 @@ openerp.xmpp = function(openerp) {
                         Groupie.participants[nick] = true;
                         $('#participant-list').append('<li>' + nick + '</li>');
                         $('#member').append('<div class="chat-friend">' + nick + '</div>');
-                        $('.chat-friend').unbind('click');
-                        $('.chat-friend').bind('click',Groupie.click);
+                        //$('.chat-friend').unbind('click');
+                        //$('.chat-friend').bind('click',Groupie.click);
                         if (Groupie.joined) {
                             $(document).trigger('user_joined', nick);
                         }   
@@ -86,7 +85,7 @@ openerp.xmpp = function(openerp) {
                         var delay_css = delayed ? " delayed": "";
                         var action = body.match(/\/me (.*)$/);
                         if (!action) {
-                            $('.msgblank').append('<p>'+body+'</p>');
+                            $('#content').append('<p>'+body+'</p>');
                             Groupie.add_message("<div class='message" + delay_css + "'>" +
                                                 "&lt;<span class='" + nick_class + "'>" +
                                                 nick + "</span>&gt; <span class='body'>" +
@@ -95,11 +94,12 @@ openerp.xmpp = function(openerp) {
                         else {
                             Groupie.add_message("<div class='message action " + delay_css + "'>" +
                                                 "* " + nick + " " + action[1] + "</div>");
-                            $('.msgblank').append('<p>'+body+'</p>');
+                            $('#content').append('<p>'+body+'</p>');
                             
                         }
                     }
                     else {
+                        $('#content').append('<p>'+body+'</p>');
                         Groupie.add_message("<div class='notice'>*** " + body + "</div>");
                     }
                 };
@@ -153,14 +153,15 @@ openerp.xmpp = function(openerp) {
             this._super();
             var self = this;
             $('.secondary_menu').hide();
-            //$('#leave').click(function () {
-            //    Groupie.connection.send($pres({to: Groupie.room + "/" + Groupie.nickname,type: "unavailable"}));
-             //   Groupie.connection.disconnect();
-            //});
+            $('#leave').click(function () {
+                Groupie.connection.send($pres({to: Groupie.room + "/" + Groupie.nickname,type: "unavailable"}));
+               Groupie.connection.disconnect();
+            });
             $('#input').keypress( function (ev) {
                 if (ev.which === 13) {
                     ev.preventDefault();
                     var body = $(this).val();
+                    console.log(body);
                     var match = body.match(/^\/(.*?)(?: (.*))?$/);
                     var args = null;
                     if (match) {
@@ -249,11 +250,12 @@ openerp.xmpp = function(openerp) {
         Groupie.joined = false;
         Groupie.participants = {};
         Groupie.connection.send($pres().c('priority').t('-1'));
-        Groupie.connection.addHandler(Groupie.on_presence,null, "presence");
-        Groupie.connection.addHandler(Groupie.on_public_message,null, "message", "groupchat");
-        Groupie.connection.addHandler(Groupie.on_private_message,null, "message", "chat");
+        Groupie.connection.addHandler(Groupie.on_presence,null,"presence");
+        Groupie.connection.addHandler(Groupie.on_public_message,null,"message","groupchat");
+        Groupie.connection.addHandler(Groupie.on_private_message,null,"message","chat");
         Groupie.connection.send($pres({to: Groupie.room + "/" + Groupie.nickname}).c('x', {xmlns: Groupie.NS_MUC}));
-        setInterval(Groupie.keeplive,50000);
+        $(".msgblank").removeClass("hidden")
+        //setInterval(Groupie.keeplive,5000);
     });
             
     $(document).bind('disconnected', function () {
@@ -269,7 +271,8 @@ openerp.xmpp = function(openerp) {
         Groupie.joined = true;
         $('#leave').removeAttr('disabled');
         $('#room-name').text(Groupie.room);
-        $('#chat').append("<div class='notice'>*** Room joined.</div>")
+        $('#chat').append("<div class='notice'>*** Room joined.</div>");
+        $('#msg').append("<div class='notice'>*** Room joined.</div>")
     });
     
     $(document).bind('user_joined', function (ev, nick) {
@@ -318,19 +321,32 @@ openerp.xmpp = function(openerp) {
             
             
             //Chat
-            $("#oe_header").before('<div class="msgblank"></div>');
+            $("#oe_header").before('<div class="msgblank hidden"><div id="content"></div><input id="msg" class="inputin"/><button id="send" type="button">Send</button></div>');
+            
+            
+            $("#send").click(function () {body = $("#msg").val();Groupie.connection.send($msg({to: Groupie.room,type: "groupchat"}).c('body').t(body));});
+            
+            
             Groupie.click = function () {
                 Groupie.to = this.innerHTML;
-                body = $("#msg").val();
+                
                 Groupie.connection.send($msg({to: Groupie.room,type: "groupchat"}).c('body').t(body));
             };
             
             //Login
-            Groupie.nickname = openerp.connection.username;
-            $(document).trigger('connect', {
-                jid: openerp.connection.username + Groupie.postfix ,
-                password: openerp.connection.username
-            });
+            //Groupie.nickname = openerp.connection.username;
+            //$(document).trigger('connect', {
+            //    jid:'admin@127.0.0.1',
+            //    password: 'admin'
+            $("#chatroom").click( function(){
+                Groupie.nickname = openerp.connection.username;
+                $(document).trigger('connect', {
+                    jid:'admin@127.0.0.1',
+                    password: 'admin'
+                });
+                
+                });
+            //});
             
             //end
         },
