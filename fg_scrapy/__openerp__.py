@@ -7,7 +7,7 @@
     'description': """Scrapy Everyday""",
     'author': 'openerp',
     'website': 'http://www.openerp.org',
-    'depends': ['base','res'],
+    'depends': ['base'],
     'init_xml': [],
     'update_xml': [
         
